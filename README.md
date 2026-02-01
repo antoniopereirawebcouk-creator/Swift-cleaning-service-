@@ -3,7 +3,6 @@
 Professional cleaning services in Jersey, Channel Islands.
 
 ## Services
-- Domestic Cleaning
 - End of Tenancy
 - Deep Cleaning
 - Office Cleaning
