@@ -3,238 +3,204 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
-  <meta name="theme-color" content="#0B1020" />
-  <meta name="color-scheme" content="light" />
+  <meta name="theme-color" content="#0B0D12" />
+  <meta name="color-scheme" content="dark" />
 
   <title>Swift Cleaning Service in Jersey | Commercial & Specialist Cleaning</title>
   <meta name="description" content="Swift Cleaning Service in Jersey, Channel Islands. Commercial cleaning, end of tenancy, deep cleaning, carpets & upholstery and window cleaning. Fully insured. WhatsApp 07700 335 789." />
   <meta name="robots" content="index,follow,max-image-preview:large" />
 
-  <!-- When you move to the .co.uk domain, change these 2 lines -->
+  <!-- GitHub Pages (troca para swiftcleaningjersey.co.uk quando mudares o domínio) -->
   <link rel="canonical" href="https://antoniopereirawebcouk-creator.github.io/Swift-cleaning-service-/" />
-  <meta property="og:url" content="https://antoniopereirawebcouk-creator.github.io/Swift-cleaning-service-/" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Swift Cleaning Service in Jersey | Commercial & Specialist Cleaning" />
   <meta property="og:description" content="Trusted local cleaning for businesses & rentals in Jersey. Fully insured. WhatsApp 07700 335 789." />
-  <meta property="og:image" content="assets/og.jpg" />
+  <meta property="og:url" content="https://antoniopereirawebcouk-creator.github.io/Swift-cleaning-service-/" />
+  <meta property="og:image" content="logo-hero.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
-
-  <link rel="icon" href="assets/favicon.ico" />
 
   <style>
     :root{
-      --bg:#0B1020;
-      --text:#EAF0FF;
-      --muted:#B9C4E6;
-      --line:rgba(255,255,255,.12);
-      --yellow:#FFC700;
-      --green:#25D366;
-      --shadow: 0 24px 70px rgba(0,0,0,.45);
-      --shadow2: 0 12px 30px rgba(0,0,0,.35);
-      --radius: 18px;
-      --radius2: 26px;
+      /* Neutros (premium) */
+      --bg:#0B0D12;
+      --panel: rgba(255,255,255,.05);
+      --panel2: rgba(255,255,255,.035);
+      --text:#F2F4F8;
+      --muted:#AAB2C5;
+      --line:rgba(255,255,255,.10);
+
+      /* A página não usa cores “de tema”.
+         A cor vem do LOGO. */
+      --shadow: 0 28px 80px rgba(0,0,0,.55);
+      --shadow2: 0 14px 34px rgba(0,0,0,.45);
+
+      --r: 18px;
+      --r2: 26px;
       --max: 1120px;
     }
+
     *{box-sizing:border-box}
     html,body{height:100%}
     body{
       margin:0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji";
-      color:var(--text);
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
       background:
-        radial-gradient(1100px 700px at 10% 0%, rgba(11,77,255,.25), transparent 55%),
-        radial-gradient(900px 700px at 95% 10%, rgba(255,199,0,.16), transparent 55%),
-        linear-gradient(180deg, #070A16 0%, #0B1020 35%, #070A16 100%);
+        radial-gradient(900px 520px at 20% -10%, rgba(255,255,255,.06), transparent 60%),
+        radial-gradient(900px 520px at 90% 0%, rgba(255,255,255,.05), transparent 60%),
+        linear-gradient(180deg, #07080B, var(--bg) 30%, #07080B);
+      color: var(--text);
       overflow-x:hidden;
     }
+
     a{color:inherit;text-decoration:none}
-    img{max-width:100%;display:block}
+    img{display:block;max-width:100%}
     .wrap{max-width:var(--max);margin:0 auto;padding:0 18px}
 
     /* Topbar */
     .topbar{
-      position:sticky; top:0; z-index:30;
+      position:sticky; top:0; z-index:50;
       backdrop-filter: blur(14px);
-      background: linear-gradient(180deg, rgba(11,16,32,.88), rgba(11,16,32,.55));
+      background: linear-gradient(180deg, rgba(11,13,18,.88), rgba(11,13,18,.60));
       border-bottom:1px solid var(--line);
     }
-    .topbar .row{
-      display:flex; align-items:center; justify-content:space-between;
-      padding:12px 0; gap:12px;
-    }
-    .brand{display:flex; align-items:center; gap:12px; min-width:220px}
-    .brandLogo{
+    .row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 0}
+    .brand{display:flex;align-items:center;gap:12px;min-width:220px}
+    .brandMark{
       width:44px;height:44px;border-radius:14px;
-      background: rgba(255,255,255,.08);
       border:1px solid rgba(255,255,255,.14);
-      display:flex;align-items:center;justify-content:center;
+      background: rgba(255,255,255,.06);
       overflow:hidden;
       box-shadow: var(--shadow2);
     }
-    .brandLogo img{width:100%;height:100%;object-fit:cover}
+    .brandMark img{width:100%;height:100%;object-fit:cover}
     .brand strong{letter-spacing:.4px}
     .brand small{display:block;color:var(--muted);margin-top:2px}
 
-    .nav{display:flex; align-items:center; gap:14px; flex-wrap:wrap; justify-content:flex-end}
+    .nav{display:flex;align-items:center;gap:14px;flex-wrap:wrap;justify-content:flex-end}
     .nav a{
-      color:var(--muted);
-      font-weight:700;
-      font-size:14px;
-      padding:8px 10px;
-      border-radius:999px;
-      border:1px solid transparent;
+      color:var(--muted);font-weight:800;font-size:14px;
+      padding:8px 10px;border-radius:999px;border:1px solid transparent;
     }
     .nav a:hover{color:var(--text);border-color:var(--line);background:rgba(255,255,255,.05)}
 
     .ctaRow{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
     .btn{
-      display:inline-flex; align-items:center; justify-content:center; gap:10px;
-      padding:11px 14px;
-      border-radius:999px;
-      font-weight:900;
-      border:1px solid var(--line);
-      background: rgba(255,255,255,.06);
-      box-shadow: 0 12px 24px rgba(0,0,0,.18);
+      display:inline-flex;align-items:center;justify-content:center;gap:10px;
+      padding:11px 14px;border-radius:999px;font-weight:950;
+      border:1px solid var(--line); background: rgba(255,255,255,.06);
+      box-shadow: 0 10px 22px rgba(0,0,0,.25);
       transition: transform .12s ease, background .12s ease;
       white-space:nowrap;
     }
     .btn:hover{transform: translateY(-1px); background: rgba(255,255,255,.09)}
     .btnPrimary{
-      border-color: rgba(37,211,102,.35);
-      background: linear-gradient(135deg, rgba(37,211,102,.95), rgba(37,211,102,.75));
-      color:#06230F;
-    }
-    .btnPrimary:hover{background: linear-gradient(135deg, rgba(37,211,102,1), rgba(37,211,102,.78))}
-    .btnFb{
+      background: linear-gradient(180deg, rgba(255,255,255,.12), rgba(255,255,255,.06));
       border-color: rgba(255,255,255,.18);
-      background: rgba(255,255,255,.07);
+    }
+    .dotWA{
+      width:10px;height:10px;border-radius:99px;background:#25D366; /* só o indicador do WhatsApp */
+      box-shadow: 0 0 0 3px rgba(37,211,102,.15);
+      flex:0 0 auto;
     }
 
     /* Hero */
     .hero{padding:54px 0 26px}
-    .heroGrid{
-      display:grid;
-      grid-template-columns: 1.15fr .85fr;
-      gap:18px;
-      align-items:stretch;
-    }
+    .heroGrid{display:grid;grid-template-columns: 1.15fr .85fr;gap:18px;align-items:stretch}
     .heroCard{
-      border-radius: var(--radius2);
-      background:
-        linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03)),
-        radial-gradient(700px 380px at 20% 0%, rgba(11,77,255,.25), transparent 60%),
-        radial-gradient(700px 420px at 90% 20%, rgba(255,199,0,.18), transparent 55%);
+      border-radius: var(--r2);
       border:1px solid var(--line);
+      background: linear-gradient(180deg, var(--panel), var(--panel2));
       box-shadow: var(--shadow);
       padding:24px;
-      position:relative;
-      overflow:hidden;
+      position:relative; overflow:hidden;
     }
-    .heroTop{
-      display:flex; align-items:center; gap:12px; margin-bottom:14px;
-    }
+    .heroTop{display:flex;align-items:center;gap:12px;margin-bottom:14px}
     .heroLogo{
-      width:54px;height:54px;border-radius:18px;
+      width:56px;height:56px;border-radius:18px;
       border:1px solid rgba(255,255,255,.14);
-      background: rgba(255,255,255,.08);
+      background: rgba(255,255,255,.06);
       overflow:hidden;
       box-shadow: var(--shadow2);
       flex:0 0 auto;
     }
     .heroLogo img{width:100%;height:100%;object-fit:cover}
-    .heroBadges{display:flex; gap:10px; flex-wrap:wrap; margin:10px 0 14px}
+    .badgeRow{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0 14px}
     .pill{
-      display:inline-flex; align-items:center; gap:8px;
+      display:inline-flex;align-items:center;gap:8px;
       padding:8px 12px;border-radius:999px;
       background: rgba(255,255,255,.06);
-      border:1px solid var(--line);
-      color:var(--muted);
-      font-weight:800;
-      font-size:13px;
+      border:1px solid rgba(255,255,255,.10);
+      color:var(--muted);font-weight:850;font-size:13px;
     }
-    .heroTitle{
+    .h1{
       font-size: clamp(28px, 3.6vw, 44px);
-      line-height:1.06;
-      margin:0 0 10px;
-      letter-spacing:-.8px;
+      line-height:1.06;margin:0 0 10px;letter-spacing:-.8px;
     }
-    .heroSub{
-      margin:0 0 18px;
-      color: var(--muted);
-      font-size: 16px;
-      line-height:1.55;
-      max-width:65ch;
-    }
-    .heroActions{display:flex; gap:10px; flex-wrap:wrap; align-items:center}
-    .mini{color:var(--muted); font-size:13px; margin-top:10px}
+    .sub{margin:0 0 18px;color:var(--muted);font-size:16px;line-height:1.55;max-width:65ch}
+    .actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+    .mini{color:var(--muted);font-size:13px;margin-top:10px}
 
     .heroSide{
-      border-radius: var(--radius2);
+      border-radius: var(--r2);
       border:1px solid var(--line);
       background: rgba(255,255,255,.03);
       box-shadow: var(--shadow2);
       overflow:hidden;
-      position:relative;
       min-height: 340px;
     }
     .heroPhoto{
       height:100%;
       background:
-        linear-gradient(180deg, rgba(0,0,0,.12), rgba(0,0,0,.55)),
-        url("https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&w=1400&q=70");
-      background-size: cover;
-      background-position: center;
-      display:flex;
-      align-items:flex-end;
-      padding:18px;
+        linear-gradient(180deg, rgba(0,0,0,.15), rgba(0,0,0,.65)),
+        url("https://images.unsplash.com/photo-1473081556163-2a17de81fc96?auto=format&fit=crop&w=1600&q=70");
+      background-size:cover;background-position:center;
+      display:flex;align-items:flex-end;padding:18px;
     }
     .caption{
       width:100%;
       border-radius: 16px;
-      border:1px solid rgba(255,255,255,.16);
-      background: rgba(11,16,32,.62);
+      border:1px solid rgba(255,255,255,.14);
+      background: rgba(11,13,18,.66);
       backdrop-filter: blur(10px);
       padding:14px;
     }
-    .caption strong{display:block; font-size:14px; letter-spacing:.3px}
-    .caption span{display:block; color:var(--muted); font-size:13px; margin-top:4px}
+    .caption strong{display:block;font-size:14px;letter-spacing:.3px}
+    .caption span{display:block;color:var(--muted);font-size:13px;margin-top:4px}
 
     section{padding:40px 0}
-    .sectionHead{
-      display:flex; align-items:flex-end; justify-content:space-between;
-      gap:12px; flex-wrap:wrap; margin-bottom:16px;
-    }
+    .sectionHead{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:16px}
     h2{margin:0;font-size:22px;letter-spacing:-.2px}
-    .kicker{color:var(--muted); font-size:14px; margin-top:6px}
+    .kicker{color:var(--muted);font-size:14px;margin-top:6px}
 
-    .grid{display:grid;grid-template-columns: repeat(3, 1fr);gap:14px}
+    /* Cards */
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
     .card{
       border:1px solid var(--line);
       background: rgba(255,255,255,.04);
-      border-radius: var(--radius);
+      border-radius: var(--r);
       box-shadow: 0 14px 30px rgba(0,0,0,.22);
       overflow:hidden;
     }
-    .cardMedia{height:155px; background: rgba(255,255,255,.06)}
-    .cardMedia img{width:100%;height:100%;object-fit:cover;filter:saturate(1.05) contrast(1.05)}
-    .cardBody{padding:14px 14px 16px}
-    .cardTitle{margin:0 0 6px;font-weight:1000}
-    .cardText{margin:0;color:var(--muted);font-size:14px;line-height:1.5}
-    .tagRow{margin-top:10px; display:flex; gap:8px; flex-wrap:wrap}
+    .media{height:155px;background: rgba(255,255,255,.06)}
+    .media img{width:100%;height:100%;object-fit:cover;filter:saturate(1.02) contrast(1.02)}
+    .body{padding:14px 14px 16px}
+    .title{margin:0 0 6px;font-weight:1000}
+    .text{margin:0;color:var(--muted);font-size:14px;line-height:1.5}
+    .tags{margin-top:10px;display:flex;gap:8px;flex-wrap:wrap}
     .tag{
-      font-size:12px; color: rgba(255,255,255,.85);
+      font-size:12px;color: rgba(255,255,255,.86);
       border:1px solid rgba(255,255,255,.14);
       background: rgba(255,255,255,.06);
-      padding:6px 10px; border-radius:999px;
-      font-weight:900;
+      padding:6px 10px;border-radius:999px;font-weight:900;
     }
 
-    .twoCol{display:grid;grid-template-columns: 1fr 1fr;gap:14px}
+    /* Panels */
+    .twoCol{display:grid;grid-template-columns:1fr 1fr;gap:14px}
     .panel{
       border:1px solid var(--line);
-      border-radius: var(--radius2);
+      border-radius: var(--r2);
       background: rgba(255,255,255,.04);
       box-shadow: var(--shadow2);
       padding:18px;
@@ -242,38 +208,37 @@
     ul.clean{margin:0;padding-left:18px;color:var(--muted);line-height:1.7}
     .steps{display:grid;gap:10px;margin-top:10px}
     .step{
-      display:flex; gap:12px; align-items:flex-start;
-      padding:12px; border-radius: 16px;
+      display:flex;gap:12px;align-items:flex-start;
+      padding:12px;border-radius:16px;
       border:1px solid rgba(255,255,255,.12);
       background: rgba(255,255,255,.04);
     }
     .num{
       width:32px;height:32px;border-radius:12px;
       display:flex;align-items:center;justify-content:center;
-      background: linear-gradient(135deg, rgba(255,199,0,.92), rgba(255,199,0,.68));
-      color:#2A1B00;font-weight:1000;flex:0 0 auto
+      background: rgba(255,255,255,.12);
+      border:1px solid rgba(255,255,255,.16);
+      color:var(--text);font-weight:1000;flex:0 0 auto;
     }
     .step strong{display:block}
     .step span{display:block;color:var(--muted);font-size:14px;line-height:1.45;margin-top:3px}
 
-    footer{border-top: 1px solid var(--line);padding:22px 0 30px;color:var(--muted);font-size:13px}
-    .footRow{display:flex; justify-content:space-between; align-items:flex-start; gap:12px; flex-wrap:wrap}
+    footer{border-top:1px solid var(--line);padding:22px 0 30px;color:var(--muted);font-size:13px}
+    .footRow{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap}
 
-    /* Responsive */
-    @media (max-width: 940px){
-      .heroGrid{grid-template-columns: 1fr}
+    @media (max-width:940px){
+      .heroGrid{grid-template-columns:1fr}
       .heroSide{min-height:260px}
-      .grid{grid-template-columns: repeat(2, 1fr)}
-      .twoCol{grid-template-columns: 1fr}
+      .grid{grid-template-columns:repeat(2,1fr)}
+      .twoCol{grid-template-columns:1fr}
       .nav{display:none}
       .brand{min-width:auto}
     }
-    @media (max-width: 560px){
-      .grid{grid-template-columns: 1fr}
+    @media (max-width:560px){
+      .grid{grid-template-columns:1fr}
     }
   </style>
 
-  <!-- LocalBusiness Schema (update Facebook when you have the link) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -289,14 +254,12 @@
 </head>
 
 <body>
-  <!-- Top bar -->
   <div class="topbar">
     <div class="wrap">
       <div class="row">
         <div class="brand">
-          <div class="brandLogo" aria-hidden="true">
-            <img src="assets/logo.png" alt="Swift Cleaning Service logo"
-              onerror="this.closest('.brandLogo').style.display='none';" />
+          <div class="brandMark" aria-hidden="true">
+            <img src="logo-gold.jpg" alt="Swift logo" onerror="this.closest('.brandMark').style.display='none';" />
           </div>
           <div>
             <strong>SWIFT</strong>
@@ -313,25 +276,23 @@
 
         <div class="ctaRow">
           <a class="btn" href="tel:+447700335789">Call</a>
-          <!-- Add your real Facebook page URL here -->
-          <a class="btn btnFb" href="#" onclick="alert('Add your Facebook link in the index.html'); return false;">Facebook</a>
+          <!-- mete aqui o link do Facebook quando tiveres -->
+          <a class="btn" href="#" onclick="alert('Add the Swift Facebook page link in the index.html'); return false;">Facebook</a>
           <a class="btn btnPrimary" href="https://wa.me/447700335789?text=Hi%20Swift%20Cleaning%20Service%2C%20I%27d%20like%20a%20quote%20please." target="_blank" rel="noopener">
-            <span aria-hidden="true">🟢</span> WhatsApp 07700 335 789
+            <span class="dotWA" aria-hidden="true"></span> WhatsApp 07700 335 789
           </a>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Hero -->
   <header class="hero">
     <div class="wrap">
       <div class="heroGrid">
         <div class="heroCard">
           <div class="heroTop">
             <div class="heroLogo" aria-hidden="true">
-              <img src="assets/logo.png" alt="Swift Cleaning Service logo"
-                   onerror="this.closest('.heroLogo').style.display='none';" />
+              <img src="logo-hero.jpg" alt="Swift logo" onerror="this.closest('.heroLogo').style.display='none';" />
             </div>
             <div>
               <div style="font-weight:1000;letter-spacing:.2px">Swift Cleaning Service</div>
@@ -339,21 +300,21 @@
             </div>
           </div>
 
-          <div class="heroBadges">
+          <div class="badgeRow">
             <span class="pill">Serving Jersey Channel Islands</span>
             <span class="pill">Fully Insured</span>
             <span class="pill">Commercial & Specialist</span>
           </div>
 
-          <h1 class="heroTitle">Swift Cleaning Service in Jersey</h1>
-          <p class="heroSub">
+          <h1 class="h1">Swift Cleaning Service in Jersey</h1>
+          <p class="sub">
             Professional cleaning for offices, rentals and specialist jobs. From end of tenancy to deep cleaning and carpets —
             consistent results, clear communication, reliable service.
           </p>
 
-          <div class="heroActions">
+          <div class="actions">
             <a class="btn btnPrimary" href="https://wa.me/447700335789?text=Hi%20Swift%20Cleaning%20Service%2C%20I%27d%20like%20a%20quote%20please." target="_blank" rel="noopener">
-              <span aria-hidden="true">🟢</span> Get a quote on WhatsApp
+              <span class="dotWA" aria-hidden="true"></span> Get a quote on WhatsApp
             </a>
             <a class="btn" href="#services">View services</a>
           </div>
@@ -362,7 +323,7 @@
         </div>
 
         <div class="heroSide">
-          <div class="heroPhoto" role="img" aria-label="Jersey harbour background">
+          <div class="heroPhoto" role="img" aria-label="Jersey harbour">
             <div class="caption">
               <strong>Local Jersey service</strong>
               <span>Commercial and specialist cleaning across Jersey — fully insured.</span>
@@ -373,7 +334,6 @@
     </div>
   </header>
 
-  <!-- Services -->
   <section id="services">
     <div class="wrap">
       <div class="sectionHead">
@@ -381,86 +341,85 @@
           <h2>Services</h2>
           <div class="kicker">Professional services for businesses, rentals and specialist jobs.</div>
         </div>
-        <a class="btn" href="https://wa.me/447700335789?text=Hi%20Swift%20Cleaning%20Service%2C%20can%20I%20get%20a%20quote%20please%3F" target="_blank" rel="noopener">
-          WhatsApp for availability
+        <a class="btn btnPrimary" href="https://wa.me/447700335789?text=Hi%20Swift%20Cleaning%20Service%2C%20can%20I%20get%20a%20quote%20please%3F" target="_blank" rel="noopener">
+          <span class="dotWA" aria-hidden="true"></span> WhatsApp for availability
         </a>
       </div>
 
       <div class="grid">
         <article class="card">
-          <div class="cardMedia">
+          <div class="media">
             <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1400&q=70" alt="Office cleaning" loading="lazy">
           </div>
-          <div class="cardBody">
-            <h3 class="cardTitle">Office & Commercial</h3>
-            <p class="cardText">Reliable cleaning for workplaces — professional, discreet and consistent.</p>
-            <div class="tagRow"><span class="tag">After-hours</span><span class="tag">Contracts</span><span class="tag">Custom plans</span></div>
+          <div class="body">
+            <h3 class="title">Office & Commercial</h3>
+            <p class="text">Reliable cleaning for workplaces — professional, discreet and consistent.</p>
+            <div class="tags"><span class="tag">After-hours</span><span class="tag">Contracts</span><span class="tag">Custom plans</span></div>
           </div>
         </article>
 
         <article class="card">
-          <div class="cardMedia">
+          <div class="media">
             <img src="https://images.unsplash.com/photo-1560448204-603b3fc33ddc?auto=format&fit=crop&w=1400&q=70" alt="End of tenancy cleaning" loading="lazy">
           </div>
-          <div class="cardBody">
-            <h3 class="cardTitle">End of Tenancy</h3>
-            <p class="cardText">A thorough clean for move-outs, landlords and rentals — ready for inspection.</p>
-            <div class="tagRow"><span class="tag">Move-out</span><span class="tag">Landlords</span><span class="tag">Lettings</span></div>
+          <div class="body">
+            <h3 class="title">End of Tenancy</h3>
+            <p class="text">A thorough clean for move-outs, landlords and rentals — ready for inspection.</p>
+            <div class="tags"><span class="tag">Move-out</span><span class="tag">Landlords</span><span class="tag">Lettings</span></div>
           </div>
         </article>
 
         <article class="card">
-          <div class="cardMedia">
-            <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=1400&q=70" alt="Deep cleaning" loading="lazy">
+          <div class="media">
+            <img src="https://images.unsplash.com/photo-1585421514738-01798e348b17?auto=format&fit=crop&w=1400&q=70" alt="Deep cleaning" loading="lazy">
           </div>
-          <div class="cardBody">
-            <h3 class="cardTitle">Deep Cleaning</h3>
-            <p class="cardText">Detailed, top-to-bottom cleaning for a reset — kitchens, bathrooms and more.</p>
-            <div class="tagRow"><span class="tag">Detailed</span><span class="tag">Hygiene focus</span><span class="tag">One-off</span></div>
+          <div class="body">
+            <h3 class="title">Deep Cleaning</h3>
+            <p class="text">Detailed, top-to-bottom cleaning for a reset — kitchens, bathrooms and more.</p>
+            <div class="tags"><span class="tag">Detailed</span><span class="tag">Hygiene focus</span><span class="tag">One-off</span></div>
           </div>
         </article>
 
         <article class="card">
-          <div class="cardMedia">
+          <div class="media">
             <img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=1400&q=70" alt="Carpet and upholstery cleaning" loading="lazy">
           </div>
-          <div class="cardBody">
-            <h3 class="cardTitle">Carpets & Upholstery</h3>
-            <p class="cardText">Refresh fabrics and remove dirt buildup — ideal for offices and rentals.</p>
-            <div class="tagRow"><span class="tag">Stains</span><span class="tag">Odours</span><span class="tag">Refresh</span></div>
+          <div class="body">
+            <h3 class="title">Carpets & Upholstery</h3>
+            <p class="text">Refresh fabrics and remove dirt buildup — ideal for offices and rentals.</p>
+            <div class="tags"><span class="tag">Stains</span><span class="tag">Odours</span><span class="tag">Refresh</span></div>
           </div>
         </article>
 
         <article class="card">
-          <div class="cardMedia">
+          <div class="media">
             <img src="https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?auto=format&fit=crop&w=1400&q=70" alt="Window cleaning" loading="lazy">
           </div>
-          <div class="cardBody">
-            <h3 class="cardTitle">Window Cleaning</h3>
-            <p class="cardText">Clean, clear windows that lift the whole property — inside and out.</p>
-            <div class="tagRow"><span class="tag">Inside/Outside</span><span class="tag">Frames</span><span class="tag">Finish</span></div>
+          <div class="body">
+            <h3 class="title">Window Cleaning</h3>
+            <p class="text">Clean, clear windows that lift the whole property — inside and out.</p>
+            <div class="tags"><span class="tag">Inside/Outside</span><span class="tag">Frames</span><span class="tag">Finish</span></div>
           </div>
         </article>
 
         <article class="card">
-          <div class="cardMedia">
-            <img src="https://images.unsplash.com/photo-1585421514738-01798e348b17?auto=format&fit=crop&w=1400&q=70" alt="Specialist cleaning" loading="lazy">
+          <div class="media">
+            <img src="https://images.unsplash.com/photo-1581579185169-7b07f02f0a0a?auto=format&fit=crop&w=1400&q=70" alt="Specialist cleaning" loading="lazy">
           </div>
-          <div class="cardBody">
-            <h3 class="cardTitle">Specialist Cleaning</h3>
-            <p class="cardText">Tell us what you need — we confirm the scope and provide a clear quote.</p>
-            <div class="tagRow"><span class="tag">Custom</span><span class="tag">Flexible</span><span class="tag">Insured</span></div>
+          <div class="body">
+            <h3 class="title">Specialist Cleaning</h3>
+            <p class="text">Tell us what you need — we confirm the scope and provide a clear quote.</p>
+            <div class="tags"><span class="tag">Custom</span><span class="tag">Flexible</span><span class="tag">Insured</span></div>
           </div>
         </article>
       </div>
 
       <div style="margin-top:14px;color:var(--muted);font-size:12px">
-        Service images: royalty-free via Unsplash.
+        Service photos: royalty-free via Unsplash.
       </div>
     </div>
   </section>
 
-  <!-- Why + Process -->
   <section id="why">
     <div class="wrap">
       <div class="twoCol">
@@ -505,7 +464,7 @@
 
           <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
             <a class="btn btnPrimary" href="https://wa.me/447700335789?text=Hi%20Swift%20Cleaning%20Service%2C%20I%27d%20like%20a%20quote%20please." target="_blank" rel="noopener">
-              <span aria-hidden="true">🟢</span> WhatsApp 07700 335 789
+              <span class="dotWA" aria-hidden="true"></span> WhatsApp 07700 335 789
             </a>
             <a class="btn" href="tel:+447700335789">Call now</a>
           </div>
@@ -514,7 +473,6 @@
     </div>
   </section>
 
-  <!-- Contact -->
   <section id="contact">
     <div class="wrap">
       <div class="panel">
@@ -523,7 +481,7 @@
 
         <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:14px">
           <a class="btn btnPrimary" href="https://wa.me/447700335789?text=Hi%20Swift%20Cleaning%20Service%2C%20I%27d%20like%20to%20book%20a%20clean%20in%20Jersey." target="_blank" rel="noopener">
-            <span aria-hidden="true">🟢</span> WhatsApp 07700 335 789
+            <span class="dotWA" aria-hidden="true"></span> WhatsApp 07700 335 789
           </a>
           <a class="btn" href="tel:+447700335789">Call: 07700 335 789</a>
         </div>
