@@ -17,34 +17,37 @@
   <meta property="og:title" content="Swift Cleaning Service Jersey | Commercial & Specialist Cleaning" />
   <meta property="og:description" content="Commercial & specialist cleaning across Jersey, Channel Islands. Fully insured. Get a quote on WhatsApp." />
   <meta property="og:url" content="https://swiftcleaningjersey.co.uk/" />
-  <meta property="og:image" content="https://swiftcleaningjersey.co.uk/logo-hero.jpg" />
+  <meta property="og:image" content="https://swiftcleaningjersey.co.uk/og.jpg" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Swift Cleaning Service Jersey" />
   <meta name="twitter:description" content="Commercial & specialist cleaning across Jersey, Channel Islands. Fully insured." />
-  <meta name="twitter:image" content="https://swiftcleaningjersey.co.uk/logo-hero.jpg" />
+  <meta name="twitter:image" content="https://swiftcleaningjersey.co.uk/og.jpg" />
 
   <style>
     :root{
-      --bg:#f6f8fc;
-      --panel:#ffffff;
-      --panel2:#fbfcff;
-      --line:rgba(12,18,28,.10);
-      --shadow: 0 18px 50px rgba(11,20,40,.10);
-      --shadow2: 0 10px 30px rgba(11,20,40,.08);
-
-      --text:#0b1220;
+      --bg:#F7F9FC;
+      --panel:#FFFFFF;
+      --panel2:#F2F5FA;
+      --line:rgba(10,18,40,.10);
+      --text:#0B1220;
       --muted:rgba(11,18,32,.72);
       --muted2:rgba(11,18,32,.58);
 
-      /* Logo colours (blue + gold) */
-      --brandBlue:#0B5BD3;
-      --brandGold:#F4C542;
+      /* Brand */
+      --blue:#0B5BD3;
+      --blue2:#0A4DB6;
+      --gold:#F4C542;
+
       --wa:#25D366;
 
       --r1:14px;
       --r2:22px;
+
+      --shadow: 0 18px 45px rgba(11,18,32,.10);
+      --shadow2: 0 10px 28px rgba(11,18,32,.10);
+
       --max: 1120px;
     }
 
@@ -54,9 +57,9 @@
       margin:0;
       font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
       background:
-        radial-gradient(1200px 600px at 10% -10%, rgba(11,91,211,.12), transparent 60%),
-        radial-gradient(900px 500px at 90% 0%, rgba(244,197,66,.14), transparent 55%),
-        linear-gradient(#ffffff, var(--bg) 40%);
+        radial-gradient(1000px 520px at 12% -10%, rgba(11,91,211,.10), transparent 60%),
+        radial-gradient(900px 520px at 90% 0%, rgba(244,197,66,.14), transparent 55%),
+        var(--bg);
       color:var(--text);
       line-height:1.5;
       -webkit-font-smoothing:antialiased;
@@ -64,13 +67,13 @@
     }
 
     a{color:inherit; text-decoration:none}
-    .wrap{max-width:var(--max); margin:0 auto; padding:0 16px}
+    .wrap{max-width:var(--max); margin:0 auto; padding:0 18px}
 
-    /* Topbar */
+    /* Top bar */
     .topbar{
       position:sticky; top:0; z-index:50;
+      background: rgba(247,249,252,.86);
       backdrop-filter: blur(12px);
-      background: rgba(255,255,255,.82);
       border-bottom: 1px solid var(--line);
     }
     .nav{
@@ -78,11 +81,12 @@
       gap:14px; padding:12px 0;
     }
     .brand{
-      display:flex; align-items:center; gap:12px;
-      min-width:240px;
+      display:flex; align-items:center; gap:14px; min-width:240px;
     }
+
+    /* BIGGER LOGO */
     .brandLogo{
-      width:64px; height:64px; border-radius:18px;
+      width:62px; height:62px; border-radius:16px;
       background: #fff;
       border:1px solid var(--line);
       overflow:hidden;
@@ -96,146 +100,186 @@
       display:block;
     }
     .brandText{display:flex; flex-direction:column; line-height:1.1}
-    .brandText strong{
-      font-size:14px;
-      letter-spacing:.6px;
-      text-transform:uppercase;
-    }
-    .brandText span{font-size:13px; color:var(--muted2)}
+    .brandText strong{font-size:14px; letter-spacing:.6px}
+    .brandText span{font-size:12px; color:var(--muted2)}
 
     .navBtns{display:flex; gap:10px; align-items:center; flex-wrap:wrap; justify-content:flex-end}
-    .chip{
-      display:inline-flex; align-items:center; gap:10px;
+    .btnSm{
+      display:inline-flex; align-items:center; justify-content:center; gap:10px;
       padding:10px 14px;
-      background: rgba(11,91,211,.06);
-      border:1px solid rgba(11,91,211,.18);
       border-radius:999px;
+      border:1px solid var(--line);
+      background: #fff;
       color:var(--text);
       font-weight:800;
+      box-shadow: 0 10px 20px rgba(11,18,32,.06);
     }
-    .chip:hover{background: rgba(11,91,211,.09)}
-    .chipSecondary{
-      background: rgba(244,197,66,.18);
-      border-color: rgba(244,197,66,.40);
+    .btnSm:hover{border-color: rgba(11,91,211,.28)}
+    .btnSm.primary{
+      background: linear-gradient(135deg, var(--blue), var(--blue2));
+      color:#fff;
+      border-color: rgba(11,91,211,.35);
     }
-    .chipSecondary:hover{background: rgba(244,197,66,.24)}
+    .btnSm.primary:hover{filter:brightness(1.02)}
     .waDot{
       width:10px; height:10px; border-radius:999px;
       background: var(--wa);
-      box-shadow: 0 0 0 4px rgba(37,211,102,.18);
+      box-shadow: 0 0 0 4px rgba(37,211,102,.14);
       flex:0 0 auto;
     }
 
+    /* Mobile menu */
+    .menuBtn{
+      display:none;
+      padding:10px 12px;
+      border-radius:12px;
+      border:1px solid var(--line);
+      background:#fff;
+      font-weight:900;
+    }
+    .menu{
+      display:flex; align-items:center; gap:10px; flex-wrap:wrap;
+    }
+
+    @media (max-width: 860px){
+      .menuBtn{display:inline-flex}
+      .menu{display:none}
+      .menu.open{display:flex; width:100%; padding:0 0 12px; justify-content:flex-start}
+      .nav{flex-wrap:wrap}
+      .navBtns{width:100%; justify-content:flex-start}
+    }
+
     /* Hero */
-    .hero{padding: 18px 0 10px}
+    .hero{padding:18px 0 6px}
     .heroGrid{
       display:grid;
-      gap:14px;
-      grid-template-columns: 1fr;
+      gap:16px;
+      grid-template-columns: 1.1fr .9fr;
       align-items:stretch;
     }
-    .heroLeft{
+    @media (max-width: 980px){
+      .heroGrid{grid-template-columns: 1fr}
+    }
+
+    .panel{
       background: var(--panel);
       border:1px solid var(--line);
       border-radius: var(--r2);
       box-shadow: var(--shadow);
-      padding: 22px;
-      overflow:hidden;
-      position:relative;
     }
+    .heroCopy{
+      padding:24px;
+      display:grid;
+      gap:12px;
+    }
+
     .kicker{
-      display:inline-flex; gap:10px; align-items:center;
-      padding:8px 12px;
-      border-radius:999px;
-      background: rgba(11,91,211,.08);
-      border:1px solid rgba(11,91,211,.16);
-      color: rgba(11,18,32,.84);
+      display:inline-flex; align-items:center; gap:10px; flex-wrap:wrap;
       font-weight:900;
-      letter-spacing:.2px;
+      color:rgba(11,18,32,.78);
       font-size:13px;
-      margin-bottom: 12px;
+      letter-spacing:.2px;
     }
-    .kicker b{color: var(--brandBlue)}
-    h1{
-      margin:0;
-      font-size: clamp(28px, 4.6vw, 44px);
-      letter-spacing:-.6px;
-      line-height:1.08;
-    }
-    .lead{
-      margin: 10px 0 0;
-      font-size:16px;
-      color: var(--muted);
-      max-width: 72ch;
-    }
-    .badges{display:flex; flex-wrap:wrap; gap:10px; margin-top:14px}
-    .badge{
+    .pill{
       display:inline-flex; align-items:center;
       padding:8px 12px;
       border-radius:999px;
-      background: rgba(255,255,255,.85);
       border:1px solid var(--line);
-      color: var(--muted);
+      background: var(--panel2);
       font-weight:800;
-      font-size:13px;
+      color:rgba(11,18,32,.76);
+      font-size:12px;
     }
-    .badgeGold{
-      color:#1a1300;
-      background: linear-gradient(135deg, rgba(244,197,66,.90), rgba(244,197,66,.65));
-      border-color: rgba(244,197,66,.55);
+    .pill.gold{
+      background: linear-gradient(135deg, var(--gold), rgba(244,197,66,.60));
+      border-color: rgba(244,197,66,.45);
+      color:#0B1220;
     }
 
-    .btnRow{display:flex; gap:12px; flex-wrap:wrap; margin-top:16px}
+    h1{
+      margin:0;
+      font-size: clamp(28px, 4.5vw, 44px);
+      letter-spacing:-.7px;
+      line-height:1.08;
+    }
+    .lead{
+      margin:0;
+      font-size: 16px;
+      color: var(--muted);
+      max-width: 70ch;
+    }
+    .btnRow{display:flex; gap:12px; flex-wrap:wrap; margin-top:6px}
     .btn{
       display:inline-flex; align-items:center; justify-content:center; gap:10px;
       padding:14px 18px;
       border-radius: 999px;
-      border:1px solid rgba(11,18,32,.16);
+      border:1px solid var(--line);
       background: #fff;
       color: var(--text);
       font-weight:900;
       letter-spacing:.2px;
-      box-shadow: 0 10px 22px rgba(11,20,40,.10);
+      box-shadow: 0 14px 28px rgba(11,18,32,.08);
     }
-    .btn:hover{filter:brightness(0.99)}
+    .btn:hover{border-color: rgba(11,91,211,.26)}
     .btnPrimary{
-      border-color: rgba(37,211,102,.45);
-      background: linear-gradient(135deg, rgba(37,211,102,.95), rgba(37,211,102,.80));
-      color:#06110a;
+      border-color: rgba(37,211,102,.30);
+      background: linear-gradient(135deg, rgba(37,211,102,.95), rgba(37,211,102,.78));
+      color:#072112;
     }
-    .btnPrimary:hover{filter:brightness(1.02)}
+    .btnBlue{
+      border-color: rgba(11,91,211,.35);
+      background: linear-gradient(135deg, var(--blue), var(--blue2));
+      color:#fff;
+    }
     .micro{
-      margin: 12px 0 0;
+      margin:0;
       color: var(--muted2);
       font-size:13px;
     }
 
-    .heroRight{
+    .heroMedia{
+      overflow:hidden;
+      position:relative;
+      min-height: 360px;
       border-radius: var(--r2);
       border:1px solid var(--line);
       box-shadow: var(--shadow);
-      background: url("logo-hero.jpg") center/cover no-repeat;
-      min-height: 280px;
-      position:relative;
-      overflow:hidden;
+      background:
+        radial-gradient(800px 400px at 20% 10%, rgba(11,91,211,.16), transparent 60%),
+        radial-gradient(700px 420px at 80% 0%, rgba(244,197,66,.20), transparent 55%),
+        #ffffff;
+      display:grid;
+      align-content:end;
     }
-    .heroRight::after{
-      content:"";
-      position:absolute; inset:0;
-      background: linear-gradient(to top, rgba(255,255,255,.88), rgba(255,255,255,.18));
+    .heroMediaInner{
+      padding:18px;
+      background: linear-gradient(to top, rgba(255,255,255,.92), rgba(255,255,255,.0));
     }
-    .heroRight .overlayBox{
-      position:absolute;
-      left:16px; right:16px; bottom:16px;
-      background: rgba(255,255,255,.86);
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      padding: 14px 14px;
-      box-shadow: 0 10px 24px rgba(11,20,40,.10);
+    .trustRow{
+      display:flex; flex-wrap:wrap; gap:10px;
+      align-items:center;
     }
-    .overlayBox strong{display:block}
-    .overlayBox span{color:var(--muted2); font-size:13px}
+    .trustCard{
+      display:flex; align-items:center; gap:10px;
+      padding:10px 12px;
+      border-radius: 16px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.88);
+      box-shadow: 0 12px 24px rgba(11,18,32,.07);
+      font-weight:800;
+      color: rgba(11,18,32,.78);
+      font-size:12px;
+    }
+    .tick{
+      width:18px; height:18px; border-radius:999px;
+      background: rgba(11,91,211,.12);
+      border:1px solid rgba(11,91,211,.20);
+      display:grid; place-items:center;
+      font-size:12px;
+      color: var(--blue);
+    }
 
+    /* Sections */
     section{padding: 26px 0}
     .sectionHead{
       display:flex; justify-content:space-between; align-items:flex-end;
@@ -249,7 +293,7 @@
     .sectionHead p{
       margin:0;
       color:var(--muted2);
-      max-width: 62ch;
+      max-width: 64ch;
       font-size: 14px;
     }
 
@@ -260,11 +304,11 @@
     }
     .card{
       grid-column: span 12;
+      overflow:hidden;
       border-radius: var(--r2);
       border:1px solid var(--line);
       background: var(--panel);
       box-shadow: var(--shadow2);
-      overflow:hidden;
     }
     .cardBody{padding:16px}
     .cardBody h3{margin:0 0 6px; font-size:20px; letter-spacing:-.2px}
@@ -273,49 +317,28 @@
     .tag{
       padding:7px 10px;
       border-radius:999px;
-      background: rgba(11,91,211,.06);
-      border:1px solid rgba(11,91,211,.14);
-      color: rgba(11,18,32,.70);
+      background: var(--panel2);
+      border:1px solid var(--line);
+      color:rgba(11,18,32,.72);
       font-weight:900;
       font-size:12px;
     }
-    .icon{
-      width:42px; height:42px; border-radius:14px;
-      display:grid; place-items:center;
-      background: rgba(244,197,66,.22);
-      border: 1px solid rgba(244,197,66,.42);
-      box-shadow: 0 10px 18px rgba(11,20,40,.07);
-      margin-bottom: 10px;
-      font-weight:1000;
-    }
 
-    @media (min-width: 900px){
-      .heroGrid{grid-template-columns: 1.15fr .85fr}
-      .heroRight{min-height: 420px}
+    @media (min-width: 760px){
       .card{grid-column: span 6}
     }
-    @media (min-width: 1100px){
+    @media (min-width: 1020px){
       .card{grid-column: span 4}
     }
 
-    .panel{
-      background: var(--panel);
-      border:1px solid var(--line);
-      border-radius: var(--r2);
-      box-shadow: var(--shadow2);
-    }
-    .ctaStrip{
-      display:flex; flex-wrap:wrap; gap:12px;
-      align-items:center; justify-content:space-between;
-      padding: 18px;
-    }
-    .ctaStrip strong{font-size:16px}
-    .ctaStrip span{color:var(--muted2); font-size:13px}
-
+    /* Quote / form */
     .twoCol{
       display:grid;
       gap:14px;
       grid-template-columns: 1fr;
+    }
+    @media (min-width: 900px){
+      .twoCol{grid-template-columns: 1.1fr .9fr}
     }
     .infoBox{padding:18px}
     .list{margin:10px 0 0; padding:0; list-style:none; display:grid; gap:8px}
@@ -326,35 +349,58 @@
     }
     .dot{
       width:9px; height:9px; border-radius:999px; margin-top:7px;
-      background: linear-gradient(135deg, var(--brandBlue), rgba(11,91,211,.55));
-      box-shadow: 0 0 0 4px rgba(11,91,211,.12);
+      background: linear-gradient(135deg, var(--blue), rgba(11,91,211,.60));
+      box-shadow: 0 0 0 4px rgba(11,91,211,.10);
       flex:0 0 auto;
     }
-    @media (min-width: 980px){
-      .twoCol{grid-template-columns: 1.15fr .85fr}
-    }
 
-    details{
+    form{display:grid; gap:10px}
+    label{font-weight:900; font-size:12px; color:rgba(11,18,32,.78)}
+    input, textarea, select{
+      width:100%;
+      padding:12px 12px;
+      border-radius:14px;
       border:1px solid var(--line);
-      border-radius: 16px;
-      background: #fff;
-      padding: 12px 14px;
+      background:#fff;
+      outline:none;
+      font-size:14px;
     }
-    details summary{
-      cursor:pointer;
-      font-weight:900;
-      color: rgba(11,18,32,.88);
-      list-style:none;
+    input:focus, textarea:focus, select:focus{
+      border-color: rgba(11,91,211,.40);
+      box-shadow: 0 0 0 4px rgba(11,91,211,.10);
     }
-    details summary::-webkit-details-marker{display:none}
-    details p{margin:10px 0 0; color:var(--muted); font-size:14px}
+    textarea{min-height:110px; resize:vertical}
 
+    .note{
+      padding:14px;
+      border-radius: 16px;
+      border:1px solid rgba(244,197,66,.45);
+      background: rgba(244,197,66,.18);
+      color: rgba(11,18,32,.82);
+      font-weight:800;
+      font-size:13px;
+    }
+
+    /* Testimonials */
+    .quote{
+      margin:0;
+      color: rgba(11,18,32,.80);
+      font-weight:800;
+      font-size:14px;
+    }
+    .who{
+      margin-top:10px;
+      color: var(--muted2);
+      font-weight:900;
+      font-size:12px;
+    }
+
+    /* Footer */
     footer{
       padding: 26px 0 40px;
       color: var(--muted2);
       border-top:1px solid var(--line);
       margin-top: 10px;
-      background: rgba(255,255,255,.70);
     }
     .footRow{
       display:flex; flex-wrap:wrap; gap:12px;
@@ -363,52 +409,47 @@
     .footLinks{display:flex; gap:12px; flex-wrap:wrap}
     .footLinks a{
       padding:10px 14px; border-radius:999px;
-      background: rgba(11,91,211,.06);
-      border:1px solid rgba(11,91,211,.14);
-      color: rgba(11,18,32,.78);
+      background: #fff;
+      border:1px solid var(--line);
+      color: rgba(11,18,32,.72);
       font-weight:900;
       font-size:13px;
+      box-shadow: 0 10px 18px rgba(11,18,32,.05);
     }
-    .footLinks a:hover{background: rgba(11,91,211,.10)}
+    .footLinks a:hover{border-color: rgba(11,91,211,.26)}
 
-    /* Sticky WhatsApp */
+    /* Sticky CTA */
     .sticky{
-      position: fixed;
-      left: 16px;
-      right: 16px;
-      bottom: 14px;
-      z-index: 60;
-      display:flex;
-      justify-content:center;
+      position:fixed;
+      left:0; right:0; bottom:14px;
+      display:flex; justify-content:center;
       pointer-events:none;
+      z-index:60;
     }
     .sticky a{
       pointer-events:auto;
-      width: min(640px, 100%);
-      display:flex; justify-content:center; align-items:center; gap:10px;
-      padding: 14px 18px;
-      border-radius: 999px;
-      background: linear-gradient(135deg, rgba(37,211,102,.95), rgba(37,211,102,.80));
-      color:#06110a;
+      display:inline-flex; align-items:center; gap:10px;
+      padding:14px 18px;
+      border-radius:999px;
+      background: linear-gradient(135deg, rgba(37,211,102,.96), rgba(37,211,102,.82));
+      color:#072112;
       font-weight:1000;
-      box-shadow: 0 16px 40px rgba(11,20,40,.18);
-      border: 1px solid rgba(37,211,102,.45);
+      border:1px solid rgba(37,211,102,.35);
+      box-shadow: 0 20px 45px rgba(11,18,32,.18);
     }
   </style>
 
-  <!-- Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "CleaningService",
     "name": "Swift Cleaning Service",
     "url": "https://swiftcleaningjersey.co.uk/",
-    "image": "https://swiftcleaningjersey.co.uk/logo-hero.jpg",
-    "telephone": "+44 7700 335 789",
     "areaServed": {
       "@type": "Place",
       "name": "Jersey, Channel Islands"
     },
+    "telephone": "+44 7700 335 789",
     "sameAs": [
       "https://www.facebook.com/share/181zrn8D8R/"
     ]
@@ -424,22 +465,29 @@
       <div class="nav">
         <a class="brand" href="#top" aria-label="Swift Cleaning Service home">
           <div class="brandLogo">
+            <!-- ✅ Put your logo file in the same folder as this HTML -->
+            <!-- Suggested filename: logo-gold.jpg or logo.png -->
             <img src="logo-gold.jpg" alt="Swift Cleaning Service logo">
           </div>
           <div class="brandText">
-            <strong>Swift Cleaning Service</strong>
+            <strong>SWIFT CLEANING SERVICE</strong>
             <span>Jersey, Channel Islands</span>
           </div>
         </a>
 
+        <button class="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" id="menuBtn">Menu</button>
+
+        <div class="menu" id="menu">
+          <a class="btnSm" href="#services">Services</a>
+          <a class="btnSm" href="#about">About</a>
+          <a class="btnSm" href="#testimonials">Testimonials</a>
+          <a class="btnSm" href="#quote">Request a Quote</a>
+        </div>
+
         <div class="navBtns">
-          <a class="chip chipSecondary" href="tel:+447700335789" aria-label="Call Swift Cleaning Service">
-            Call
-          </a>
-          <a class="chip" href="https://www.facebook.com/share/181zrn8D8R/" target="_blank" rel="noopener" aria-label="Swift Cleaning Service on Facebook">
-            Facebook
-          </a>
-          <a class="chip" href="https://wa.me/447700335789?text=Hi%20Swift%20Cleaning%20Service%2C%20I%27d%20like%20a%20quote%20please.%0A%0AService%3A%20%0ALocation%3A%20%0APreferred%20date%2Ftime%3A" target="_blank" rel="noopener" aria-label="WhatsApp Swift Cleaning Service">
+          <a class="btnSm" href="tel:+447700335789" aria-label="Call Swift Cleaning Service">Call</a>
+          <a class="btnSm" href="https://www.facebook.com/share/181zrn8D8R/" target="_blank" rel="noopener" aria-label="Swift Cleaning Service on Facebook">Facebook</a>
+          <a class="btnSm primary" href="https://wa.me/447700335789?text=Hi%20Swift%20Cleaning%20Service%2C%20I%27d%20like%20a%20quote%20please.%0A%0AService%3A%20%0ALocation%3A%20%0APreferred%20date%2Ftime%3A" target="_blank" rel="noopener" aria-label="WhatsApp Swift Cleaning Service">
             <span class="waDot" aria-hidden="true"></span>
             WhatsApp
           </a>
@@ -448,45 +496,52 @@
     </div>
   </div>
 
+  <!-- HERO -->
   <main>
-
-    <!-- HERO -->
     <section class="hero">
       <div class="wrap">
         <div class="heroGrid">
-          <div class="heroLeft">
-            <div class="kicker"><b>Commercial</b> & Specialist • Jersey</div>
+          <div class="panel heroCopy">
+            <div class="kicker">
+              <span class="pill">Serving Jersey</span>
+              <span class="pill">Commercial & Specialist</span>
+              <span class="pill gold">Fully insured</span>
+            </div>
 
             <h1>Commercial & specialist cleaning across Jersey.</h1>
 
             <p class="lead">
-              Reliable cleaning for offices, rentals and specialist jobs.
-              End of tenancy, deep cleaning, carpets & upholstery — with clear communication and a professional finish.
+              Reliable cleaning for <b>offices</b>, <b>rentals</b> and <b>specialist jobs</b>.
+              End of tenancy, deep cleans, carpets & upholstery — clear communication, professional finish.
             </p>
-
-            <div class="badges">
-              <div class="badge">Fast response</div>
-              <div class="badge">Clear quotes</div>
-              <div class="badge badgeGold">Fully Insured</div>
-            </div>
 
             <div class="btnRow">
               <a class="btn btnPrimary" href="https://wa.me/447700335789?text=Hi%20Swift%20Cleaning%20Service%2C%20please%20can%20I%20get%20a%20quote%3F%0A%0AService%3A%20%0ALocation%3A%20%0APreferred%20date%2Ftime%3A" target="_blank" rel="noopener">
                 <span class="waDot" aria-hidden="true"></span>
                 Get a quote on WhatsApp
               </a>
+              <a class="btn btnBlue" href="#quote">Request a quote</a>
               <a class="btn" href="#services">View services</a>
             </div>
 
-            <p class="micro">Typical reply: same day • Professional standards • Jersey-wide coverage</p>
+            <p class="micro">Fast response • Clear pricing • Reliable service • Professional finish</p>
           </div>
 
-          <div class="heroRight" role="img" aria-label="Swift Cleaning Service Jersey image">
-            <div class="overlayBox">
-              <strong>Need availability this week?</strong>
-              <span>Message service + location + preferred date/time.</span>
+          <aside class="heroMedia" aria-label="Swift Cleaning highlights">
+            <!-- OPTIONAL: If you have a real hero photo, you can turn this into a background image:
+                 style="background: url('hero.jpg') center/cover no-repeat;" -->
+            <div class="heroMediaInner">
+              <div class="trustRow">
+                <div class="trustCard"><span class="tick">✓</span> Commercial-ready standards</div>
+                <div class="trustCard"><span class="tick">✓</span> End of tenancy specialists</div>
+                <div class="trustCard"><span class="tick">✓</span> Carpets & upholstery</div>
+                <div class="trustCard"><span class="tick">✓</span> Jersey-wide coverage</div>
+              </div>
+              <p class="micro" style="margin-top:12px">
+                Tip: Add 8–12 real job photos (before/after + equipment + commercial spaces) and this page becomes a lead machine.
+              </p>
             </div>
-          </div>
+          </aside>
         </div>
       </div>
     </section>
@@ -497,7 +552,7 @@
         <div class="sectionHead">
           <div>
             <h2>Services</h2>
-            <p>Contract-ready services for businesses, landlords and specialist cleaning across Jersey.</p>
+            <p>Clear service list, like the top Jersey competitors: simple, scannable, and focused on what buyers actually book.</p>
           </div>
           <a class="btn btnPrimary" href="https://wa.me/447700335789?text=Hi%20Swift%20Cleaning%20Service%2C%20what%20availability%20do%20you%20have%20this%20week%3F" target="_blank" rel="noopener">
             <span class="waDot" aria-hidden="true"></span> WhatsApp for availability
@@ -507,22 +562,20 @@
         <div class="grid">
           <article class="card">
             <div class="cardBody">
-              <div class="icon">🏢</div>
-              <h3>Office & Commercial</h3>
-              <p>Reliable cleaning for workplaces, communal areas and commercial spaces.</p>
+              <h3>Office & Commercial Cleaning</h3>
+              <p>Regular or one-off cleaning for workplaces, communal areas and commercial premises.</p>
               <div class="tags">
-                <span class="tag">After-hours</span>
                 <span class="tag">Contracts</span>
-                <span class="tag">Custom plans</span>
+                <span class="tag">After-hours</span>
+                <span class="tag">Custom plan</span>
               </div>
             </div>
           </article>
 
           <article class="card">
             <div class="cardBody">
-              <div class="icon">🧾</div>
-              <h3>End of Tenancy</h3>
-              <p>Thorough move-out cleans for landlords, letting agents and rentals — ready for inspection.</p>
+              <h3>End of Tenancy Cleaning</h3>
+              <p>Thorough move-out cleans for landlords, tenants and letting agencies — ready for inspection.</p>
               <div class="tags">
                 <span class="tag">Move-out</span>
                 <span class="tag">Landlords</span>
@@ -533,12 +586,11 @@
 
           <article class="card">
             <div class="cardBody">
-              <div class="icon">🧼</div>
               <h3>Deep Cleaning</h3>
-              <p>Detailed top-to-bottom cleaning for a full reset — kitchens, bathrooms and high-touch areas.</p>
+              <p>Detail-focused cleaning to reset a property or space: kitchens, bathrooms, high-touch areas.</p>
               <div class="tags">
                 <span class="tag">Detailed</span>
-                <span class="tag">Hygiene focus</span>
+                <span class="tag">Hygiene</span>
                 <span class="tag">One-off</span>
               </div>
             </div>
@@ -546,9 +598,8 @@
 
           <article class="card">
             <div class="cardBody">
-              <div class="icon">🧵</div>
               <h3>Carpets & Upholstery</h3>
-              <p>Professional carpet and upholstery cleaning for a fresher, cleaner finish.</p>
+              <p>Carpet and upholstery cleaning for a fresher look, fewer odours, and better presentation.</p>
               <div class="tags">
                 <span class="tag">Stains</span>
                 <span class="tag">Odours</span>
@@ -559,9 +610,8 @@
 
           <article class="card">
             <div class="cardBody">
-              <div class="icon">🪟</div>
               <h3>Window Cleaning</h3>
-              <p>Clean, streak-free windows for offices and properties (inside/outside as required).</p>
+              <p>Clean, streak-free windows for offices and properties (inside/outside depending on access).</p>
               <div class="tags">
                 <span class="tag">Inside/Outside</span>
                 <span class="tag">Regular</span>
@@ -572,9 +622,8 @@
 
           <article class="card">
             <div class="cardBody">
-              <div class="icon">🧯</div>
               <h3>Specialist Cleaning</h3>
-              <p>Specialist jobs handled professionally — send details and we’ll confirm scope and pricing.</p>
+              <p>Specialist jobs handled professionally — tell us what you need and we’ll confirm scope + timing.</p>
               <div class="tags">
                 <span class="tag">Tailored</span>
                 <span class="tag">Discreet</span>
@@ -584,49 +633,16 @@
           </article>
         </div>
 
-        <div class="panel ctaStrip" style="margin-top:16px">
-          <div>
-            <strong>Need a quote today?</strong><br>
-            <span>Message service + location + preferred date/time. We’ll confirm scope and price clearly.</span>
+        <div class="panel" style="margin-top:16px;padding:18px">
+          <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between">
+            <div>
+              <strong style="font-size:16px">Need a quote today?</strong><br>
+              <span style="color:var(--muted2);font-size:13px;font-weight:800">Message on WhatsApp with the service, location and preferred date/time.</span>
+            </div>
+            <a class="btn btnPrimary" href="https://wa.me/447700335789?text=Hi%20Swift%20Cleaning%20Service%2C%20please%20can%20I%20get%20a%20quote%3F%0A%0AService%3A%20%0ALocation%3A%20%0APreferred%20date%2Ftime%3A" target="_blank" rel="noopener">
+              <span class="waDot" aria-hidden="true"></span> WhatsApp to quote
+            </a>
           </div>
-          <a class="btn btnPrimary" href="https://wa.me/447700335789?text=Hi%20Swift%20Cleaning%20Service%2C%20please%20can%20I%20get%20a%20quote%3F%0A%0AService%3A%20%0ALocation%3A%20%0APreferred%20date%2Ftime%3A" target="_blank" rel="noopener">
-            <span class="waDot" aria-hidden="true"></span> WhatsApp
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- HOW IT WORKS -->
-    <section id="process">
-      <div class="wrap">
-        <div class="sectionHead">
-          <div>
-            <h2>How quotes work</h2>
-            <p>Simple process — clear scope, clear price, reliable delivery.</p>
-          </div>
-        </div>
-
-        <div class="grid">
-          <div class="card"><div class="cardBody">
-            <div class="icon">1</div>
-            <h3>Message the details</h3>
-            <p>Service + location + preferred date/time (and any special requirements).</p>
-            <div class="tags"><span class="tag">WhatsApp</span><span class="tag">Fast response</span></div>
-          </div></div>
-
-          <div class="card"><div class="cardBody">
-            <div class="icon">2</div>
-            <h3>We confirm scope</h3>
-            <p>We confirm what’s included so expectations are aligned (no surprises).</p>
-            <div class="tags"><span class="tag">Clear scope</span><span class="tag">Professional</span></div>
-          </div></div>
-
-          <div class="card"><div class="cardBody">
-            <div class="icon">3</div>
-            <h3>Job done properly</h3>
-            <p>Reliable finish and consistent standards — ideal for businesses and landlords.</p>
-            <div class="tags"><span class="tag">Reliable</span><span class="tag">Insured</span></div>
-          </div></div>
         </div>
       </div>
     </section>
@@ -634,89 +650,167 @@
     <!-- ABOUT / WHY -->
     <section id="about">
       <div class="wrap">
+        <div class="sectionHead">
+          <div>
+            <h2>About Swift</h2>
+            <p>Simple promise: reliable service, clear communication, and a professional finish — across Jersey.</p>
+          </div>
+        </div>
+
         <div class="twoCol">
           <div class="panel infoBox">
-            <div class="sectionHead" style="margin:0 0 10px">
-              <div>
-                <h2 style="margin:0">Why Swift</h2>
-                <p style="margin-top:6px">A straightforward service that businesses and landlords can rely on.</p>
-              </div>
+            <div class="kicker">
+              <span class="pill">Why choose Swift</span>
+              <span class="pill gold">Trust & reliability</span>
             </div>
 
             <ul class="list">
               <li><span class="dot" aria-hidden="true"></span> <span><strong>Fully insured</strong> for peace of mind.</span></li>
-              <li><span class="dot" aria-hidden="true"></span> <span><strong>Commercial & specialist focus</strong> (not regular domestic home cleaning).</span></li>
-              <li><span class="dot" aria-hidden="true"></span> <span><strong>Clear communication</strong> — scope, timing and expectations confirmed upfront.</span></li>
-              <li><span class="dot" aria-hidden="true"></span> <span><strong>Reliable finish</strong> with consistent standards.</span></li>
+              <li><span class="dot" aria-hidden="true"></span> <span><strong>Commercial & specialist focus</strong> (clear scope, professional standards).</span></li>
+              <li><span class="dot" aria-hidden="true"></span> <span><strong>Clear communication</strong> — confirm scope, timing and expectations upfront.</span></li>
+              <li><span class="dot" aria-hidden="true"></span> <span><strong>Reliable results</strong> with consistent quality checks.</span></li>
+              <li><span class="dot" aria-hidden="true"></span> <span><strong>Flexible scheduling</strong> for businesses and move-out deadlines.</span></li>
             </ul>
 
-            <p class="micro" style="margin-top:12px">
-              <strong>Tip:</strong> Add real job photos over time (office, end-of-tenancy, carpets) — it increases trust fast.
-            </p>
+            <div class="note" style="margin-top:14px">
+              Want this to convert better? Add: (1) 1–2 short testimonials, (2) 12 real photos, (3) service-area list (parishes).
+            </div>
           </div>
 
           <div class="panel infoBox">
-            <div class="sectionHead" style="margin:0 0 10px">
-              <div>
-                <h2 style="margin:0">Coverage (Jersey)</h2>
-                <p style="margin-top:6px">We serve across the island — message your location.</p>
-              </div>
+            <div class="kicker">
+              <span class="pill">Coverage</span>
+              <span class="pill">Jersey, Channel Islands</span>
             </div>
 
-            <ul class="list">
-              <li><span class="dot" aria-hidden="true"></span> <span>St Helier • St Saviour • St Clement</span></li>
-              <li><span class="dot" aria-hidden="true"></span> <span>St Brelade • St Lawrence • St Ouen</span></li>
-              <li><span class="dot" aria-hidden="true"></span> <span>Grouville • Trinity • St Martin</span></li>
-              <li><span class="dot" aria-hidden="true"></span> <span>And other parishes — ask on WhatsApp</span></li>
-            </ul>
+            <p class="lead" style="font-size:15px">
+              We work across Jersey for offices, rentals and specialist jobs.
+              Message on WhatsApp to confirm availability and receive a clear quote.
+            </p>
 
-            <div class="btnRow" style="margin:14px 0 0">
-              <a class="btn btnPrimary" href="https://wa.me/447700335789?text=Hi%20Swift%20Cleaning%20Service%2C%20I%27d%20like%20a%20quote%20please.%0A%0AService%3A%20%0ALocation%3A%20%0APreferred%20date%2Ftime%3A" target="_blank" rel="noopener">
+            <div class="btnRow" style="margin-top:12px">
+              <a class="btn btnPrimary" href="https://wa.me/447700335789?text=Hi%20Swift%20Cleaning%20Service%2C%20I%27d%20like%20to%20book%20or%20get%20a%20quote.%0A%0AService%3A%20%0ALocation%3A%20%0APreferred%20date%2Ftime%3A" target="_blank" rel="noopener">
                 <span class="waDot" aria-hidden="true"></span> WhatsApp
               </a>
               <a class="btn" href="tel:+447700335789">Call</a>
               <a class="btn" href="https://www.facebook.com/share/181zrn8D8R/" target="_blank" rel="noopener">Facebook</a>
             </div>
 
-            <p class="micro" style="margin-top:10px">
-              Phone: <strong>+44 7700 335 789</strong>
+            <p class="micro" style="margin-top:12px">
+              Phone: <strong>+44 7700 335 789</strong><br>
+              Location: <strong>Jersey, Channel Islands</strong>
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- FAQ -->
-    <section id="faq">
+    <!-- TESTIMONIALS -->
+    <section id="testimonials">
       <div class="wrap">
         <div class="sectionHead">
           <div>
-            <h2>FAQ</h2>
-            <p>Quick answers customers usually ask before booking.</p>
+            <h2>Testimonials</h2>
+            <p>Even 2–3 short testimonials increase trust fast. Replace these placeholders with real ones.</p>
           </div>
         </div>
 
         <div class="grid">
-          <div class="card"><div class="cardBody">
-            <details open>
-              <summary>How quickly can I get a quote?</summary>
-              <p>Fastest via WhatsApp. Send the service, location, and preferred date/time — we’ll reply with availability and pricing.</p>
-            </details>
-          </div></div>
+          <div class="card">
+            <div class="cardBody">
+              <p class="quote">“Great communication, reliable service and the finish was spotless. Would book again.”</p>
+              <div class="who">— Local client (replace with name/initials)</div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="cardBody">
+              <p class="quote">“End of tenancy clean was thorough and on time. Deposit inspection went smoothly.”</p>
+              <div class="who">— Rental client (replace with name/initials)</div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="cardBody">
+              <p class="quote">“Professional, consistent and easy to book. Perfect for our office schedule.”</p>
+              <div class="who">— Office client (replace with company/type)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="card"><div class="cardBody">
-            <details>
-              <summary>Do you do end of tenancy cleans?</summary>
-              <p>Yes. We can confirm what’s included (kitchen, bathroom, appliances, carpets if needed) and align it to inspection expectations.</p>
-            </details>
-          </div></div>
+    <!-- REQUEST A QUOTE -->
+    <section id="quote">
+      <div class="wrap">
+        <div class="sectionHead">
+          <div>
+            <h2>Request a quote</h2>
+            <p>Like the best Jersey competitors: clear quote form + fast WhatsApp option.</p>
+          </div>
+        </div>
 
-          <div class="card"><div class="cardBody">
-            <details>
-              <summary>Do you take regular commercial contracts?</summary>
-              <p>Yes — offices and commercial spaces. We can set a schedule and standards that stay consistent.</p>
-            </details>
-          </div></div>
+        <div class="twoCol">
+          <div class="panel infoBox">
+            <form id="quoteForm">
+              <div>
+                <label for="name">Your name</label>
+                <input id="name" name="name" autocomplete="name" placeholder="Full name" required>
+              </div>
+
+              <div>
+                <label for="phone">Phone number</label>
+                <input id="phone" name="phone" autocomplete="tel" placeholder="e.g. 07700..." required>
+              </div>
+
+              <div>
+                <label for="service">Service</label>
+                <select id="service" name="service" required>
+                  <option value="">Select a service</option>
+                  <option>Office & Commercial Cleaning</option>
+                  <option>End of Tenancy Cleaning</option>
+                  <option>Deep Cleaning</option>
+                  <option>Carpets & Upholstery</option>
+                  <option>Window Cleaning</option>
+                  <option>Specialist Cleaning</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="location">Location / Parish</label>
+                <input id="location" name="location" placeholder="e.g. St Helier" required>
+              </div>
+
+              <div>
+                <label for="message">Details</label>
+                <textarea id="message" name="message" placeholder="Tell us what you need + preferred date/time" required></textarea>
+              </div>
+
+              <div class="btnRow">
+                <button class="btn btnBlue" type="submit">Send via Email</button>
+                <a class="btn btnPrimary" id="waQuote" href="#" target="_blank" rel="noopener">
+                  <span class="waDot" aria-hidden="true"></span> Send on WhatsApp
+                </a>
+              </div>
+
+              <p class="micro">We reply ASAP. For fastest response, use WhatsApp.</p>
+            </form>
+          </div>
+
+          <div class="panel infoBox">
+            <div class="kicker">
+              <span class="pill">Fast quote</span>
+              <span class="pill gold">WhatsApp preferred</span>
+            </div>
+
+            <ul class="list">
+              <li><span class="dot" aria-hidden="true"></span> <span><strong>What to send:</strong> service + location + preferred date/time.</span></li>
+              <li><span class="dot" aria-hidden="true"></span> <span><strong>For end of tenancy:</strong> bedrooms + bathrooms + any extras (oven, carpets).</span></li>
+              <li><span class="dot" aria-hidden="true"></span> <span><strong>For offices:</strong> size, frequency, access times, parking.</span></li>
+            </ul>
+
+            <div class="note" style="margin-top:14px">
+              Quick win: add a “Gallery” section with real photos (before/after + equipment + commercial spaces). This boosts conversions heavily.
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -728,12 +822,16 @@
       <div class="footRow">
         <div>
           © <span id="y"></span> Swift Cleaning Service • Jersey, Channel Islands
+          <div style="margin-top:6px;color:var(--muted2);font-weight:800;font-size:12px">
+            Fully insured • Commercial & specialist cleaning • Fast quotes via WhatsApp
+          </div>
         </div>
         <div class="footLinks">
           <a href="#top">Top</a>
           <a href="#services">Services</a>
-          <a href="#process">How it works</a>
-          <a href="#faq">FAQ</a>
+          <a href="#quote">Request a quote</a>
+          <a href="https://www.facebook.com/share/181zrn8D8R/" target="_blank" rel="noopener">Facebook</a>
+          <a href="tel:+447700335789">Call</a>
         </div>
       </div>
     </div>
@@ -742,13 +840,62 @@
   <!-- Sticky WhatsApp -->
   <div class="sticky" aria-hidden="false">
     <a href="https://wa.me/447700335789?text=Hi%20Swift%20Cleaning%20Service%2C%20please%20can%20I%20get%20a%20quote%3F%0A%0AService%3A%20%0ALocation%3A%20%0APreferred%20date%2Ftime%3A" target="_blank" rel="noopener">
-      <span class="waDot" aria-hidden="true"></span>
-      WhatsApp for a quote
+      <span class="waDot" aria-hidden="true"></span> WhatsApp for a quote
     </a>
   </div>
 
   <script>
+    // Year
     document.getElementById('y').textContent = new Date().getFullYear();
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menuBtn');
+    const menu = document.getElementById('menu');
+    menuBtn?.addEventListener('click', () => {
+      const isOpen = menu.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+
+    // Quote form: Email + WhatsApp builder
+    const form = document.getElementById('quoteForm');
+    const waLink = document.getElementById('waQuote');
+
+    function buildMessage() {
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const service = document.getElementById('service').value.trim();
+      const location = document.getElementById('location').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      const text =
+`Hi Swift Cleaning Service,
+I'd like a quote please.
+
+Name: ${name}
+Phone: ${phone}
+Service: ${service}
+Location: ${location}
+
+Details:
+${message}`;
+
+      return text;
+    }
+
+    waLink.addEventListener('click', (e) => {
+      const msg = encodeURIComponent(buildMessage());
+      waLink.href = `https://wa.me/447700335789?text=${msg}`;
+    });
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const subject = encodeURIComponent('Quote request — Swift Cleaning Service');
+      const body = encodeURIComponent(buildMessage());
+
+      // If they have an email later, change it here:
+      const to = 'swiftcleaningservice@example.com'; // TODO: replace
+      window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
+    });
   </script>
 
 </body>
