@@ -36,6 +36,8 @@
       --bg:#F6F8FC;
       --card:#FFFFFF;
       --text:#0B1220;
+      --muted:rgba(11,18,32,.72);
+      --muted2:rgba(11,18,32,.58);
       --line:rgba(12,18,32,.10);
 
       --blue:#0B5BD3;
@@ -73,7 +75,7 @@
 
     /* Header */
     .topbar{
-      position:sticky;top:0;z-index:50;
+      position:sticky;top:0;z-index:80;
       background: rgba(246,248,252,.88);
       backdrop-filter: blur(12px);
       border-bottom:1px solid var(--line);
@@ -102,25 +104,29 @@
     .brandText strong{font-size:14px;letter-spacing:.6px}
     .brandText span{font-size:12px;color:rgba(12,18,32,.60);font-weight:700}
 
-    .menuBtn{
-      display:none;
-      padding:10px 12px;border-radius:14px;
-      border:1px solid var(--line);background:#fff;
-      font-weight:900;
-      box-shadow:0 10px 18px rgba(11,18,32,.05);
+    /* NEW PROFESSIONAL MENU (DESKTOP) */
+    .navRight{
+      display:flex;align-items:center;gap:12px;
     }
-    .menu{
-      display:flex;align-items:center;gap:10px;flex-wrap:wrap;
-    }
-    .linkPill{
-      padding:10px 14px;border-radius:999px;
+    .navLinks{
+      display:flex;align-items:center;gap:10px;
+      padding:6px;
+      border-radius:999px;
       border:1px solid var(--line);
-      background:#fff;
-      font-weight:900;
-      color:rgba(11,18,32,.78);
-      box-shadow:0 10px 18px rgba(11,18,32,.05);
+      background: rgba(255,255,255,.70);
+      box-shadow: 0 10px 18px rgba(11,18,32,.05);
     }
-    .linkPill:hover{border-color:rgba(11,91,211,.26)}
+    .navLinks a{
+      padding:10px 14px;border-radius:999px;
+      font-weight:950;
+      color:rgba(11,18,32,.78);
+      font-size:13px;
+      transition: all .18s ease;
+    }
+    .navLinks a:hover{
+      background: rgba(11,91,211,.07);
+      color: rgba(11,18,32,.92);
+    }
     .cta{
       display:inline-flex;align-items:center;gap:10px;
       padding:12px 16px;border-radius:999px;
@@ -137,11 +143,100 @@
       flex:0 0 auto;
     }
 
-    @media (max-width: 860px){
+    /* NEW MOBILE BUTTON */
+    .menuBtn{
+      display:none;
+      padding:10px 12px;border-radius:14px;
+      border:1px solid var(--line);
+      background:#fff;
+      font-weight:1000;
+      box-shadow:0 10px 18px rgba(11,18,32,.05);
+    }
+
+    /* NEW MOBILE DRAWER */
+    .drawerOverlay{
+      position:fixed; inset:0;
+      background: rgba(11,18,32,.35);
+      backdrop-filter: blur(6px);
+      opacity:0; pointer-events:none;
+      transition: opacity .18s ease;
+      z-index:90;
+    }
+    .drawer{
+      position:fixed;
+      top:0; right:0;
+      height:100%;
+      width:min(360px, 92vw);
+      background: rgba(255,255,255,.92);
+      backdrop-filter: blur(16px);
+      border-left:1px solid var(--line);
+      box-shadow: -18px 0 45px rgba(11,18,32,.14);
+      transform: translateX(110%);
+      transition: transform .22s ease;
+      z-index:100;
+      display:flex;
+      flex-direction:column;
+      padding:16px;
+      gap:12px;
+    }
+    .drawerTop{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:12px;
+      padding:6px 4px 10px;
+      border-bottom:1px solid var(--line);
+    }
+    .drawerTop strong{letter-spacing:.4px}
+    .closeBtn{
+      width:44px;height:44px;
+      border-radius:14px;
+      border:1px solid var(--line);
+      background:#fff;
+      font-weight:1000;
+    }
+    .drawerNav{
+      display:grid;
+      gap:10px;
+      padding-top:6px;
+    }
+    .drawerNav a{
+      padding:14px 14px;
+      border-radius:16px;
+      border:1px solid var(--line);
+      background:#fff;
+      font-weight:1000;
+      color: rgba(11,18,32,.88);
+      box-shadow: 0 10px 18px rgba(11,18,32,.05);
+    }
+    .drawerNav a:active{transform: scale(.99)}
+    .drawerCtas{
+      margin-top:auto;
+      display:grid;
+      gap:10px;
+    }
+    .drawerCtas a{
+      display:flex; align-items:center; justify-content:center; gap:10px;
+      padding:14px 16px;
+      border-radius:999px;
+      font-weight:1100;
+      border:1px solid var(--line);
+      background:#fff;
+      box-shadow: 0 14px 28px rgba(11,18,32,.08);
+    }
+    .drawerCtas a.primary{
+      background: linear-gradient(135deg, rgba(37,211,102,.96), rgba(37,211,102,.82));
+      border-color: rgba(37,211,102,.35);
+      color:#072112;
+    }
+
+    /* OPEN STATE */
+    body.menuOpen{overflow:hidden}
+    body.menuOpen .drawerOverlay{opacity:1; pointer-events:auto}
+    body.menuOpen .drawer{transform: translateX(0)}
+
+    @media (max-width: 980px){
+      .navLinks{display:none}
+      .cta{display:none}
       .menuBtn{display:inline-flex}
-      .menu{display:none;width:100%}
-      .menu.open{display:flex;padding:0 0 12px}
-      .nav{flex-wrap:wrap}
     }
 
     section{padding:26px 0}
@@ -388,9 +483,11 @@
 
 <body>
 
+  <!-- TOPBAR -->
   <div class="topbar" id="top">
     <div class="wrap">
       <div class="nav">
+
         <a class="brand" href="#top" aria-label="Swift Cleaning Service home">
           <div class="logoBox">
             <img src="logo-gold.png" alt="Swift Cleaning Service logo">
@@ -401,23 +498,50 @@
           </div>
         </a>
 
-        <button class="menuBtn" type="button" id="menuBtn" aria-label="Open menu" aria-expanded="false">Menu</button>
+        <div class="navRight">
+          <nav class="navLinks" aria-label="Primary">
+            <a href="#services">Services</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+          </nav>
 
-        <nav class="menu" id="menu" aria-label="Primary">
-          <a class="linkPill" href="#services">Services</a>
-          <a class="linkPill" href="#gallery">Gallery</a>
-          <a class="linkPill" href="#contact">Contact</a>
-        </nav>
+          <a class="cta" href="https://wa.me/447700335389?text=Hi%20Swift%20Cleaning%20Service%2C%20please%20can%20I%20get%20a%20quote%3F%0A%0AService%3A%20%0ALocation%3A%20%0APreferred%20date%2Ftime%3A" target="_blank" rel="noopener">
+            <span class="waDot" aria-hidden="true"></span> WhatsApp for a quote
+          </a>
 
-        <a class="cta" href="https://wa.me/447700335389?text=Hi%20Swift%20Cleaning%20Service%2C%20please%20can%20I%20get%20a%20quote%3F%0A%0AService%3A%20%0ALocation%3A%20%0APreferred%20date%2Ftime%3A" target="_blank" rel="noopener">
-          <span class="waDot" aria-hidden="true"></span> WhatsApp for a quote
-        </a>
+          <button class="menuBtn" type="button" id="menuBtn" aria-label="Open menu" aria-expanded="false">Menu</button>
+        </div>
+
       </div>
     </div>
   </div>
 
+  <!-- MOBILE DRAWER -->
+  <div class="drawerOverlay" id="drawerOverlay" aria-hidden="true"></div>
+  <aside class="drawer" id="drawer" aria-label="Mobile menu" aria-hidden="true">
+    <div class="drawerTop">
+      <strong>Swift Cleaning Service</strong>
+      <button class="closeBtn" type="button" id="closeBtn" aria-label="Close menu">✕</button>
+    </div>
+
+    <nav class="drawerNav" aria-label="Mobile navigation">
+      <a href="#services" data-close>Services</a>
+      <a href="#gallery" data-close>Gallery</a>
+      <a href="#contact" data-close>Contact</a>
+    </nav>
+
+    <div class="drawerCtas">
+      <a class="primary" href="https://wa.me/447700335389?text=Hi%20Swift%20Cleaning%20Service%2C%20please%20can%20I%20get%20a%20quote%3F%0A%0AService%3A%20%0ALocation%3A%20%0APreferred%20date%2Ftime%3A" target="_blank" rel="noopener">
+        <span class="waDot" aria-hidden="true"></span> WhatsApp for a quote
+      </a>
+      <a href="tel:+447700335389">Call +44 7700 335389</a>
+      <a href="https://www.facebook.com/share/181zrn8D8R/" target="_blank" rel="noopener">Facebook</a>
+    </div>
+  </aside>
+
   <main>
 
+    <!-- HERO -->
     <section class="hero">
       <div class="wrap">
         <div class="heroGrid">
@@ -461,6 +585,7 @@
       </div>
     </section>
 
+    <!-- SERVICES -->
     <section id="services">
       <div class="wrap">
         <div class="sectionHead">
@@ -495,13 +620,7 @@
             </div>
           </div>
 
-          <div class="card">
-            <h3>Deep Cleaning</h3>
-            <p>Detail-focused cleaning for a reset — kitchens, bathrooms and high-touch areas.</p>
-            <div class="tags">
-              <span class="tag">Detailed</span><span class="tag">Hygiene</span><span class="tag">One-off</span>
-            </div>
-          </div>
+          <!-- ✅ REMOVED DEEP CLEANING -->
 
           <div class="card">
             <h3>End of Tenancy (Occasional)</h3>
@@ -522,6 +641,7 @@
       </div>
     </section>
 
+    <!-- GALLERY -->
     <section id="gallery">
       <div class="wrap">
         <div class="sectionHead">
@@ -539,6 +659,7 @@
       </div>
     </section>
 
+    <!-- CONTACT -->
     <section id="contact">
       <div class="wrap">
         <div class="sectionHead">
@@ -597,6 +718,7 @@
 
   </main>
 
+  <!-- FOOTER -->
   <footer>
     <div class="wrap">
       <div class="footRow">
@@ -624,12 +746,43 @@
   </div>
 
   <script>
+    // Year
     document.getElementById('y').textContent = new Date().getFullYear();
+
+    // Drawer menu
+    const body = document.body;
     const menuBtn = document.getElementById('menuBtn');
-    const menu = document.getElementById('menu');
-    menuBtn?.addEventListener('click', () => {
-      const isOpen = menu.classList.toggle('open');
-      menuBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    const closeBtn = document.getElementById('closeBtn');
+    const overlay = document.getElementById('drawerOverlay');
+    const drawer = document.getElementById('drawer');
+
+    function openMenu(){
+      body.classList.add('menuOpen');
+      menuBtn?.setAttribute('aria-expanded', 'true');
+      overlay?.setAttribute('aria-hidden', 'false');
+      drawer?.setAttribute('aria-hidden', 'false');
+    }
+
+    function closeMenu(){
+      body.classList.remove('menuOpen');
+      menuBtn?.setAttribute('aria-expanded', 'false');
+      overlay?.setAttribute('aria-hidden', 'true');
+      drawer?.setAttribute('aria-hidden', 'true');
+    }
+
+    menuBtn?.addEventListener('click', openMenu);
+    closeBtn?.addEventListener('click', closeMenu);
+    overlay?.addEventListener('click', closeMenu);
+
+    // Close when clicking a drawer link
+    drawer?.addEventListener('click', (e) => {
+      const t = e.target;
+      if (t && t.matches && t.matches('[data-close]')) closeMenu();
+    });
+
+    // ESC closes
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeMenu();
     });
   </script>
 
