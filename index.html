@@ -9,8 +9,6 @@
 
   <title>Swift Cleaning Service Jersey | Commercial, Carpets & Window Cleaning</title>
   <meta name="description" content="Swift Cleaning Service — commercial cleaning, carpets & upholstery, and window cleaning across Jersey, Channel Islands. Fully insured. Fast quotes via WhatsApp." />
-
-  <!-- ✅ FINAL DOMAIN -->
   <link rel="canonical" href="https://swiftcleaning.je/" />
 
   <!-- Open Graph -->
@@ -27,9 +25,9 @@
   <meta name="twitter:description" content="Commercial cleaning, carpets & upholstery, and window cleaning across Jersey. Fully insured." />
   <meta name="twitter:image" content="https://swiftcleaning.je/og.jpg" />
 
-  <!-- Preload -->
-  <link rel="preload" as="image" href="logo-gold.png">
-  <link rel="preload" as="image" href="hero.jpg">
+  <!-- Preload (hero + logo) -->
+  <link rel="preload" as="image" href="hero.jpg" />
+  <link rel="preload" as="image" href="logo-gold.png" />
 
   <style>
     :root{
@@ -43,6 +41,7 @@
       --blue:#0B5BD3;
       --blue2:#0A4DB6;
       --gold:#F4C542;
+
       --wa:#25D366;
 
       --r2:26px;
@@ -55,6 +54,7 @@
 
     *{box-sizing:border-box}
     html,body{height:100%}
+    html{scroll-behavior:smooth}
     body{
       margin:0;
       font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
@@ -103,13 +103,13 @@
     .brandText strong{font-size:14px;letter-spacing:.6px}
     .brandText span{font-size:12px;color:rgba(12,18,32,.60);font-weight:700}
 
-    /* Desktop nav */
+    /* Professional menu (desktop) */
     .navRight{display:flex;align-items:center;gap:12px}
     .navLinks{
-      display:flex;align-items:center;gap:8px;
+      display:flex;align-items:center;gap:10px;
       padding:6px;border-radius:999px;
       border:1px solid var(--line);
-      background: rgba(255,255,255,.72);
+      background: rgba(255,255,255,.70);
       box-shadow: 0 10px 18px rgba(11,18,32,.05);
     }
     .navLinks a{
@@ -182,6 +182,7 @@
       width:44px;height:44px;border-radius:14px;
       border:1px solid var(--line);
       background:#fff;font-weight:1000;
+      cursor:pointer;
     }
     .drawerNav{display:grid;gap:10px;padding-top:6px}
     .drawerNav a{
@@ -221,50 +222,62 @@
       box-shadow:var(--shadow);
     }
 
-    /* HERO (now truly on top for ALL screens) */
-    .hero{padding:16px 0 8px}
-    .heroTop{
+    /* HERO */
+    .hero{padding:18px 0 8px}
+    .heroGrid{
+      display:grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap:16px;
+      align-items:stretch;
+    }
+    @media (max-width: 980px){
+      .heroGrid{grid-template-columns:1fr}
+    }
+
+    /* Hero top for mobile */
+    .heroTopMedia{
+      display:none;
       border-radius:var(--r2);
       border:1px solid var(--line);
       box-shadow:var(--shadow);
       overflow:hidden;
       position:relative;
       background: url("hero.jpg") center/cover no-repeat;
-      min-height: 320px;
+      min-height: 290px;
     }
-    .heroTop::after{
+    .heroTopMedia::after{
       content:"";
       position:absolute; inset:0;
-      background:
-        linear-gradient(to top, rgba(11,18,32,.68), rgba(11,18,32,.10) 58%, rgba(255,255,255,0) 100%);
+      background: linear-gradient(to top, rgba(11,18,32,.66), rgba(11,18,32,.10) 55%, rgba(255,255,255,0) 100%);
     }
-    .heroTopInner{
+    .heroOverlay{
       position:absolute; inset:auto 0 0 0;
       padding:18px;
       z-index:1;
-      display:grid; gap:10px;
+      display:grid;
+      gap:10px;
     }
-    .heroTopInner h1{
+    .heroOverlay h2{
       margin:0;
       color:#fff;
-      font-size: clamp(22px, 3.2vw, 36px);
-      letter-spacing:-.6px;
-      line-height:1.10;
+      font-size:22px;
+      letter-spacing:-.2px;
+      line-height:1.15;
       text-shadow: 0 12px 26px rgba(0,0,0,.25);
     }
-    .heroTopInner p{
+    .heroOverlay p{
       margin:0;
       color:rgba(255,255,255,.86);
-      font-weight:850;
+      font-weight:800;
       font-size:13px;
-      max-width:72ch;
+      max-width:60ch;
       text-shadow: 0 12px 26px rgba(0,0,0,.18);
     }
-    .heroTopRow{
+    .overlayRow{
       display:flex; gap:10px; flex-wrap:wrap; align-items:center;
-      margin-top:6px;
+      margin-top:4px;
     }
-    .heroTopBtn{
+    .overlayBtn{
       display:inline-flex;align-items:center;gap:10px;
       padding:12px 14px;border-radius:999px;
       background: linear-gradient(135deg, rgba(37,211,102,.96), rgba(37,211,102,.82));
@@ -274,7 +287,7 @@
       box-shadow: 0 18px 40px rgba(0,0,0,.22);
       white-space:nowrap;
     }
-    .heroTopTag{
+    .overlayTag{
       display:inline-flex;
       padding:9px 12px;border-radius:999px;
       border:1px solid rgba(255,255,255,.22);
@@ -284,20 +297,11 @@
       font-size:12px;
       backdrop-filter: blur(10px);
     }
-
-    .heroGrid{
-      display:grid;
-      grid-template-columns: 1.1fr .9fr;
-      gap:16px;
-      align-items:stretch;
-      margin-top:16px;
-    }
     @media (max-width: 980px){
-      .heroGrid{grid-template-columns:1fr}
+      .heroTopMedia{display:block}
     }
 
-    .heroCopy{padding:22px;display:grid;gap:12px}
-
+    .heroCopy{padding:24px;display:grid;gap:12px}
     .kicker{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
     .pill{
       padding:8px 12px;border-radius:999px;
@@ -313,13 +317,18 @@
       color:#0B1220;
     }
 
+    h1{
+      margin:0;
+      font-size: clamp(30px, 4.6vw, 46px);
+      letter-spacing:-.8px;
+      line-height:1.06;
+    }
     .lead{
       margin:0;
       font-size:16px;
       color:rgba(11,18,32,.72);
       max-width:72ch;
     }
-
     .btnRow{display:flex;gap:12px;flex-wrap:wrap;margin-top:6px}
 
     .btn{
@@ -349,35 +358,51 @@
       font-weight:800;
     }
 
-    .trustPanel{padding:18px}
-    .trustPanel h2{
-      margin:0 0 8px;
-      font-size:18px;
-      letter-spacing:-.2px;
+    /* Desktop side image */
+    .heroMedia{
+      border-radius:var(--r2);
+      border:1px solid var(--line);
+      box-shadow:var(--shadow);
+      overflow:hidden;
+      background: url("hero.jpg") center/cover no-repeat;
+      min-height: 360px;
+      position:relative;
+      display:grid;
+      align-content:end;
     }
-    .trustPanel p{
-      margin:0 0 14px;
-      color:var(--muted);
-      font-weight:800;
-      font-size:14px;
+    .heroMedia::after{
+      content:"";
+      position:absolute; inset:0;
+      background: linear-gradient(to top, rgba(11,18,32,.58), rgba(11,18,32,.10) 55%, rgba(255,255,255,0) 100%);
+    }
+    @media (max-width: 980px){
+      .heroMedia{display:none;}
+    }
+    .heroMediaInner{
+      position:relative;
+      padding:18px;
+      z-index:1;
+      display:grid;
+      gap:10px;
     }
     .trustRow{display:flex;flex-wrap:wrap;gap:10px}
     .trustCard{
       display:flex;align-items:center;gap:10px;
       padding:10px 12px;border-radius:16px;
-      border:1px solid var(--line);
-      background: rgba(11,91,211,.04);
-      box-shadow: 0 12px 24px rgba(11,18,32,.06);
+      border:1px solid rgba(255,255,255,.18);
+      background: rgba(255,255,255,.12);
+      box-shadow: 0 12px 24px rgba(0,0,0,.10);
       font-weight:900;
       font-size:12px;
-      color:rgba(11,18,32,.78);
+      color:rgba(255,255,255,.92);
+      backdrop-filter: blur(12px);
     }
     .tick{
       width:18px;height:18px;border-radius:999px;
-      background: rgba(11,91,211,.10);
-      border:1px solid rgba(11,91,211,.18);
+      background: rgba(255,255,255,.18);
+      border:1px solid rgba(255,255,255,.22);
       display:grid;place-items:center;
-      color:var(--blue);
+      color:#fff;
       font-size:12px;
       flex:0 0 auto;
     }
@@ -439,7 +464,7 @@
       flex:0 0 auto;
     }
 
-    /* Gallery (real images, better SEO) */
+    /* Gallery (click to open) */
     .gallery{
       display:grid;
       grid-template-columns: repeat(12, 1fr);
@@ -454,13 +479,28 @@
       background:#fff;
       box-shadow:var(--shadow2);
       aspect-ratio: 16/10;
-      display:block;
+      position:relative;
     }
+    .gLink{display:block;width:100%;height:100%}
     .gItem img{
       width:100%;
       height:100%;
       object-fit:cover;
       display:block;
+      transform: scale(1.01);
+      transition: transform .18s ease;
+    }
+    .gItem:hover img{transform: scale(1.04)}
+    .gBadge{
+      position:absolute; left:12px; bottom:12px;
+      padding:8px 10px;
+      border-radius:999px;
+      background: rgba(255,255,255,.86);
+      border:1px solid rgba(12,18,32,.12);
+      font-weight:950;
+      font-size:12px;
+      color: rgba(11,18,32,.86);
+      box-shadow: 0 12px 24px rgba(11,18,32,.10);
     }
     @media (min-width:760px){ figure.gItem{grid-column: span 6} }
     @media (min-width:1020px){ figure.gItem{grid-column: span 4} }
@@ -501,9 +541,62 @@
       border:1px solid rgba(37,211,102,.35);
       box-shadow:0 22px 50px rgba(11,18,32,.16);
     }
+
+    /* Lightbox */
+    .lb{
+      position:fixed; inset:0;
+      display:none;
+      align-items:center;
+      justify-content:center;
+      background: rgba(11,18,32,.72);
+      backdrop-filter: blur(6px);
+      z-index:200;
+      padding:18px;
+    }
+    .lb.open{display:flex}
+    .lbInner{
+      width:min(1100px, 96vw);
+      max-height: 86vh;
+      position:relative;
+      border-radius: 18px;
+      overflow:hidden;
+      border:1px solid rgba(255,255,255,.14);
+      box-shadow: 0 28px 70px rgba(0,0,0,.35);
+      background: rgba(0,0,0,.18);
+    }
+    .lbImg{
+      width:100%;
+      height:100%;
+      max-height: 86vh;
+      object-fit: contain;
+      display:block;
+      background: rgba(0,0,0,.25);
+    }
+    .lbClose{
+      position:absolute; top:10px; right:10px;
+      width:44px;height:44px;
+      border-radius:14px;
+      border:1px solid rgba(255,255,255,.18);
+      background: rgba(255,255,255,.12);
+      color:#fff;
+      font-weight:1100;
+      cursor:pointer;
+      backdrop-filter: blur(10px);
+    }
+    .lbHint{
+      position:absolute; left:12px; bottom:12px;
+      color: rgba(255,255,255,.85);
+      font-weight:900;
+      font-size:12px;
+      padding:8px 10px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.16);
+      background: rgba(255,255,255,.10);
+      backdrop-filter: blur(10px);
+    }
   </style>
 
-  <!-- ✅ Correct phone + final domain -->
+  <!-- Schema -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -526,7 +619,7 @@
 
         <a class="brand" href="#top" aria-label="Swift Cleaning Service home">
           <div class="logoBox">
-            <img src="logo-gold.png" alt="Swift Cleaning Service logo">
+            <img src="logo-gold.png" alt="Swift Cleaning Service logo" width="64" height="64">
           </div>
           <div class="brandText">
             <strong>SWIFT CLEANING SERVICE</strong>
@@ -581,18 +674,17 @@
     <section class="hero">
       <div class="wrap">
 
-        <!-- ✅ HERO AT THE VERY TOP (ALL SCREENS) -->
-        <div class="heroTop" aria-label="Swift Cleaning hero image">
-          <div class="heroTopInner">
-            <h1>Commercial cleaning across Jersey.</h1>
+        <!-- Mobile hero on top -->
+        <div class="heroTopMedia" aria-label="Swift Cleaning hero image (mobile)">
+          <div class="heroOverlay">
+            <h2>Commercial cleaning across Jersey.</h2>
             <p>Office & contract cleaning • Carpets & upholstery • Window cleaning • Fully insured</p>
-            <div class="heroTopRow">
-              <a class="heroTopBtn" href="https://wa.me/447700335389?text=Hi%20Swift%20Cleaning%20Service%2C%20please%20can%20I%20get%20a%20quote%3F%0A%0AService%3A%20%0ALocation%3A%20%0APreferred%20date%2Ftime%3A" target="_blank" rel="noopener">
+            <div class="overlayRow">
+              <a class="overlayBtn" href="https://wa.me/447700335389?text=Hi%20Swift%20Cleaning%20Service%2C%20please%20can%20I%20get%20a%20quote%3F%0A%0AService%3A%20%0ALocation%3A%20%0APreferred%20date%2Ftime%3A" target="_blank" rel="noopener">
                 <span class="waDot" aria-hidden="true"></span> Request a quote
               </a>
-              <span class="heroTopTag">Fast response</span>
-              <span class="heroTopTag">Professional finish</span>
-              <span class="heroTopTag">Island-wide</span>
+              <span class="overlayTag">Fast response</span>
+              <span class="overlayTag">Professional finish</span>
             </div>
           </div>
         </div>
@@ -606,6 +698,8 @@
               <span class="pill">Window Cleaning</span>
               <span class="pill gold">Fully insured</span>
             </div>
+
+            <h1>Professional cleaning for businesses and properties across Jersey.</h1>
 
             <p class="lead">
               Main focus: <b>commercial cleaning</b>, <b>carpets & upholstery</b>, and <b>window cleaning</b> — clear communication and a professional finish.
@@ -622,17 +716,26 @@
             <p class="micro">Fast response • Clear scope • Professional finish</p>
           </div>
 
-          <div class="panel trustPanel">
-            <h2>What you can expect</h2>
-            <p>Built for commercial clients: consistent standards, clear scope, and reliable scheduling.</p>
+          <!-- Desktop side image -->
+          <aside class="heroMedia" aria-label="Swift Cleaning hero image (desktop)">
+            <div class="heroMediaInner">
+              <div style="display:grid;gap:8px;margin-bottom:10px">
+                <div style="color:#fff;font-weight:1100;font-size:20px;letter-spacing:-.2px;line-height:1.15;text-shadow:0 12px 26px rgba(0,0,0,.25);">
+                  Reliable commercial cleaning in Jersey.
+                </div>
+                <div style="color:rgba(255,255,255,.86);font-weight:850;font-size:13px;text-shadow:0 12px 26px rgba(0,0,0,.18);">
+                  Clear communication • Consistent standards • Flexible scheduling
+                </div>
+              </div>
 
-            <div class="trustRow">
-              <div class="trustCard"><span class="tick">✓</span> Commercial-ready standards</div>
-              <div class="trustCard"><span class="tick">✓</span> Carpets & upholstery specialists</div>
-              <div class="trustCard"><span class="tick">✓</span> Window cleaning available</div>
-              <div class="trustCard"><span class="tick">✓</span> Jersey-wide coverage</div>
+              <div class="trustRow">
+                <div class="trustCard"><span class="tick">✓</span> Commercial-ready standards</div>
+                <div class="trustCard"><span class="tick">✓</span> Carpets & upholstery specialists</div>
+                <div class="trustCard"><span class="tick">✓</span> Window cleaning available</div>
+                <div class="trustCard"><span class="tick">✓</span> Jersey-wide coverage</div>
+              </div>
             </div>
-          </div>
+          </aside>
 
         </div>
       </div>
@@ -698,22 +801,37 @@
         <div class="sectionHead">
           <div>
             <h2>Gallery</h2>
-            <p>Use real job photos (commercial spaces, equipment, carpets, windows). This builds trust fast.</p>
+            <p>Tap any photo to open. Replace these with real jobs whenever possible.</p>
           </div>
         </div>
 
         <div class="gallery">
           <figure class="gItem">
-            <img src="gallery-1.jpg" alt="Commercial cleaning service in Jersey" loading="lazy" width="1200" height="800">
+            <a class="gLink" href="gallery-1.jpg" data-lightbox data-caption="Commercial cleaning">
+              <img src="gallery-1.jpg" alt="Commercial cleaning in Jersey" loading="lazy" width="1200" height="800">
+              <span class="gBadge">Open</span>
+            </a>
           </figure>
+
           <figure class="gItem">
-            <img src="gallery-2.jpg" alt="Professional cleaning team at work" loading="lazy" width="1200" height="800">
+            <a class="gLink" href="gallery-2.jpg" data-lightbox data-caption="Office & contract cleaning">
+              <img src="gallery-2.jpg" alt="Office and contract cleaning service" loading="lazy" width="1200" height="800">
+              <span class="gBadge">Open</span>
+            </a>
           </figure>
+
           <figure class="gItem">
-            <img src="gallery-3.jpg" alt="Carpet and upholstery cleaning service" loading="lazy" width="1200" height="800">
+            <a class="gLink" href="gallery-3.jpg" data-lightbox data-caption="Carpet & upholstery">
+              <img src="gallery-3.jpg" alt="Carpet and upholstery cleaning" loading="lazy" width="1200" height="800">
+              <span class="gBadge">Open</span>
+            </a>
           </figure>
+
           <figure class="gItem">
-            <img src="gallery-4.jpg" alt="Window cleaning service" loading="lazy" width="1200" height="800">
+            <a class="gLink" href="gallery-4.jpg" data-lightbox data-caption="Window cleaning">
+              <img src="gallery-4.jpg" alt="Window cleaning service" loading="lazy" width="1200" height="800">
+              <span class="gBadge">Open</span>
+            </a>
           </figure>
         </div>
       </div>
@@ -805,6 +923,15 @@
     </a>
   </div>
 
+  <!-- Lightbox -->
+  <div class="lb" id="lb" aria-hidden="true">
+    <div class="lbInner" role="dialog" aria-modal="true" aria-label="Image preview">
+      <button class="lbClose" id="lbClose" aria-label="Close">✕</button>
+      <img class="lbImg" id="lbImg" alt="" src="">
+      <div class="lbHint" id="lbHint">Tap outside or press Esc</div>
+    </div>
+  </div>
+
   <script>
     // Year
     document.getElementById('y').textContent = new Date().getFullYear();
@@ -838,10 +965,46 @@
       if (t && t.matches && t.matches('[data-close]')) closeMenu();
     });
 
+    // Lightbox
+    const lb = document.getElementById('lb');
+    const lbImg = document.getElementById('lbImg');
+    const lbClose = document.getElementById('lbClose');
+
+    function openLightbox(src, alt){
+      lbImg.src = src;
+      lbImg.alt = alt || 'Gallery image';
+      lb.classList.add('open');
+      lb.setAttribute('aria-hidden','false');
+      body.style.overflow = 'hidden';
+    }
+    function closeLightbox(){
+      lb.classList.remove('open');
+      lb.setAttribute('aria-hidden','true');
+      lbImg.src = '';
+      body.style.overflow = '';
+    }
+
+    document.querySelectorAll('[data-lightbox]').forEach(a => {
+      a.addEventListener('click', (e) => {
+        e.preventDefault();
+        const href = a.getAttribute('href');
+        const img = a.querySelector('img');
+        openLightbox(href, img ? img.alt : 'Gallery image');
+      });
+    });
+
+    lbClose?.addEventListener('click', closeLightbox);
+    lb?.addEventListener('click', (e) => {
+      if (e.target === lb) closeLightbox();
+    });
+
     window.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') closeMenu();
+      if (e.key === 'Escape') {
+        closeMenu();
+        closeLightbox();
+      }
     });
   </script>
 
 </body>
-              </html>
+</html>
