@@ -7,27 +7,29 @@
   <meta name="color-scheme" content="light" />
   <meta name="robots" content="index,follow,max-image-preview:large" />
 
-  <title>Commercial Cleaning Jersey | Office & Contract Cleaning | Swift Cleaning Service</title>
-  <meta name="description" content="Commercial cleaning in Jersey for offices, retail and managed buildings. Reliable contract cleaning, flexible scheduling and fully insured service. Fast quotes via WhatsApp." />
-  <link rel="canonical" href="https://swiftcleaning.je/commercial-cleaning-jersey.html" />
+  <title>Swift Cleaning Service Jersey | Commercial, Carpets & Window Cleaning</title>
+  <meta name="description" content="Swift Cleaning Service — commercial cleaning, carpets & upholstery, and window cleaning across Jersey, Channel Islands. Fully insured. Fast quotes via WhatsApp." />
+
+  <!-- ✅ FINAL DOMAIN -->
+  <link rel="canonical" href="https://swiftcleaning.je/" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="en_GB" />
-  <meta property="og:title" content="Commercial Cleaning Jersey | Office & Contract Cleaning" />
-  <meta property="og:description" content="Reliable contract cleaning for offices, retail units and commercial properties across Jersey. Fully insured. Fast quotes via WhatsApp." />
-  <meta property="og:url" content="https://swiftcleaning.je/commercial-cleaning-jersey.html" />
-  <meta property="og:image" content="https://swiftcleaning.je/og-commercial.jpg" />
+  <meta property="og:title" content="Swift Cleaning Service Jersey | Commercial, Carpets & Window Cleaning" />
+  <meta property="og:description" content="Commercial cleaning, carpets & upholstery, and window cleaning across Jersey. Fully insured. Fast quotes via WhatsApp." />
+  <meta property="og:url" content="https://swiftcleaning.je/" />
+  <meta property="og:image" content="https://swiftcleaning.je/og.jpg" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Commercial Cleaning Jersey" />
-  <meta name="twitter:description" content="Office & contract cleaning across Jersey. Fully insured. Fast quotes via WhatsApp." />
-  <meta name="twitter:image" content="https://swiftcleaning.je/og-commercial.jpg" />
+  <meta name="twitter:title" content="Swift Cleaning Service Jersey" />
+  <meta name="twitter:description" content="Commercial cleaning, carpets & upholstery, and window cleaning across Jersey. Fully insured." />
+  <meta name="twitter:image" content="https://swiftcleaning.je/og.jpg" />
 
-  <!-- Performance -->
+  <!-- Preload -->
   <link rel="preload" as="image" href="logo-gold.png">
-  <link rel="preload" as="image" href="hero-commercial.jpg">
+  <link rel="preload" as="image" href="hero.jpg">
 
   <style>
     :root{
@@ -85,7 +87,7 @@
       display:flex;align-items:center;gap:14px;min-width:240px;
     }
     .logoBox{
-      width:66px;height:66px;border-radius:16px;
+      width:64px;height:64px;border-radius:16px;
       background:#fff;border:1px solid var(--line);
       box-shadow:var(--shadow2);
       display:grid;place-items:center;overflow:hidden;
@@ -101,12 +103,13 @@
     .brandText strong{font-size:14px;letter-spacing:.6px}
     .brandText span{font-size:12px;color:rgba(12,18,32,.60);font-weight:700}
 
+    /* Desktop nav */
     .navRight{display:flex;align-items:center;gap:12px}
     .navLinks{
-      display:flex;align-items:center;gap:10px;
+      display:flex;align-items:center;gap:8px;
       padding:6px;border-radius:999px;
       border:1px solid var(--line);
-      background: rgba(255,255,255,.70);
+      background: rgba(255,255,255,.72);
       box-shadow: 0 10px 18px rgba(11,18,32,.05);
     }
     .navLinks a{
@@ -120,6 +123,7 @@
       background: rgba(11,91,211,.07);
       color: rgba(11,18,32,.92);
     }
+
     .cta{
       display:inline-flex;align-items:center;gap:10px;
       padding:12px 16px;border-radius:999px;
@@ -136,7 +140,7 @@
       flex:0 0 auto;
     }
 
-    /* Mobile menu */
+    /* Mobile menu button */
     .menuBtn{
       display:none;
       padding:10px 12px;border-radius:14px;
@@ -145,6 +149,8 @@
       font-weight:1000;
       box-shadow:0 10px 18px rgba(11,18,32,.05);
     }
+
+    /* Mobile drawer */
     .drawerOverlay{
       position:fixed; inset:0;
       background: rgba(11,18,32,.35);
@@ -154,8 +160,7 @@
       z-index:90;
     }
     .drawer{
-      position:fixed; top:0; right:0;
-      height:100%;
+      position:fixed; top:0; right:0; height:100%;
       width:min(360px, 92vw);
       background: rgba(255,255,255,.92);
       backdrop-filter: blur(16px);
@@ -164,10 +169,8 @@
       transform: translateX(110%);
       transition: transform .22s ease;
       z-index:100;
-      display:flex;
-      flex-direction:column;
-      padding:16px;
-      gap:12px;
+      display:flex;flex-direction:column;
+      padding:16px;gap:12px;
     }
     .drawerTop{
       display:flex; align-items:center; justify-content:space-between;
@@ -175,33 +178,24 @@
       padding:6px 4px 10px;
       border-bottom:1px solid var(--line);
     }
-    .drawerTop strong{letter-spacing:.4px}
     .closeBtn{
-      width:44px;height:44px;
-      border-radius:14px;
+      width:44px;height:44px;border-radius:14px;
       border:1px solid var(--line);
-      background:#fff;
-      font-weight:1000;
+      background:#fff;font-weight:1000;
     }
     .drawerNav{display:grid;gap:10px;padding-top:6px}
     .drawerNav a{
       padding:14px 14px;border-radius:16px;
-      border:1px solid var(--line);
-      background:#fff;
-      font-weight:1000;
-      color: rgba(11,18,32,.88);
+      border:1px solid var(--line);background:#fff;
+      font-weight:1000;color: rgba(11,18,32,.88);
       box-shadow: 0 10px 18px rgba(11,18,32,.05);
     }
-    .drawerNav a:active{transform: scale(.99)}
     .drawerCtas{margin-top:auto;display:grid;gap:10px}
     .drawerCtas a{
       display:flex; align-items:center; justify-content:center; gap:10px;
-      padding:14px 16px;
-      border-radius:999px;
-      font-weight:1100;
-      border:1px solid var(--line);
-      background:#fff;
-      box-shadow: 0 14px 28px rgba(11,18,32,.08);
+      padding:14px 16px;border-radius:999px;
+      font-weight:1100;border:1px solid var(--line);
+      background:#fff;box-shadow: 0 14px 28px rgba(11,18,32,.08);
     }
     .drawerCtas a.primary{
       background: linear-gradient(135deg, rgba(37,211,102,.96), rgba(37,211,102,.82));
@@ -215,11 +209,10 @@
 
     @media (max-width: 980px){
       .navLinks{display:none}
-      .cta{display:none} /* top CTA hidden on mobile; sticky CTA remains */
+      .cta{display:none}
       .menuBtn{display:inline-flex}
     }
 
-    /* Layout */
     section{padding:26px 0}
     .panel{
       background:var(--card);
@@ -228,23 +221,82 @@
       box-shadow:var(--shadow);
     }
 
-    /* Hero */
-    .hero{padding:18px 0 8px}
+    /* HERO (now truly on top for ALL screens) */
+    .hero{padding:16px 0 8px}
+    .heroTop{
+      border-radius:var(--r2);
+      border:1px solid var(--line);
+      box-shadow:var(--shadow);
+      overflow:hidden;
+      position:relative;
+      background: url("hero.jpg") center/cover no-repeat;
+      min-height: 320px;
+    }
+    .heroTop::after{
+      content:"";
+      position:absolute; inset:0;
+      background:
+        linear-gradient(to top, rgba(11,18,32,.68), rgba(11,18,32,.10) 58%, rgba(255,255,255,0) 100%);
+    }
+    .heroTopInner{
+      position:absolute; inset:auto 0 0 0;
+      padding:18px;
+      z-index:1;
+      display:grid; gap:10px;
+    }
+    .heroTopInner h1{
+      margin:0;
+      color:#fff;
+      font-size: clamp(22px, 3.2vw, 36px);
+      letter-spacing:-.6px;
+      line-height:1.10;
+      text-shadow: 0 12px 26px rgba(0,0,0,.25);
+    }
+    .heroTopInner p{
+      margin:0;
+      color:rgba(255,255,255,.86);
+      font-weight:850;
+      font-size:13px;
+      max-width:72ch;
+      text-shadow: 0 12px 26px rgba(0,0,0,.18);
+    }
+    .heroTopRow{
+      display:flex; gap:10px; flex-wrap:wrap; align-items:center;
+      margin-top:6px;
+    }
+    .heroTopBtn{
+      display:inline-flex;align-items:center;gap:10px;
+      padding:12px 14px;border-radius:999px;
+      background: linear-gradient(135deg, rgba(37,211,102,.96), rgba(37,211,102,.82));
+      border:1px solid rgba(37,211,102,.35);
+      font-weight:1100;
+      color:#072112;
+      box-shadow: 0 18px 40px rgba(0,0,0,.22);
+      white-space:nowrap;
+    }
+    .heroTopTag{
+      display:inline-flex;
+      padding:9px 12px;border-radius:999px;
+      border:1px solid rgba(255,255,255,.22);
+      background: rgba(255,255,255,.12);
+      color:rgba(255,255,255,.92);
+      font-weight:900;
+      font-size:12px;
+      backdrop-filter: blur(10px);
+    }
+
     .heroGrid{
       display:grid;
-      grid-template-columns: 1.15fr .85fr;
+      grid-template-columns: 1.1fr .9fr;
       gap:16px;
       align-items:stretch;
+      margin-top:16px;
     }
     @media (max-width: 980px){
-      .hero{padding:12px 0 6px}
       .heroGrid{grid-template-columns:1fr}
     }
 
-    .heroCopy{padding:24px;display:grid;gap:12px}
-    @media (max-width: 980px){
-      .heroCopy{padding:18px}
-    }
+    .heroCopy{padding:22px;display:grid;gap:12px}
 
     .kicker{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
     .pill{
@@ -261,26 +313,15 @@
       color:#0B1220;
     }
 
-    h1{
-      margin:0;
-      font-size: clamp(30px, 4.6vw, 46px);
-      letter-spacing:-.8px;
-      line-height:1.06;
-    }
     .lead{
       margin:0;
       font-size:16px;
       color:rgba(11,18,32,.72);
-      max-width:74ch;
-    }
-    .micro{
-      margin:0;
-      font-size:13px;
-      color:rgba(11,18,32,.56);
-      font-weight:800;
+      max-width:72ch;
     }
 
     .btnRow{display:flex;gap:12px;flex-wrap:wrap;margin-top:6px}
+
     .btn{
       display:inline-flex;align-items:center;justify-content:center;gap:10px;
       padding:14px 18px;border-radius:999px;
@@ -301,34 +342,31 @@
       border-color: rgba(37,211,102,.35);
       color:#072112;
     }
-
-    .heroMedia{
-      border-radius:var(--r2);
-      border:1px solid var(--line);
-      box-shadow:var(--shadow);
-      overflow:hidden;
-      background:
-        linear-gradient(to bottom, rgba(255,255,255,.0), rgba(255,255,255,.88)),
-        url("hero-commercial.jpg") center/cover no-repeat;
-      min-height: 340px;
-      display:grid;
-      align-content:end;
-    }
-    @media (max-width: 980px){
-      /* ✅ removes the “big white gap” feel on mobile */
-      .heroMedia{min-height: 190px}
+    .micro{
+      margin:0;
+      font-size:13px;
+      color:rgba(11,18,32,.56);
+      font-weight:800;
     }
 
-    .heroMediaInner{
-      padding:18px;
-      background: linear-gradient(to top, rgba(255,255,255,.92), rgba(255,255,255,.0));
+    .trustPanel{padding:18px}
+    .trustPanel h2{
+      margin:0 0 8px;
+      font-size:18px;
+      letter-spacing:-.2px;
+    }
+    .trustPanel p{
+      margin:0 0 14px;
+      color:var(--muted);
+      font-weight:800;
+      font-size:14px;
     }
     .trustRow{display:flex;flex-wrap:wrap;gap:10px}
     .trustCard{
       display:flex;align-items:center;gap:10px;
       padding:10px 12px;border-radius:16px;
       border:1px solid var(--line);
-      background: rgba(255,255,255,.90);
+      background: rgba(11,91,211,.04);
       box-shadow: 0 12px 24px rgba(11,18,32,.06);
       font-weight:900;
       font-size:12px;
@@ -341,6 +379,7 @@
       display:grid;place-items:center;
       color:var(--blue);
       font-size:12px;
+      flex:0 0 auto;
     }
 
     /* Section headings */
@@ -357,11 +396,11 @@
       margin:0;
       color:rgba(11,18,32,.58);
       font-size:14px;
-      max-width:66ch;
+      max-width:64ch;
       font-weight:700;
     }
 
-    /* Cards */
+    /* Services grid */
     .grid{
       display:grid;
       grid-template-columns: repeat(12, 1fr);
@@ -377,9 +416,6 @@
     }
     .card h3{margin:0 0 6px;font-size:18px;letter-spacing:-.2px}
     .card p{margin:0;color:rgba(11,18,32,.68);font-weight:700;font-size:14px}
-    @media (min-width:760px){ .card{grid-column: span 6} }
-    @media (min-width:1020px){ .card{grid-column: span 4} }
-
     .tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
     .tag{
       padding:7px 10px;border-radius:999px;
@@ -387,13 +423,13 @@
       background: rgba(11,91,211,.06);
       font-size:12px;font-weight:900;color:rgba(11,18,32,.72);
     }
+    @media (min-width:760px){ .card{grid-column: span 6} }
+    @media (min-width:1020px){ .card{grid-column: span 4} }
 
-    /* Two columns */
+    /* Contact */
     .twoCol{display:grid;gap:14px;grid-template-columns:1fr}
     @media (min-width:900px){ .twoCol{grid-template-columns: 1.1fr .9fr} }
     .box{padding:18px}
-
-    /* Bullets */
     .list{margin:10px 0 0;padding:0;list-style:none;display:grid;gap:10px}
     .list li{display:flex;gap:10px;align-items:flex-start;color:rgba(11,18,32,.70);font-weight:750;font-size:14px}
     .dot{
@@ -403,65 +439,34 @@
       flex:0 0 auto;
     }
 
-    /* Highlight panel */
-    .highlight{
-      border-radius:18px;
-      border:1px solid rgba(244,197,66,.45);
-      background:rgba(244,197,66,.14);
-      padding:16px;
-      box-shadow:none;
+    /* Gallery (real images, better SEO) */
+    .gallery{
+      display:grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap:14px;
     }
-    .highlight strong{color:rgba(11,18,32,.88)}
-    .highlight p{margin:8px 0 0;color:rgba(11,18,32,.70);font-weight:750}
-
-    /* Testimonials */
-    .quoteGrid{display:grid;gap:14px;grid-template-columns:1fr}
-    @media (min-width:900px){ .quoteGrid{grid-template-columns:1fr 1fr 1fr} }
-    .quote{
-      background:#fff;
-      border:1px solid var(--line);
-      border-radius:22px;
-      box-shadow:var(--shadow2);
-      padding:16px;
-    }
-    .quote p{
+    figure.gItem{
       margin:0;
-      color:rgba(11,18,32,.72);
-      font-weight:750;
-      font-size:14px;
-    }
-    .quote footer{
-      margin-top:12px;
-      border-top:1px solid rgba(12,18,32,.08);
-      padding-top:12px;
-      color:rgba(11,18,32,.62);
-      font-weight:900;
-      font-size:13px;
-    }
-
-    /* FAQ */
-    details{
+      grid-column: span 12;
+      border-radius:var(--r2);
+      overflow:hidden;
       border:1px solid var(--line);
-      border-radius:18px;
       background:#fff;
-      box-shadow: var(--shadow2);
-      padding:14px 14px;
+      box-shadow:var(--shadow2);
+      aspect-ratio: 16/10;
+      display:block;
     }
-    details summary{
-      cursor:pointer;
-      font-weight:1000;
-      color: rgba(11,18,32,.88);
+    .gItem img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
     }
-    details p{
-      margin:10px 0 0;
-      color: rgba(11,18,32,.72);
-      font-weight:750;
-      font-size:14px;
-    }
-    .faq{display:grid;gap:12px}
+    @media (min-width:760px){ figure.gItem{grid-column: span 6} }
+    @media (min-width:1020px){ figure.gItem{grid-column: span 4} }
 
     /* Footer */
-    footer.siteFooter{
+    footer{
       padding:26px 0 40px;
       border-top:1px solid var(--line);
       color:rgba(11,18,32,.58);
@@ -496,44 +501,18 @@
       border:1px solid rgba(37,211,102,.35);
       box-shadow:0 22px 50px rgba(11,18,32,.16);
     }
-
-    /* Accessibility */
-    :focus-visible{outline:3px solid rgba(11,91,211,.35); outline-offset:3px}
   </style>
 
-  <!-- ✅ Local schema -->
+  <!-- ✅ Correct phone + final domain -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@type":"CleaningService",
     "name":"Swift Cleaning Service",
     "url":"https://swiftcleaning.je/",
-    "telephone":"+44 7700 335389",
-    "priceRange":"££",
-    "areaServed":[
-      {"@type":"AdministrativeArea","name":"Jersey, Channel Islands"},
-      {"@type":"City","name":"St Helier"},
-      {"@type":"City","name":"St Saviour"},
-      {"@type":"City","name":"St Clement"},
-      {"@type":"City","name":"St Brelade"},
-      {"@type":"City","name":"Grouville"},
-      {"@type":"City","name":"St Lawrence"}
-    ],
-    "serviceType":[
-      "Commercial cleaning",
-      "Office cleaning",
-      "Contract cleaning",
-      "Communal area cleaning"
-    ],
-    "address":{
-      "@type":"PostalAddress",
-      "addressLocality":"Jersey",
-      "addressRegion":"Channel Islands",
-      "addressCountry":"GB"
-    },
-    "sameAs":[
-      "https://www.facebook.com/share/181zrn8D8R/"
-    ]
+    "areaServed":{"@type":"Place","name":"Jersey, Channel Islands"},
+    "telephone":"+447700335389",
+    "sameAs":["https://www.facebook.com/share/181zrn8D8R/"]
   }
   </script>
 </head>
@@ -545,7 +524,7 @@
     <div class="wrap">
       <div class="nav">
 
-        <a class="brand" href="/" aria-label="Swift Cleaning Service home">
+        <a class="brand" href="#top" aria-label="Swift Cleaning Service home">
           <div class="logoBox">
             <img src="logo-gold.png" alt="Swift Cleaning Service logo">
           </div>
@@ -557,16 +536,13 @@
 
         <div class="navRight">
           <nav class="navLinks" aria-label="Primary">
-            <a href="#service">Service</a>
-            <a href="#standards">Standards</a>
-            <a href="#areas">Areas</a>
-            <a href="#testimonials">Reviews</a>
-            <a href="#faq">FAQ</a>
-            <a href="#contact">Quote</a>
+            <a href="#services">Services</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
           </nav>
 
-          <a class="cta" href="https://wa.me/447700335389?text=Hi%20Swift%20Cleaning%20Service%2C%20please%20can%20I%20get%20a%20commercial%20cleaning%20quote%3F%0A%0ABusiness%2Fsite%20type%3A%20%0ALocation%20(parish)%3A%20%0AFrequency%20(daily%2Fweekly)%3A%20%0AOut-of-hours%20needed%3F%20%0A" target="_blank" rel="noopener">
-            <span class="waDot" aria-hidden="true"></span> Commercial quote
+          <a class="cta" href="https://wa.me/447700335389?text=Hi%20Swift%20Cleaning%20Service%2C%20please%20can%20I%20get%20a%20quote%3F%0A%0AService%3A%20%0ALocation%3A%20%0APreferred%20date%2Ftime%3A" target="_blank" rel="noopener">
+            <span class="waDot" aria-hidden="true"></span> WhatsApp for a quote
           </a>
 
           <button class="menuBtn" type="button" id="menuBtn" aria-label="Open menu" aria-expanded="false">Menu</button>
@@ -580,25 +556,22 @@
   <div class="drawerOverlay" id="drawerOverlay" aria-hidden="true"></div>
   <aside class="drawer" id="drawer" aria-label="Mobile menu" aria-hidden="true">
     <div class="drawerTop">
-      <strong>Commercial Cleaning</strong>
+      <strong>Swift Cleaning Service</strong>
       <button class="closeBtn" type="button" id="closeBtn" aria-label="Close menu">✕</button>
     </div>
 
     <nav class="drawerNav" aria-label="Mobile navigation">
-      <a href="#service" data-close>Service</a>
-      <a href="#standards" data-close>Standards</a>
-      <a href="#areas" data-close>Areas</a>
-      <a href="#testimonials" data-close>Reviews</a>
-      <a href="#faq" data-close>FAQ</a>
-      <a href="#contact" data-close>Quote</a>
+      <a href="#services" data-close>Services</a>
+      <a href="#gallery" data-close>Gallery</a>
+      <a href="#contact" data-close>Contact</a>
     </nav>
 
     <div class="drawerCtas">
-      <a class="primary" href="https://wa.me/447700335389?text=Hi%20Swift%20Cleaning%20Service%2C%20please%20can%20I%20get%20a%20commercial%20cleaning%20quote%3F%0A%0ABusiness%2Fsite%20type%3A%20%0ALocation%20(parish)%3A%20%0AFrequency%20(daily%2Fweekly)%3A%20%0AOut-of-hours%20needed%3F%20%0A" target="_blank" rel="noopener">
-        <span class="waDot" aria-hidden="true"></span> Request quote
+      <a class="primary" href="https://wa.me/447700335389?text=Hi%20Swift%20Cleaning%20Service%2C%20please%20can%20I%20get%20a%20quote%3F%0A%0AService%3A%20%0ALocation%3A%20%0APreferred%20date%2Ftime%3A" target="_blank" rel="noopener">
+        <span class="waDot" aria-hidden="true"></span> WhatsApp for a quote
       </a>
       <a href="tel:+447700335389">Call +44 7700 335389</a>
-      <a href="/" data-close>Back to main site</a>
+      <a href="https://www.facebook.com/share/181zrn8D8R/" target="_blank" rel="noopener">Facebook</a>
     </div>
   </aside>
 
@@ -607,226 +580,141 @@
     <!-- HERO -->
     <section class="hero">
       <div class="wrap">
+
+        <!-- ✅ HERO AT THE VERY TOP (ALL SCREENS) -->
+        <div class="heroTop" aria-label="Swift Cleaning hero image">
+          <div class="heroTopInner">
+            <h1>Commercial cleaning across Jersey.</h1>
+            <p>Office & contract cleaning • Carpets & upholstery • Window cleaning • Fully insured</p>
+            <div class="heroTopRow">
+              <a class="heroTopBtn" href="https://wa.me/447700335389?text=Hi%20Swift%20Cleaning%20Service%2C%20please%20can%20I%20get%20a%20quote%3F%0A%0AService%3A%20%0ALocation%3A%20%0APreferred%20date%2Ftime%3A" target="_blank" rel="noopener">
+                <span class="waDot" aria-hidden="true"></span> Request a quote
+              </a>
+              <span class="heroTopTag">Fast response</span>
+              <span class="heroTopTag">Professional finish</span>
+              <span class="heroTopTag">Island-wide</span>
+            </div>
+          </div>
+        </div>
+
         <div class="heroGrid">
           <div class="panel heroCopy">
             <div class="kicker">
-              <span class="pill">Commercial cleaning Jersey</span>
-              <span class="pill">Office & contract cleaning</span>
-              <span class="pill">Out-of-hours available</span>
+              <span class="pill">Serving Jersey</span>
+              <span class="pill">Commercial</span>
+              <span class="pill">Carpets & Upholstery</span>
+              <span class="pill">Window Cleaning</span>
               <span class="pill gold">Fully insured</span>
             </div>
 
-            <h1>Commercial Cleaning Services in Jersey</h1>
-
             <p class="lead">
-              Reliable <b>office and contract cleaning</b> for businesses across <b>Jersey, Channel Islands</b>.
-              Clear communication, consistent standards, and flexible schedules that work around your operating hours.
+              Main focus: <b>commercial cleaning</b>, <b>carpets & upholstery</b>, and <b>window cleaning</b> — clear communication and a professional finish.
+              <br>End of tenancy available occasionally.
             </p>
 
             <div class="btnRow">
-              <a class="btn btnPrimary" href="https://wa.me/447700335389?text=Hi%20Swift%20Cleaning%20Service%2C%20please%20can%20I%20get%20a%20commercial%20cleaning%20quote%3F%0A%0ABusiness%2Fsite%20type%3A%20%0ALocation%20(parish)%3A%20%0AFrequency%20(daily%2Fweekly)%3A%20%0AOut-of-hours%20needed%3F%20%0A" target="_blank" rel="noopener">
-                <span class="waDot" aria-hidden="true"></span> Request a commercial quote
+              <a class="btn btnPrimary" href="https://wa.me/447700335389?text=Hi%20Swift%20Cleaning%20Service%2C%20please%20can%20I%20get%20a%20quote%3F%0A%0AService%3A%20%0ALocation%3A%20%0APreferred%20date%2Ftime%3A" target="_blank" rel="noopener">
+                <span class="waDot" aria-hidden="true"></span> Get a quote on WhatsApp
               </a>
-              <a class="btn btnBlue" href="#service">View services</a>
+              <a class="btn btnBlue" href="#services">View services</a>
             </div>
 
-            <p class="micro">Structured schedules • Professional standards • Island-wide coverage</p>
+            <p class="micro">Fast response • Clear scope • Professional finish</p>
           </div>
 
-          <aside class="heroMedia" aria-label="Commercial cleaning in Jersey">
-            <div class="heroMediaInner">
-              <div class="trustRow">
-                <div class="trustCard"><span class="tick">✓</span> Contract cleaning options</div>
-                <div class="trustCard"><span class="tick">✓</span> Offices & retail units</div>
-                <div class="trustCard"><span class="tick">✓</span> Communal areas</div>
-                <div class="trustCard"><span class="tick">✓</span> Consistent delivery</div>
-              </div>
+          <div class="panel trustPanel">
+            <h2>What you can expect</h2>
+            <p>Built for commercial clients: consistent standards, clear scope, and reliable scheduling.</p>
+
+            <div class="trustRow">
+              <div class="trustCard"><span class="tick">✓</span> Commercial-ready standards</div>
+              <div class="trustCard"><span class="tick">✓</span> Carpets & upholstery specialists</div>
+              <div class="trustCard"><span class="tick">✓</span> Window cleaning available</div>
+              <div class="trustCard"><span class="tick">✓</span> Jersey-wide coverage</div>
             </div>
-          </aside>
+          </div>
+
         </div>
       </div>
     </section>
 
-    <!-- SERVICE -->
-    <section id="service">
+    <!-- SERVICES -->
+    <section id="services">
       <div class="wrap">
         <div class="sectionHead">
           <div>
-            <h2>Commercial cleaning designed for businesses</h2>
-            <p>Built around reliability, clear scope and consistent standards — the things decision-makers care about.</p>
+            <h2>Services</h2>
+            <p>Simple, scannable services. Built for quick decisions and fast quotes.</p>
           </div>
         </div>
 
         <div class="grid">
           <div class="card">
-            <h3>Office cleaning (scheduled)</h3>
-            <p>Regular cleaning to keep workspaces, kitchens, toilets and shared areas consistently presentable.</p>
+            <h3>Office & Commercial Cleaning</h3>
+            <p>Regular or one-off cleaning for workplaces, communal areas and commercial premises.</p>
             <div class="tags">
-              <span class="tag">Daily / weekly</span><span class="tag">After-hours</span><span class="tag">Key-holding</span>
+              <span class="tag">Contracts</span><span class="tag">After-hours</span><span class="tag">Custom plan</span>
             </div>
           </div>
 
           <div class="card">
-            <h3>Contract cleaning</h3>
-            <p>Structured contract cleaning for businesses that need a dependable long-term cleaning partner.</p>
+            <h3>Carpets & Upholstery</h3>
+            <p>Professional cleaning to improve appearance, reduce odours and remove stains where possible.</p>
             <div class="tags">
-              <span class="tag">Clear scope</span><span class="tag">Reliable schedules</span><span class="tag">Consistency</span>
+              <span class="tag">Stains</span><span class="tag">Odours</span><span class="tag">Refresh</span>
             </div>
           </div>
 
           <div class="card">
-            <h3>Communal areas & managed buildings</h3>
-            <p>Cleaning for stairwells, corridors, shared entrances and managed properties.</p>
+            <h3>Window Cleaning</h3>
+            <p>Clean, streak-free windows for offices and properties (access dependent).</p>
             <div class="tags">
-              <span class="tag">Property managers</span><span class="tag">Communal spaces</span><span class="tag">Regular service</span>
+              <span class="tag">Regular</span><span class="tag">One-off</span><span class="tag">Inside/Outside</span>
             </div>
           </div>
 
           <div class="card">
-            <h3>Retail units</h3>
-            <p>Professional cleaning for customer-facing spaces, tailored around opening hours and footfall.</p>
+            <h3>End of Tenancy (Occasional)</h3>
+            <p>Move-out cleans for rentals — subject to availability and scheduling.</p>
             <div class="tags">
-              <span class="tag">Retail</span><span class="tag">Presentation</span><span class="tag">Out-of-hours</span>
+              <span class="tag">Move-out</span><span class="tag">Landlords</span><span class="tag">Lettings</span>
             </div>
           </div>
 
           <div class="card">
-            <h3>One-off commercial deep cleans</h3>
-            <p>Ideal for inspections, refurbishments, start/end of contracts, or bringing a site back to standard.</p>
+            <h3>Specialist Cleaning</h3>
+            <p>Specialist jobs handled professionally — tell us what you need and we confirm scope + timing.</p>
             <div class="tags">
-              <span class="tag">One-off</span><span class="tag">Inspection-ready</span><span class="tag">High standard</span>
-            </div>
-          </div>
-
-          <div class="card">
-            <h3>Add-ons (when needed)</h3>
-            <p>Carpet, upholstery and window cleaning can be added where required (scope and access agreed).</p>
-            <div class="tags">
-              <span class="tag">Carpets</span><span class="tag">Windows</span><span class="tag">Upholstery</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="panel" style="margin-top:14px;padding:18px">
-          <p style="margin:0;color:rgba(11,18,32,.72);font-weight:750;font-size:14px;max-width:90ch">
-            Swift Cleaning Service provides <b>commercial cleaning in Jersey</b> for offices, retail units, communal spaces and managed buildings.
-            If you’re looking for <b>office cleaning</b> or <b>contract cleaning</b> in <b>St Helier</b> or across the island, we offer structured schedules,
-            clear communication and professional results — with flexible out-of-hours options where required.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- STANDARDS -->
-    <section id="standards">
-      <div class="wrap">
-        <div class="sectionHead">
-          <div>
-            <h2>Professional standards & reassurance</h2>
-            <p>Commercial clients choose partners that reduce risk and deliver consistently.</p>
-          </div>
-        </div>
-
-        <div class="twoCol">
-          <div class="panel box">
-            <h3 style="margin:0 0 8px">What you can expect</h3>
-            <ul class="list">
-              <li><span class="dot"></span><span><b>Clear scope:</b> what’s included, frequency and expectations agreed upfront.</span></li>
-              <li><span class="dot"></span><span><b>Consistent scheduling:</b> reliable visits and predictable routines.</span></li>
-              <li><span class="dot"></span><span><b>Professional communication:</b> quick responses and clear updates.</span></li>
-              <li><span class="dot"></span><span><b>Site access:</b> out-of-hours options and key-holding where appropriate.</span></li>
-            </ul>
-          </div>
-
-          <div class="panel box">
-            <h3 style="margin:0 0 8px">Commercial-ready</h3>
-            <div class="highlight">
-              <strong>Fully insured • Professional approach • Reliable delivery</strong>
-              <p>
-                Tell us your site type, parish and preferred cleaning window. We’ll confirm scope and provide a clear quote.
-                For larger contracts, a quick site assessment can be arranged.
-              </p>
-            </div>
-
-            <div class="btnRow" style="margin-top:14px">
-              <a class="btn btnPrimary" href="https://wa.me/447700335389?text=Hi%20Swift%20Cleaning%20Service%2C%20please%20can%20I%20get%20a%20commercial%20cleaning%20quote%3F%0A%0ABusiness%2Fsite%20type%3A%20%0ALocation%20(parish)%3A%20%0AFrequency%20(daily%2Fweekly)%3A%20%0AOut-of-hours%20needed%3F%20%0A" target="_blank" rel="noopener">
-                <span class="waDot"></span> Start on WhatsApp
-              </a>
-              <a class="btn" href="tel:+447700335389">Call</a>
+              <span class="tag">Tailored</span><span class="tag">Discreet</span><span class="tag">Professional</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- AREAS -->
-    <section id="areas">
+    <!-- GALLERY -->
+    <section id="gallery">
       <div class="wrap">
         <div class="sectionHead">
           <div>
-            <h2>Who we work with & areas we cover</h2>
-            <p>Commercial cleaning across Jersey — including St Helier and all parishes.</p>
+            <h2>Gallery</h2>
+            <p>Use real job photos (commercial spaces, equipment, carpets, windows). This builds trust fast.</p>
           </div>
         </div>
 
-        <div class="twoCol">
-          <div class="panel box">
-            <h3 style="margin:0 0 8px">Typical commercial sites</h3>
-            <ul class="list">
-              <li><span class="dot"></span><span><b>Offices:</b> admin buildings, shared workspaces, meeting rooms.</span></li>
-              <li><span class="dot"></span><span><b>Retail:</b> customer areas and back-of-house.</span></li>
-              <li><span class="dot"></span><span><b>Medical practices:</b> professional standards (scope agreed).</span></li>
-              <li><span class="dot"></span><span><b>Managed buildings:</b> corridors, stairwells, entrances.</span></li>
-              <li><span class="dot"></span><span><b>Industrial / storage:</b> offices, welfare areas and shared spaces.</span></li>
-            </ul>
-          </div>
-
-          <div class="panel box">
-            <h3 style="margin:0 0 8px">Jersey coverage (examples)</h3>
-            <ul class="list">
-              <li><span class="dot"></span><span><b>St Helier</b> (office & contract cleaning)</span></li>
-              <li><span class="dot"></span><span><b>St Saviour</b></span></li>
-              <li><span class="dot"></span><span><b>St Clement</b></span></li>
-              <li><span class="dot"></span><span><b>St Brelade</b></span></li>
-              <li><span class="dot"></span><span><b>Grouville</b></span></li>
-              <li><span class="dot"></span><span><b>St Lawrence</b></span></li>
-            </ul>
-
-            <div class="highlight" style="margin-top:14px">
-              <strong>Need out-of-hours cleaning?</strong>
-              <p>Share your preferred cleaning window and site access details — we’ll confirm availability and scope.</p>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- TESTIMONIALS -->
-    <section id="testimonials">
-      <div class="wrap">
-        <div class="sectionHead">
-          <div>
-            <h2>Client feedback</h2>
-            <p>Replace these placeholders with real testimonials as soon as you can. Proof increases conversion.</p>
-          </div>
-        </div>
-
-        <div class="quoteGrid">
-          <article class="quote" aria-label="Testimonial 1">
-            <p>“Reliable and professional. Communication was clear and the office was consistently spotless. Highly recommended.”</p>
-            <footer>Office client • Jersey</footer>
-          </article>
-
-          <article class="quote" aria-label="Testimonial 2">
-            <p>“Great standard of work and flexible scheduling. The team worked around our opening hours with no issues.”</p>
-            <footer>Retail client • Jersey</footer>
-          </article>
-
-          <article class="quote" aria-label="Testimonial 3">
-            <p>“Quick response, clear quote, and the deep clean made a big difference. We’ll be using them again.”</p>
-            <footer>Managed building • Jersey</footer>
-          </article>
+        <div class="gallery">
+          <figure class="gItem">
+            <img src="gallery-1.jpg" alt="Commercial cleaning service in Jersey" loading="lazy" width="1200" height="800">
+          </figure>
+          <figure class="gItem">
+            <img src="gallery-2.jpg" alt="Professional cleaning team at work" loading="lazy" width="1200" height="800">
+          </figure>
+          <figure class="gItem">
+            <img src="gallery-3.jpg" alt="Carpet and upholstery cleaning service" loading="lazy" width="1200" height="800">
+          </figure>
+          <figure class="gItem">
+            <img src="gallery-4.jpg" alt="Window cleaning service" loading="lazy" width="1200" height="800">
+          </figure>
         </div>
       </div>
     </section>
@@ -836,87 +724,54 @@
       <div class="wrap">
         <div class="sectionHead">
           <div>
-            <h2>Request a commercial cleaning quote</h2>
-            <p>Fast, clear quotes. WhatsApp is preferred for speed and accuracy.</p>
+            <h2>Contact</h2>
+            <p>Fastest response via WhatsApp. Call is also available.</p>
           </div>
         </div>
 
         <div class="twoCol">
           <div class="panel box">
-            <h3 style="margin:0 0 8px">To quote accurately, send:</h3>
             <ul class="list">
-              <li><span class="dot"></span><span><b>Site type:</b> office / retail / communal / other.</span></li>
-              <li><span class="dot"></span><span><b>Parish:</b> e.g., St Helier.</span></li>
-              <li><span class="dot"></span><span><b>Frequency:</b> daily / weekly / fortnightly.</span></li>
-              <li><span class="dot"></span><span><b>Cleaning window:</b> daytime or out-of-hours.</span></li>
-              <li><span class="dot"></span><span><b>Access:</b> keys, codes, parking notes.</span></li>
+              <li><span class="dot"></span><span><b>Commercial:</b> frequency + size + access times.</span></li>
+              <li><span class="dot"></span><span><b>Carpets:</b> rooms + stains + parking/access.</span></li>
+              <li><span class="dot"></span><span><b>Windows:</b> floors + access + preferred time.</span></li>
+              <li><span class="dot"></span><span><b>End of tenancy:</b> bedrooms + bathrooms + deadline.</span></li>
             </ul>
 
             <div class="btnRow" style="margin-top:16px">
-              <a class="btn btnPrimary" href="https://wa.me/447700335389?text=Hi%20Swift%20Cleaning%20Service%2C%20please%20can%20I%20get%20a%20commercial%20cleaning%20quote%3F%0A%0ABusiness%2Fsite%20type%3A%20%0ALocation%20(parish)%3A%20%0AFrequency%20(daily%2Fweekly)%3A%20%0ACleaning%20window%20(day%2Fout-of-hours)%3A%20%0AAccess%20notes%3A%20%0A" target="_blank" rel="noopener">
-                <span class="waDot"></span> WhatsApp quote
+              <a class="btn btnPrimary" href="https://wa.me/447700335389?text=Hi%20Swift%20Cleaning%20Service%2C%20please%20can%20I%20get%20a%20quote%3F%0A%0AService%3A%20%0ALocation%3A%20%0APreferred%20date%2Ftime%3A" target="_blank" rel="noopener">
+                <span class="waDot" aria-hidden="true"></span> WhatsApp
               </a>
-              <a class="btn" href="tel:+447700335389">Call us</a>
-              <a class="btn btnBlue" href="/" title="Back to main site">Main site</a>
+              <a class="btn" href="tel:+447700335389">Call</a>
+              <a class="btn btnBlue" href="https://www.facebook.com/share/181zrn8D8R/" target="_blank" rel="noopener">Facebook</a>
             </div>
 
             <p class="micro" style="margin-top:12px">
               Phone: <b>+44 7700 335389</b><br>
-              Service area: <b>Jersey, Channel Islands</b>
+              Location: <b>Jersey, Channel Islands</b>
             </p>
           </div>
 
           <div class="panel box">
             <div class="kicker">
-              <span class="pill">Commercial contracts</span>
-              <span class="pill gold">Fully insured</span>
+              <span class="pill">Quick quote</span>
+              <span class="pill gold">WhatsApp preferred</span>
             </div>
 
             <p class="lead" style="font-size:15px;margin-top:10px">
-              For ongoing contract cleaning, we can agree a structured scope and schedule.
-              For larger sites, we may suggest a quick site assessment to quote accurately.
+              Send the service + location + preferred date/time. We confirm availability and provide a clear quote.
             </p>
 
-            <div class="highlight" style="margin-top:14px">
-              <strong>Want a faster response?</strong>
-              <p>Send photos/videos of the site on WhatsApp (if available) and your preferred cleaning window.</p>
+            <div class="panel" style="margin-top:14px;padding:16px;border-radius:18px;border:1px solid rgba(244,197,66,.45);background:rgba(244,197,66,.14);box-shadow:none;">
+              <p style="margin:0;font-weight:900;color:rgba(11,18,32,.82);">
+                Fully insured • Commercial focus • Professional finish
+              </p>
+              <p style="margin:8px 0 0;color:rgba(11,18,32,.70);font-weight:750;">
+                For stronger trust: add 10–20 real photos and 3 short testimonials.
+              </p>
             </div>
 
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section id="faq">
-      <div class="wrap">
-        <div class="sectionHead">
-          <div>
-            <h2>FAQ</h2>
-            <p>Quick answers for office cleaning and contract cleaning in Jersey.</p>
-          </div>
-        </div>
-
-        <div class="faq">
-          <details>
-            <summary>Do you offer out-of-hours commercial cleaning?</summary>
-            <p>Yes, where scheduling and access allow. Share your preferred cleaning window and site access details, and we’ll confirm availability.</p>
-          </details>
-
-          <details>
-            <summary>Can you provide contract cleaning for offices?</summary>
-            <p>Yes. We can agree a structured schedule, scope, and frequency. WhatsApp is the fastest way to start the quote process.</p>
-          </details>
-
-          <details>
-            <summary>Which areas do you cover in Jersey?</summary>
-            <p>Island-wide coverage. Many clients are in St Helier, and we also cover all parishes across Jersey.</p>
-          </details>
-
-          <details>
-            <summary>Do you provide carpets or window cleaning for commercial sites?</summary>
-            <p>Yes, as add-ons where needed (scope and access requirements confirmed before scheduling).</p>
-          </details>
         </div>
       </div>
     </section>
@@ -924,20 +779,20 @@
   </main>
 
   <!-- FOOTER -->
-  <footer class="siteFooter">
+  <footer>
     <div class="wrap">
       <div class="footRow">
         <div>
           © <span id="y"></span> Swift Cleaning Service • Jersey, Channel Islands
           <div style="margin-top:6px;color:rgba(11,18,32,.58);font-weight:800;font-size:12px">
-            Commercial cleaning Jersey • Office cleaning • Contract cleaning • Fully insured
+            Commercial • Carpets & Upholstery • Window Cleaning • Fully insured
           </div>
         </div>
         <div class="footLinks">
           <a href="#top">Top</a>
-          <a href="#service">Service</a>
-          <a href="#standards">Standards</a>
-          <a href="#contact">Quote</a>
+          <a href="#services">Services</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Contact</a>
         </div>
       </div>
     </div>
@@ -945,8 +800,8 @@
 
   <!-- Sticky WhatsApp -->
   <div class="sticky" aria-hidden="false">
-    <a href="https://wa.me/447700335389?text=Hi%20Swift%20Cleaning%20Service%2C%20please%20can%20I%20get%20a%20commercial%20cleaning%20quote%3F%0A%0ABusiness%2Fsite%20type%3A%20%0ALocation%20(parish)%3A%20%0AFrequency%20(daily%2Fweekly)%3A%20%0ACleaning%20window%20(day%2Fout-of-hours)%3A%20%0A" target="_blank" rel="noopener">
-      <span class="waDot" aria-hidden="true"></span> Commercial quote
+    <a href="https://wa.me/447700335389?text=Hi%20Swift%20Cleaning%20Service%2C%20please%20can%20I%20get%20a%20quote%3F%0A%0AService%3A%20%0ALocation%3A%20%0APreferred%20date%2Ftime%3A" target="_blank" rel="noopener">
+      <span class="waDot" aria-hidden="true"></span> WhatsApp for a quote
     </a>
   </div>
 
@@ -967,7 +822,6 @@
       overlay?.setAttribute('aria-hidden', 'false');
       drawer?.setAttribute('aria-hidden', 'false');
     }
-
     function closeMenu(){
       body.classList.remove('menuOpen');
       menuBtn?.setAttribute('aria-expanded', 'false');
@@ -990,4 +844,4 @@
   </script>
 
 </body>
-                                                                                                                          </html>
+              </html>
