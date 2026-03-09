@@ -1,1573 +1,1534 @@
 <!doctype html>
 <html lang="en-GB">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
-  <meta name="theme-color" content="#0B5BD3" />
-  <meta name="color-scheme" content="light" />
-  <meta name="robots" content="index,follow,max-image-preview:large" />
-
-  <title>Commercial Cleaning Jersey | Swift Cleaning Service</title>
-  <meta name="description" content="Swift Cleaning Service provides commercial cleaning, carpet and upholstery cleaning, and window cleaning across Jersey. Fully insured, reliable service, and fast quotes via WhatsApp." />
-  <link rel="canonical" href="https://swiftcleaning.je/" />
-
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="en_GB" />
-  <meta property="og:title" content="Commercial Cleaning Jersey | Swift Cleaning Service" />
-  <meta property="og:description" content="Commercial cleaning, carpet and upholstery cleaning, and window cleaning across Jersey. Fully insured. Fast quotes via WhatsApp." />
-  <meta property="og:url" content="https://swiftcleaning.je/" />
-  <meta property="og:image" content="https://swiftcleaning.je/hero.jpg" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Commercial Cleaning Jersey | Swift Cleaning Service" />
-  <meta name="twitter:description" content="Commercial cleaning, carpet and upholstery cleaning, and window cleaning across Jersey. Fully insured." />
-  <meta name="twitter:image" content="https://swiftcleaning.je/hero.jpg" />
-
-  <link rel="preload" as="image" href="hero.jpg" />
-  <link rel="preload" as="image" href="logo-gold.png" />
-
-  <style>
-    :root{
-      --bg:#f5f8fc;
-      --card:#ffffff;
-      --text:#0c1424;
-      --muted:rgba(12,20,36,.72);
-      --muted2:rgba(12,20,36,.56);
-      --line:rgba(12,20,36,.10);
-
-      --blue:#0B5BD3;
-      --blue2:#0848a9;
-      --gold:#F4C542;
-      --green:#25D366;
-
-      --radius:24px;
-      --radius-sm:16px;
-      --max:1160px;
-
-      --shadow:0 20px 50px rgba(12,20,36,.08);
-      --shadow-sm:0 10px 24px rgba(12,20,36,.07);
-    }
-
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{
-      margin:0;
-      font-family:ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-      color:var(--text);
-      background:
-        radial-gradient(900px 520px at 8% -10%, rgba(11,91,211,.10), transparent 60%),
-        radial-gradient(760px 420px at 92% 0%, rgba(244,197,66,.13), transparent 55%),
-        var(--bg);
-      line-height:1.55;
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-    }
-
-    img{max-width:100%;display:block}
-    a{color:inherit;text-decoration:none}
-    .wrap{max-width:var(--max);margin:0 auto;padding:0 18px}
-
-    .panel{
-      background:var(--card);
-      border:1px solid var(--line);
-      border-radius:var(--radius);
-      box-shadow:var(--shadow);
-    }
-
-    .topbar{
-      position:sticky;
-      top:0;
-      z-index:90;
-      background:rgba(245,248,252,.86);
-      backdrop-filter:blur(14px);
-      border-bottom:1px solid var(--line);
-    }
-
-    .nav{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:16px;
-      padding:12px 0;
-    }
-
-    .brand{
-      display:flex;
-      align-items:center;
-      gap:14px;
-      min-width:0;
-    }
-
-    .logoBox{
-      width:62px;
-      height:62px;
-      border-radius:18px;
-      background:#fff;
-      border:1px solid var(--line);
-      box-shadow:var(--shadow-sm);
-      display:grid;
-      place-items:center;
-      overflow:hidden;
-      flex:0 0 auto;
-    }
-
-    .logoBox img{
-      width:100%;
-      height:100%;
-      object-fit:contain;
-      padding:8px;
-    }
-
-    .brandText{
-      display:flex;
-      flex-direction:column;
-      line-height:1.06;
-    }
-
-    .brandText strong{
-      font-size:14px;
-      font-weight:1000;
-      letter-spacing:.5px;
-    }
-
-    .brandText span{
-      font-size:12px;
-      font-weight:800;
-      color:var(--muted2);
-    }
-
-    .navRight{
-      display:flex;
-      align-items:center;
-      gap:12px;
-    }
-
-    .navLinks{
-      display:flex;
-      align-items:center;
-      gap:8px;
-      padding:6px;
-      border-radius:999px;
-      background:rgba(255,255,255,.72);
-      border:1px solid var(--line);
-      box-shadow:0 10px 20px rgba(12,20,36,.05);
-    }
-
-    .navLinks a{
-      padding:10px 14px;
-      border-radius:999px;
-      font-size:13px;
-      font-weight:950;
-      color:rgba(12,20,36,.78);
-      transition:.18s ease;
-    }
-
-    .navLinks a:hover{
-      background:rgba(11,91,211,.08);
-      color:rgba(12,20,36,.94);
-    }
-
-    .btn,
-    .cta{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      gap:10px;
-      border-radius:999px;
-      font-weight:1000;
-      white-space:nowrap;
-      transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease;
-    }
-
-    .btn:hover,
-    .cta:hover{
-      transform:translateY(-1px);
-    }
-
-    .cta{
-      padding:12px 16px;
-      background:linear-gradient(135deg, rgba(37,211,102,.98), rgba(37,211,102,.84));
-      color:#06220f;
-      border:1px solid rgba(37,211,102,.35);
-      box-shadow:0 18px 36px rgba(12,20,36,.12);
-    }
-
-    .waDot{
-      width:10px;
-      height:10px;
-      border-radius:999px;
-      background:var(--green);
-      box-shadow:0 0 0 4px rgba(37,211,102,.16);
-      flex:0 0 auto;
-    }
-
-    .menuBtn{
-      display:none;
-      padding:10px 12px;
-      border-radius:14px;
-      border:1px solid var(--line);
-      background:#fff;
-      font-weight:1000;
-      box-shadow:0 10px 20px rgba(12,20,36,.05);
-      cursor:pointer;
-    }
-
-    .drawerOverlay{
-      position:fixed;
-      inset:0;
-      background:rgba(12,20,36,.38);
-      backdrop-filter:blur(6px);
-      opacity:0;
-      pointer-events:none;
-      transition:opacity .18s ease;
-      z-index:98;
-    }
-
-    .drawer{
-      position:fixed;
-      top:0;
-      right:0;
-      height:100%;
-      width:min(360px,92vw);
-      background:rgba(255,255,255,.94);
-      backdrop-filter:blur(18px);
-      border-left:1px solid var(--line);
-      box-shadow:-18px 0 50px rgba(12,20,36,.16);
-      transform:translateX(110%);
-      transition:transform .22s ease;
-      z-index:99;
-      display:flex;
-      flex-direction:column;
-      gap:12px;
-      padding:16px;
-    }
-
-    .drawerTop{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:12px;
-      padding:6px 2px 12px;
-      border-bottom:1px solid var(--line);
-    }
-
-    .closeBtn{
-      width:44px;
-      height:44px;
-      border-radius:14px;
-      border:1px solid var(--line);
-      background:#fff;
-      font-weight:1000;
-      cursor:pointer;
-    }
-
-    .drawerNav{
-      display:grid;
-      gap:10px;
-    }
-
-    .drawerNav a{
-      padding:14px;
-      border-radius:16px;
-      border:1px solid var(--line);
-      background:#fff;
-      font-weight:1000;
-      box-shadow:var(--shadow-sm);
-    }
-
-    .drawerCtas{
-      display:grid;
-      gap:10px;
-      margin-top:auto;
-    }
-
-    .drawerCtas a{
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      gap:10px;
-      padding:14px 16px;
-      border-radius:999px;
-      border:1px solid var(--line);
-      background:#fff;
-      font-weight:1000;
-      box-shadow:var(--shadow-sm);
-    }
-
-    .drawerCtas a.primary{
-      background:linear-gradient(135deg, rgba(37,211,102,.98), rgba(37,211,102,.84));
-      border-color:rgba(37,211,102,.35);
-      color:#06220f;
-    }
-
-    body.menuOpen{overflow:hidden}
-    body.menuOpen .drawerOverlay{opacity:1;pointer-events:auto}
-    body.menuOpen .drawer{transform:translateX(0)}
-
-    @media (max-width:980px){
-      .navLinks,.cta{display:none}
-      .menuBtn{display:inline-flex}
-    }
-
-    main{padding-bottom:92px}
-    section{padding:28px 0}
-
-    .sectionHead{
-      display:flex;
-      justify-content:space-between;
-      align-items:flex-end;
-      gap:14px;
-      margin-bottom:16px;
-    }
-
-    .sectionHead h2{
-      margin:0;
-      font-size:30px;
-      letter-spacing:-.5px;
-    }
-
-    .sectionHead p{
-      margin:0;
-      max-width:64ch;
-      color:var(--muted2);
-      font-weight:700;
-      font-size:14px;
-    }
-
-    .hero{padding:18px 0 8px}
-
-    .heroGrid{
-      display:grid;
-      grid-template-columns:1.1fr .9fr;
-      gap:16px;
-      align-items:stretch;
-    }
-
-    @media (max-width:980px){
-      .heroGrid{grid-template-columns:1fr}
-    }
-
-    .heroCopy{
-      padding:26px;
-      display:grid;
-      gap:14px;
-    }
-
-    .kicker{
-      display:flex;
-      flex-wrap:wrap;
-      gap:10px;
-      align-items:center;
-    }
-
-    .pill{
-      padding:8px 12px;
-      border-radius:999px;
-      border:1px solid var(--line);
-      background:rgba(11,91,211,.06);
-      color:rgba(12,20,36,.78);
-      font-size:12px;
-      font-weight:950;
-    }
-
-    .pill.gold{
-      background:linear-gradient(135deg, var(--gold), rgba(244,197,66,.60));
-      border-color:rgba(244,197,66,.40);
-      color:#10151f;
-    }
-
-    h1{
-      margin:0;
-      font-size:clamp(32px,4.8vw,50px);
-      line-height:1.04;
-      letter-spacing:-.9px;
-    }
-
-    .lead{
-      margin:0;
-      color:var(--muted);
-      font-size:16px;
-      max-width:68ch;
-    }
-
-    .heroBullets{
-      display:grid;
-      grid-template-columns:repeat(2,minmax(0,1fr));
-      gap:10px;
-      margin-top:2px;
-    }
-
-    .heroBullets .b{
-      display:flex;
-      gap:10px;
-      align-items:flex-start;
-      padding:12px 14px;
-      border-radius:16px;
-      background:rgba(11,91,211,.05);
-      border:1px solid rgba(11,91,211,.10);
-      font-size:14px;
-      font-weight:850;
-      color:rgba(12,20,36,.78);
-    }
-
-    .heroBullets .b span:first-child{
-      color:var(--blue);
-      font-weight:1100;
-    }
-
-    @media (max-width:640px){
-      .heroBullets{grid-template-columns:1fr}
-    }
-
-    .btnRow{
-      display:flex;
-      flex-wrap:wrap;
-      gap:12px;
-      margin-top:4px;
-    }
-
-    .btn{
-      padding:14px 18px;
-      background:#fff;
-      border:1px solid var(--line);
-      color:rgba(12,20,36,.92);
-      box-shadow:0 14px 30px rgba(12,20,36,.08);
-    }
-
-    .btnBlue{
-      background:linear-gradient(135deg, var(--blue), var(--blue2));
-      border-color:rgba(11,91,211,.35);
-      color:#fff;
-    }
-
-    .btnGreen{
-      background:linear-gradient(135deg, rgba(37,211,102,.98), rgba(37,211,102,.84));
-      border-color:rgba(37,211,102,.35);
-      color:#06220f;
-    }
-
-    .micro{
-      margin:0;
-      font-size:13px;
-      color:var(--muted2);
-      font-weight:800;
-    }
-
-    .heroMedia{
-      min-height:420px;
-      border-radius:var(--radius);
-      border:1px solid var(--line);
-      box-shadow:var(--shadow);
-      overflow:hidden;
-      position:relative;
-      background:url("hero.jpg") center/cover no-repeat;
-      display:grid;
-      align-content:end;
-    }
-
-    .heroMedia::after{
-      content:"";
-      position:absolute;
-      inset:0;
-      background:linear-gradient(to top, rgba(12,20,36,.68), rgba(12,20,36,.10) 58%, rgba(255,255,255,0) 100%);
-    }
-
-    .heroMediaInner{
-      position:relative;
-      z-index:1;
-      padding:20px;
-      display:grid;
-      gap:12px;
-    }
-
-    .heroMiniTitle{
-      color:#fff;
-      font-weight:1100;
-      font-size:22px;
-      line-height:1.14;
-      letter-spacing:-.2px;
-      text-shadow:0 12px 28px rgba(0,0,0,.25);
-    }
-
-    .heroMiniText{
-      color:rgba(255,255,255,.88);
-      font-weight:800;
-      font-size:13px;
-      text-shadow:0 12px 28px rgba(0,0,0,.20);
-    }
-
-    .trustRow{
-      display:flex;
-      flex-wrap:wrap;
-      gap:10px;
-    }
-
-    .trustCard{
-      display:flex;
-      align-items:center;
-      gap:10px;
-      padding:10px 12px;
-      border-radius:16px;
-      border:1px solid rgba(255,255,255,.18);
-      background:rgba(255,255,255,.12);
-      backdrop-filter:blur(10px);
-      color:rgba(255,255,255,.94);
-      font-size:12px;
-      font-weight:950;
-      box-shadow:0 12px 24px rgba(0,0,0,.10);
-    }
-
-    .tick{
-      width:18px;
-      height:18px;
-      border-radius:999px;
-      display:grid;
-      place-items:center;
-      background:rgba(255,255,255,.18);
-      border:1px solid rgba(255,255,255,.20);
-      color:#fff;
-      font-size:12px;
-      flex:0 0 auto;
-    }
-
-    .stats{
-      display:grid;
-      grid-template-columns:repeat(4,1fr);
-      gap:14px;
-    }
-
-    .stat{
-      padding:18px;
-      border-radius:20px;
-      background:#fff;
-      border:1px solid var(--line);
-      box-shadow:var(--shadow-sm);
-    }
-
-    .stat strong{
-      display:block;
-      font-size:24px;
-      letter-spacing:-.4px;
-      margin-bottom:4px;
-    }
-
-    .stat span{
-      color:var(--muted2);
-      font-size:13px;
-      font-weight:800;
-    }
-
-    @media (max-width:900px){
-      .stats{grid-template-columns:repeat(2,1fr)}
-    }
-
-    @media (max-width:560px){
-      .stats{grid-template-columns:1fr}
-    }
-
-    .grid{
-      display:grid;
-      grid-template-columns:repeat(12,1fr);
-      gap:14px;
-    }
-
-    .card{
-      grid-column:span 12;
-      padding:18px;
-      border-radius:24px;
-      background:#fff;
-      border:1px solid var(--line);
-      box-shadow:var(--shadow-sm);
-    }
-
-    .card h3{
-      margin:0 0 8px;
-      font-size:19px;
-      letter-spacing:-.25px;
-    }
-
-    .card p{
-      margin:0;
-      color:var(--muted);
-      font-size:14px;
-      font-weight:750;
-    }
-
-    .tags{
-      display:flex;
-      flex-wrap:wrap;
-      gap:8px;
-      margin-top:14px;
-    }
-
-    .tag{
-      padding:7px 10px;
-      border-radius:999px;
-      border:1px solid var(--line);
-      background:rgba(11,91,211,.06);
-      font-size:12px;
-      font-weight:950;
-      color:rgba(12,20,36,.76);
-    }
-
-    @media (min-width:760px){
-      .card{grid-column:span 6}
-    }
-
-    @media (min-width:1040px){
-      .card{grid-column:span 4}
-    }
-
-    .featureGrid{
-      display:grid;
-      gap:14px;
-      grid-template-columns:repeat(3,1fr);
-    }
-
-    .feature{
-      padding:18px;
-      border-radius:22px;
-      background:#fff;
-      border:1px solid var(--line);
-      box-shadow:var(--shadow-sm);
-    }
-
-    .featureIcon{
-      width:42px;
-      height:42px;
-      border-radius:14px;
-      display:grid;
-      place-items:center;
-      background:linear-gradient(135deg, rgba(11,91,211,.12), rgba(244,197,66,.24));
-      border:1px solid rgba(11,91,211,.10);
-      font-weight:1100;
-      margin-bottom:12px;
-    }
-
-    .feature h3{
-      margin:0 0 6px;
-      font-size:18px;
-      letter-spacing:-.25px;
-    }
-
-    .feature p{
-      margin:0;
-      color:var(--muted);
-      font-size:14px;
-      font-weight:750;
-    }
-
-    @media (max-width:980px){
-      .featureGrid{grid-template-columns:1fr}
-    }
-
-    .steps{
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:14px;
-    }
-
-    .step{
-      padding:18px;
-      border-radius:22px;
-      background:#fff;
-      border:1px solid var(--line);
-      box-shadow:var(--shadow-sm);
-    }
-
-    .stepNo{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      width:34px;
-      height:34px;
-      border-radius:999px;
-      background:linear-gradient(135deg,var(--blue),var(--blue2));
-      color:#fff;
-      font-weight:1100;
-      font-size:14px;
-      margin-bottom:12px;
-    }
-
-    .step h3{
-      margin:0 0 6px;
-      font-size:18px;
-    }
-
-    .step p{
-      margin:0;
-      color:var(--muted);
-      font-size:14px;
-      font-weight:750;
-    }
-
-    @media (max-width:900px){
-      .steps{grid-template-columns:1fr}
-    }
-
-    .gallery{
-      display:grid;
-      grid-template-columns:repeat(12,1fr);
-      gap:14px;
-    }
-
-    figure.gItem{
-      margin:0;
-      grid-column:span 12;
-      aspect-ratio:16/10;
-      border-radius:24px;
-      overflow:hidden;
-      border:1px solid var(--line);
-      background:#fff;
-      box-shadow:var(--shadow-sm);
-      position:relative;
-    }
-
-    .gLink{
-      display:block;
-      width:100%;
-      height:100%;
-    }
-
-    .gItem img{
-      width:100%;
-      height:100%;
-      object-fit:cover;
-      transition:transform .18s ease;
-    }
-
-    .gItem:hover img{transform:scale(1.04)}
-
-    .gBadge{
-      position:absolute;
-      left:12px;
-      bottom:12px;
-      padding:8px 10px;
-      border-radius:999px;
-      background:rgba(255,255,255,.88);
-      border:1px solid rgba(12,20,36,.12);
-      box-shadow:0 12px 22px rgba(12,20,36,.10);
-      font-size:12px;
-      font-weight:950;
-      color:rgba(12,20,36,.86);
-    }
-
-    @media (min-width:760px){
-      figure.gItem{grid-column:span 6}
-    }
-
-    @media (min-width:1040px){
-      figure.gItem{grid-column:span 3}
-    }
-
-    .quoteBanner{
-      padding:22px;
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      gap:16px;
-      flex-wrap:wrap;
-      background:linear-gradient(135deg, rgba(11,91,211,.98), rgba(8,72,169,.96));
-      color:#fff;
-      border-radius:26px;
-      box-shadow:0 20px 50px rgba(11,91,211,.18);
-    }
-
-    .quoteBanner h3{
-      margin:0 0 6px;
-      font-size:28px;
-      line-height:1.08;
-      letter-spacing:-.5px;
-    }
-
-    .quoteBanner p{
-      margin:0;
-      max-width:62ch;
-      color:rgba(255,255,255,.86);
-      font-weight:800;
-      font-size:14px;
-    }
-
-    .twoCol{
-      display:grid;
-      gap:14px;
-      grid-template-columns:1fr;
-    }
-
-    .box{padding:20px}
-
-    .list{
-      list-style:none;
-      margin:12px 0 0;
-      padding:0;
-      display:grid;
-      gap:10px;
-    }
-
-    .list li{
-      display:flex;
-      gap:10px;
-      align-items:flex-start;
-      color:var(--muted);
-      font-size:14px;
-      font-weight:800;
-    }
-
-    .dot{
-      width:9px;
-      height:9px;
-      border-radius:999px;
-      margin-top:7px;
-      flex:0 0 auto;
-      background:linear-gradient(135deg, var(--blue), rgba(11,91,211,.60));
-      box-shadow:0 0 0 4px rgba(11,91,211,.10);
-    }
-
-    .contactCard{
-      margin-top:16px;
-      padding:16px;
-      border-radius:18px;
-      background:rgba(244,197,66,.14);
-      border:1px solid rgba(244,197,66,.40);
-    }
-
-    .contactCard p{
-      margin:0;
-      font-size:14px;
-      color:rgba(12,20,36,.82);
-      font-weight:850;
-    }
-
-    .contactCard p + p{
-      margin-top:8px;
-      color:var(--muted);
-    }
-
-    .faqGrid{
-      display:grid;
-      gap:14px;
-      grid-template-columns:repeat(2,1fr);
-    }
-
-    details.faq{
-      background:#fff;
-      border:1px solid var(--line);
-      border-radius:20px;
-      box-shadow:var(--shadow-sm);
-      padding:16px 18px;
-    }
-
-    .faq summary{
-      cursor:pointer;
-      font-weight:1000;
-      list-style:none;
-    }
-
-    .faq summary::-webkit-details-marker{display:none}
-
-    .faq p{
-      margin:10px 0 0;
-      color:var(--muted);
-      font-size:14px;
-      font-weight:750;
-    }
-
-    @media (max-width:920px){
-      .faqGrid{grid-template-columns:1fr}
-    }
-
-    footer{
-      padding:28px 0 40px;
-      border-top:1px solid var(--line);
-      color:var(--muted2);
-      font-weight:800;
-    }
-
-    .footRow{
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      gap:14px;
-      flex-wrap:wrap;
-    }
-
-    .footLinks{
-      display:flex;
-      flex-wrap:wrap;
-      gap:10px;
-    }
-
-    .footLinks a{
-      padding:10px 14px;
-      border-radius:999px;
-      border:1px solid var(--line);
-      background:#fff;
-      box-shadow:0 10px 18px rgba(12,20,36,.05);
-      font-size:13px;
-      font-weight:1000;
-      color:rgba(12,20,36,.74);
-    }
-
-    .sticky{
-      position:fixed;
-      left:0;
-      right:0;
-      bottom:14px;
-      display:flex;
-      justify-content:center;
-      z-index:70;
-      pointer-events:none;
-    }
-
-    .sticky a{
-      pointer-events:auto;
-      display:inline-flex;
-      align-items:center;
-      gap:10px;
-      padding:14px 18px;
-      border-radius:999px;
-      background:linear-gradient(135deg, rgba(37,211,102,.98), rgba(37,211,102,.84));
-      color:#06220f;
-      font-weight:1100;
-      border:1px solid rgba(37,211,102,.35);
-      box-shadow:0 22px 50px rgba(12,20,36,.18);
-    }
-
-    .lb{
-      position:fixed;
-      inset:0;
-      display:none;
-      align-items:center;
-      justify-content:center;
-      background:rgba(12,20,36,.74);
-      backdrop-filter:blur(6px);
-      z-index:200;
-      padding:18px;
-    }
-
-    .lb.open{display:flex}
-
-    .lbInner{
-      width:min(1100px,96vw);
-      max-height:86vh;
-      position:relative;
-      border-radius:18px;
-      overflow:hidden;
-      border:1px solid rgba(255,255,255,.14);
-      box-shadow:0 30px 70px rgba(0,0,0,.35);
-      background:rgba(0,0,0,.2);
-    }
-
-    .lbImg{
-      width:100%;
-      height:100%;
-      max-height:86vh;
-      object-fit:contain;
-      background:rgba(0,0,0,.2);
-    }
-
-    .lbClose{
-      position:absolute;
-      top:10px;
-      right:10px;
-      width:44px;
-      height:44px;
-      border-radius:14px;
-      border:1px solid rgba(255,255,255,.18);
-      background:rgba(255,255,255,.12);
-      color:#fff;
-      font-weight:1100;
-      cursor:pointer;
-      backdrop-filter:blur(10px);
-    }
-
-    .lbHint{
-      position:absolute;
-      left:12px;
-      bottom:12px;
-      padding:8px 10px;
-      border-radius:999px;
-      border:1px solid rgba(255,255,255,.16);
-      background:rgba(255,255,255,.10);
-      color:rgba(255,255,255,.88);
-      font-size:12px;
-      font-weight:900;
-      backdrop-filter:blur(10px);
-    }
-  </style>
-
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"CleaningService",
-    "name":"Swift Cleaning Service",
-    "url":"https://swiftcleaning.je/",
-    "image":"https://swiftcleaning.je/hero.jpg",
-    "telephone":"+447700335389",
-    "areaServed":{
-      "@type":"Place",
-      "name":"Jersey, Channel Islands"
-    },
-    "sameAs":[
-      "https://www.facebook.com/share/181zrn8D8R/"
-    ],
-    "serviceType":[
-      "Commercial Cleaning",
-      "Carpet Cleaning",
-      "Upholstery Cleaning",
-      "Window Cleaning"
-    ]
-  }
-  </script>
-
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"FAQPage",
-    "mainEntity":[
-      {
-        "@type":"Question",
-        "name":"Do you provide commercial cleaning across Jersey?",
-        "acceptedAnswer":{
-          "@type":"Answer",
-          "text":"Yes. Swift Cleaning Service works across Jersey and focuses on commercial cleaning, carpets and upholstery, and window cleaning."
-        }
-      },
-      {
-        "@type":"Question",
-        "name":"How can I get a quote?",
-        "acceptedAnswer":{
-          "@type":"Answer",
-          "text":"The fastest way is by WhatsApp. Send the service you need, your location, and your preferred date and time, and we will confirm availability and quote."
-        }
-      },
-      {
-        "@type":"Question",
-        "name":"Do you offer one-off and regular cleaning?",
-        "acceptedAnswer":{
-          "@type":"Answer",
-          "text":"Yes. Depending on the service, both regular and one-off cleaning can be arranged."
-        }
-      },
-      {
-        "@type":"Question",
-        "name":"Is end of tenancy cleaning available?",
-        "acceptedAnswer":{
-          "@type":"Answer",
-          "text":"Yes, end of tenancy cleaning is available occasionally and depends on scheduling and availability."
-        }
-      }
-    ]
-  }
-  </script>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<meta name="theme-color" content="#0B5BD3" />
+<meta name="color-scheme" content="light" />
+<meta name="robots" content="index,follow,max-image-preview:large" />
+<title>Commercial Cleaning Jersey | Swift Cleaning Service</title>
+<meta name="description" content="Swift Cleaning Service provides commercial cleaning, carpet and upholstery cleaning, and window cleaning across Jersey. Fully insured, reliable service, and fast quotes via WhatsApp." />
+<link rel="canonical" href="https://swiftcleaning.je/" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_GB" />
+<meta property="og:title" content="Commercial Cleaning Jersey | Swift Cleaning Service" />
+<meta property="og:description" content="Commercial cleaning, carpet and upholstery cleaning, and window cleaning across Jersey. Fully insured. Fast quotes via WhatsApp." />
+<meta property="og:url" content="https://swiftcleaning.je/" />
+<meta property="og:image" content="https://swiftcleaning.je/hero.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Commercial Cleaning Jersey | Swift Cleaning Service" />
+<meta name="twitter:description" content="Commercial cleaning, carpet and upholstery cleaning, and window cleaning across Jersey. Fully insured." />
+<meta name="twitter:image" content="https://swiftcleaning.je/hero.jpg" />
+<link rel="preload" as="image" href="hero.jpg" />
+<link rel="preload" as="image" href="logo-gold.png" />
+<style>
+/* --- VARIABLES --- */
+:root{
+--bg:#f5f8fc;
+--card:#ffffff;
+--text:#0c1424;
+--muted:rgba(12,20,36,.72);
+--muted2:rgba(12,20,36,.56);
+--line:rgba(12,20,36,.10);
+--blue:#0B5BD3;
+--blue2:#0848a9;
+--gold:#F4C542;
+--gold2:#D4AF37;
+--green:#25D366;
+--green2:#1da851;
+--radius:24px;
+--radius-sm:16px;
+--max:1160px;
+--shadow:0 20px 50px rgba(12,20,36,.08);
+--shadow-sm:0 10px 24px rgba(12,20,36,.07);
+--shadow-lg:0 30px 70px rgba(12,20,36,.12);
+--shadow-glow:0 0 30px rgba(11,91,211,.15);
+--transition:all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* --- RESET & BASE --- */
+*{box-sizing:border-box}
+html{scroll-behavior:smooth; scroll-padding-top: 100px;}
+body{
+margin:0;
+font-family:ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+color:var(--text);
+background:
+radial-gradient(900px 520px at 8% -10%, rgba(11,91,211,.10), transparent 60%),
+radial-gradient(760px 420px at 92% 0%, rgba(244,197,66,.13), transparent 55%),
+var(--bg);
+line-height:1.55;
+-webkit-font-smoothing:antialiased;
+-moz-osx-font-smoothing:grayscale;
+overflow-x: hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none; transition: var(--transition);}
+button{font-family: inherit;}
+
+/* --- UTILITIES --- */
+.wrap{max-width:var(--max);margin:0 auto;padding:0 18px}
+.panel{
+background:var(--card);
+border:1px solid var(--line);
+border-radius:var(--radius);
+box-shadow:var(--shadow);
+transition: var(--transition);
+}
+.panel:hover{transform: translateY(-4px); box-shadow: var(--shadow-lg);}
+
+/* --- HEADER & NAV --- */
+.topbar{
+position:sticky;
+top:0;
+z-index:90;
+background:rgba(245,248,252,.92);
+backdrop-filter:blur(16px);
+-webkit-backdrop-filter:blur(16px);
+border-bottom:1px solid var(--line);
+transition: var(--transition);
+}
+.nav{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:16px;
+padding:12px 0;
+}
+.brand{
+display:flex;
+align-items:center;
+gap:14px;
+min-width:0;
+}
+.logoBox{
+width:62px;
+height:62px;
+border-radius:18px;
+background:#fff;
+border:1px solid var(--line);
+box-shadow:var(--shadow-sm);
+display:grid;
+place-items:center;
+overflow:hidden;
+flex:0 0 auto;
+transition: var(--transition);
+}
+.logoBox:hover{box-shadow: var(--shadow);}
+.logoBox img{
+width:100%;
+height:100%;
+object-fit:contain;
+padding:8px;
+}
+.brandText{
+display:flex;
+flex-direction:column;
+line-height:1.06;
+}
+.brandText strong{
+font-size:14px;
+font-weight:1000;
+letter-spacing:.5px;
+}
+.brandText span{
+font-size:12px;
+font-weight:800;
+color:var(--muted2);
+}
+.navRight{
+display:flex;
+align-items:center;
+gap:12px;
+}
+.navLinks{
+display:flex;
+align-items:center;
+gap:8px;
+padding:6px;
+border-radius:999px;
+background:rgba(255,255,255,.72);
+border:1px solid var(--line);
+box-shadow:0 10px 20px rgba(12,20,36,.05);
+}
+.navLinks a{
+padding:10px 14px;
+border-radius:999px;
+font-size:13px;
+font-weight:950;
+color:rgba(12,20,36,.78);
+transition: var(--transition);
+}
+.navLinks a:hover{
+background:rgba(11,91,211,.08);
+color:rgba(12,20,36,.94);
+}
+.btn,
+.cta{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+gap:10px;
+border-radius:999px;
+font-weight:1000;
+white-space:nowrap;
+transition: var(--transition);
+cursor: pointer;
+border: none;
+}
+.btn:hover,
+.cta:hover{
+transform:translateY(-2px);
+}
+.cta{
+padding:12px 16px;
+background:linear-gradient(135deg, rgba(37,211,102,.98), rgba(37,211,102,.84));
+color:#06220f;
+border:1px solid rgba(37,211,102,.35);
+box-shadow:0 18px 36px rgba(12,20,36,.12);
+}
+.cta:hover{box-shadow:0 22px 44px rgba(37,211,102,.20);}
+.waDot{
+width:10px;
+height:10px;
+border-radius:999px;
+background:var(--green);
+box-shadow:0 0 0 4px rgba(37,211,102,.16);
+flex:0 0 auto;
+}
+.menuBtn{
+display:none;
+padding:10px 12px;
+border-radius:14px;
+border:1px solid var(--line);
+background:#fff;
+font-weight:1000;
+box-shadow:0 10px 20px rgba(12,20,36,.05);
+cursor:pointer;
+transition: var(--transition);
+}
+.menuBtn:hover{background: var(--bg);}
+
+/* --- MOBILE DRAWER --- */
+.drawerOverlay{
+position:fixed;
+inset:0;
+background:rgba(12,20,36,.38);
+backdrop-filter:blur(6px);
+opacity:0;
+pointer-events:none;
+transition:opacity .3s ease;
+z-index:98;
+}
+.drawer{
+position:fixed;
+top:0;
+right:0;
+height:100%;
+width:min(360px,92vw);
+background:rgba(255,255,255,.98);
+backdrop-filter:blur(18px);
+border-left:1px solid var(--line);
+box-shadow:-18px 0 50px rgba(12,20,36,.16);
+transform:translateX(110%);
+transition:transform .3s cubic-bezier(0.4, 0, 0.2, 1);
+z-index:99;
+display:flex;
+flex-direction:column;
+gap:12px;
+padding:16px;
+}
+.drawerTop{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:12px;
+padding:6px 2px 12px;
+border-bottom:1px solid var(--line);
+}
+.closeBtn{
+width:44px;
+height:44px;
+border-radius:14px;
+border:1px solid var(--line);
+background:#fff;
+font-weight:1000;
+cursor:pointer;
+transition: var(--transition);
+}
+.closeBtn:hover{background: var(--bg);}
+.drawerNav{
+display:grid;
+gap:10px;
+}
+.drawerNav a{
+padding:14px;
+border-radius:16px;
+border:1px solid var(--line);
+background:#fff;
+font-weight:1000;
+box-shadow:var(--shadow-sm);
+transition: var(--transition);
+}
+.drawerNav a:hover{background: var(--bg); transform: translateX(4px);}
+.drawerCtas{
+display:grid;
+gap:10px;
+margin-top:auto;
+}
+.drawerCtas a{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:10px;
+padding:14px 16px;
+border-radius:999px;
+border:1px solid var(--line);
+background:#fff;
+font-weight:1000;
+box-shadow:var(--shadow-sm);
+transition: var(--transition);
+}
+.drawerCtas a:hover{transform: translateY(-2px);}
+.drawerCtas a.primary{
+background:linear-gradient(135deg, rgba(37,211,102,.98), rgba(37,211,102,.84));
+border-color:rgba(37,211,102,.35);
+color:#06220f;
+}
+body.menuOpen{overflow:hidden}
+body.menuOpen .drawerOverlay{opacity:1;pointer-events:auto}
+body.menuOpen .drawer{transform:translateX(0)}
+
+@media (max-width:980px){
+.navLinks,.cta.desktop-only{display:none}
+.menuBtn{display:inline-flex}
+}
+
+/* --- MAIN CONTENT --- */
+main{padding-bottom:92px}
+section{padding:28px 0}
+.sectionHead{
+display:flex;
+justify-content:space-between;
+align-items:flex-end;
+gap:14px;
+margin-bottom:16px;
+flex-wrap: wrap;
+}
+.sectionHead h2{
+margin:0;
+font-size:30px;
+letter-spacing:-.5px;
+}
+.sectionHead p{
+margin:0;
+max-width:64ch;
+color:var(--muted2);
+font-weight:700;
+font-size:14px;
+}
+
+/* --- HERO --- */
+.hero{padding:18px 0 8px}
+.heroGrid{
+display:grid;
+grid-template-columns:1.1fr .9fr;
+gap:16px;
+align-items:stretch;
+}
+@media (max-width:980px){
+.heroGrid{grid-template-columns:1fr}
+}
+.heroCopy{
+padding:26px;
+display:grid;
+gap:14px;
+}
+.kicker{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+align-items:center;
+}
+.pill{
+padding:8px 12px;
+border-radius:999px;
+border:1px solid var(--line);
+background:rgba(11,91,211,.06);
+color:rgba(12,20,36,.78);
+font-size:12px;
+font-weight:950;
+transition: var(--transition);
+}
+.pill:hover{background: rgba(11,91,211,.10);}
+.pill.gold{
+background:linear-gradient(135deg, var(--gold), rgba(244,197,66,.60));
+border-color:rgba(244,197,66,.40);
+color:#10151f;
+}
+h1{
+margin:0;
+font-size:clamp(32px,4.8vw,50px);
+line-height:1.04;
+letter-spacing:-.9px;
+}
+.lead{
+margin:0;
+color:var(--muted);
+font-size:16px;
+max-width:68ch;
+}
+.heroBullets{
+display:grid;
+grid-template-columns:repeat(2,minmax(0,1fr));
+gap:10px;
+margin-top:2px;
+}
+.heroBullets .b{
+display:flex;
+gap:10px;
+align-items:flex-start;
+padding:12px 14px;
+border-radius:16px;
+background:rgba(11,91,211,.05);
+border:1px solid rgba(11,91,211,.10);
+font-size:14px;
+font-weight:850;
+color:rgba(12,20,36,.78);
+transition: var(--transition);
+}
+.heroBullets .b:hover{background: rgba(11,91,211,.08);}
+.heroBullets .b span:first-child{
+color:var(--blue);
+font-weight:1100;
+}
+@media (max-width:640px){
+.heroBullets{grid-template-columns:1fr}
+}
+.btnRow{
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+margin-top:4px;
+}
+.btn{
+padding:14px 18px;
+background:#fff;
+border:1px solid var(--line);
+color:rgba(12,20,36,.92);
+box-shadow:0 14px 30px rgba(12,20,36,.08);
+}
+.btnBlue{
+background:linear-gradient(135deg, var(--blue), var(--blue2));
+border-color:rgba(11,91,211,.35);
+color:#fff;
+}
+.btnBlue:hover{box-shadow: var(--shadow-glow);}
+.btnGreen{
+background:linear-gradient(135deg, rgba(37,211,102,.98), rgba(37,211,102,.84));
+border-color:rgba(37,211,102,.35);
+color:#06220f;
+}
+.btnGreen:hover{box-shadow:0 18px 40px rgba(37,211,102,.25);}
+.micro{
+margin:0;
+font-size:13px;
+color:var(--muted2);
+font-weight:800;
+}
+.heroMedia{
+min-height:420px;
+border-radius:var(--radius);
+border:1px solid var(--line);
+box-shadow:var(--shadow);
+overflow:hidden;
+position:relative;
+background:url("hero.jpg") center/cover no-repeat;
+display:grid;
+align-content:end;
+transition: var(--transition);
+}
+.heroMedia:hover{box-shadow: var(--shadow-lg);}
+.heroMedia::after{
+content:"";
+position:absolute;
+inset:0;
+background:linear-gradient(to top, rgba(12,20,36,.68), rgba(12,20,36,.10) 58%, rgba(255,255,255,0) 100%);
+}
+.heroMediaInner{
+position:relative;
+z-index:1;
+padding:20px;
+display:grid;
+gap:12px;
+}
+.heroMiniTitle{
+color:#fff;
+font-weight:1100;
+font-size:22px;
+line-height:1.14;
+letter-spacing:-.2px;
+text-shadow:0 12px 28px rgba(0,0,0,.25);
+}
+.heroMiniText{
+color:rgba(255,255,255,.88);
+font-weight:800;
+font-size:13px;
+text-shadow:0 12px 28px rgba(0,0,0,.20);
+}
+.trustRow{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+}
+.trustCard{
+display:flex;
+align-items:center;
+gap:10px;
+padding:10px 12px;
+border-radius:16px;
+border:1px solid rgba(255,255,255,.18);
+background:rgba(255,255,255,.12);
+backdrop-filter:blur(10px);
+color:rgba(255,255,255,.94);
+font-size:12px;
+font-weight:950;
+box-shadow:0 12px 24px rgba(0,0,0,.10);
+transition: var(--transition);
+}
+.trustCard:hover{background: rgba(255,255,255,.18);}
+.tick{
+width:18px;
+height:18px;
+border-radius:999px;
+display:grid;
+place-items:center;
+background:rgba(255,255,255,.18);
+border:1px solid rgba(255,255,255,.20);
+color:#fff;
+font-size:12px;
+flex:0 0 auto;
+}
+
+/* --- STATS --- */
+.stats{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:14px;
+}
+.stat{
+padding:18px;
+border-radius:20px;
+background:#fff;
+border:1px solid var(--line);
+box-shadow:var(--shadow-sm);
+transition: var(--transition);
+text-align: center;
+}
+.stat:hover{transform: translateY(-4px); box-shadow: var(--shadow);}
+.stat strong{
+display:block;
+font-size:24px;
+letter-spacing:-.4px;
+margin-bottom:4px;
+color: var(--blue);
+}
+.stat span{
+color:var(--muted2);
+font-size:13px;
+font-weight:800;
+}
+@media (max-width:900px){
+.stats{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:560px){
+.stats{grid-template-columns:1fr}
+}
+
+/* --- SERVICES GRID --- */
+.grid{
+display:grid;
+grid-template-columns:repeat(12,1fr);
+gap:14px;
+}
+.card{
+grid-column:span 12;
+padding:18px;
+border-radius:24px;
+background:#fff;
+border:1px solid var(--line);
+box-shadow:var(--shadow-sm);
+transition: var(--transition);
+}
+.card:hover{transform: translateY(-4px); box-shadow: var(--shadow); border-color: var(--blue);}
+.card h3{
+margin:0 0 8px;
+font-size:19px;
+letter-spacing:-.25px;
+}
+.card p{
+margin:0;
+color:var(--muted);
+font-size:14px;
+font-weight:750;
+}
+.tags{
+display:flex;
+flex-wrap:wrap;
+gap:8px;
+margin-top:14px;
+}
+.tag{
+padding:7px 10px;
+border-radius:999px;
+border:1px solid var(--line);
+background:rgba(11,91,211,.06);
+font-size:12px;
+font-weight:950;
+color:rgba(12,20,36,.76);
+transition: var(--transition);
+}
+.tag:hover{background: rgba(11,91,211,.10);}
+@media (min-width:760px){
+.card{grid-column:span 6}
+}
+@media (min-width:1040px){
+.card{grid-column:span 4}
+}
+
+/* --- FEATURES --- */
+.featureGrid{
+display:grid;
+gap:14px;
+grid-template-columns:repeat(3,1fr);
+}
+.feature{
+padding:18px;
+border-radius:22px;
+background:#fff;
+border:1px solid var(--line);
+box-shadow:var(--shadow-sm);
+transition: var(--transition);
+}
+.feature:hover{transform: translateY(-4px); box-shadow: var(--shadow);}
+.featureIcon{
+width:42px;
+height:42px;
+border-radius:14px;
+display:grid;
+place-items:center;
+background:linear-gradient(135deg, rgba(11,91,211,.12), rgba(244,197,66,.24));
+border:1px solid rgba(11,91,211,.10);
+font-weight:1100;
+margin-bottom:12px;
+}
+.feature h3{
+margin:0 0 6px;
+font-size:18px;
+letter-spacing:-.25px;
+}
+.feature p{
+margin:0;
+color:var(--muted);
+font-size:14px;
+font-weight:750;
+}
+@media (max-width:980px){
+.featureGrid{grid-template-columns:1fr}
+}
+
+/* --- STEPS --- */
+.steps{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:14px;
+}
+.step{
+padding:18px;
+border-radius:22px;
+background:#fff;
+border:1px solid var(--line);
+box-shadow:var(--shadow-sm);
+transition: var(--transition);
+}
+.step:hover{transform: translateY(-4px); box-shadow: var(--shadow);}
+.stepNo{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+width:34px;
+height:34px;
+border-radius:999px;
+background:linear-gradient(135deg,var(--blue),var(--blue2));
+color:#fff;
+font-weight:1100;
+font-size:14px;
+margin-bottom:12px;
+}
+.step h3{
+margin:0 0 6px;
+font-size:18px;
+}
+.step p{
+margin:0;
+color:var(--muted);
+font-size:14px;
+font-weight:750;
+}
+@media (max-width:900px){
+.steps{grid-template-columns:1fr}
+}
+
+/* --- GALLERY --- */
+.gallery{
+display:grid;
+grid-template-columns:repeat(12,1fr);
+gap:14px;
+}
+figure.gItem{
+margin:0;
+grid-column:span 12;
+aspect-ratio:16/10;
+border-radius:24px;
+overflow:hidden;
+border:1px solid var(--line);
+background:#fff;
+box-shadow:var(--shadow-sm);
+position:relative;
+}
+.gLink{
+display:block;
+width:100%;
+height:100%;
+}
+.gItem img{
+width:100%;
+height:100%;
+object-fit:cover;
+transition:transform .5s ease;
+}
+.gItem:hover img{transform:scale(1.06)}
+.gBadge{
+position:absolute;
+left:12px;
+bottom:12px;
+padding:8px 10px;
+border-radius:999px;
+background:rgba(255,255,255,.88);
+border:1px solid rgba(12,20,36,.12);
+box-shadow:0 12px 22px rgba(12,20,36,.10);
+font-size:12px;
+font-weight:950;
+color:rgba(12,20,36,.86);
+transition: var(--transition);
+}
+.gItem:hover .gBadge{transform: translateY(-2px);}
+@media (min-width:760px){
+figure.gItem{grid-column:span 6}
+}
+@media (min-width:1040px){
+figure.gItem{grid-column:span 3}
+}
+
+/* --- QUOTE BANNER --- */
+.quoteBanner{
+padding:22px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:16px;
+flex-wrap:wrap;
+background:linear-gradient(135deg, rgba(11,91,211,.98), rgba(8,72,169,.96));
+color:#fff;
+border-radius:26px;
+box-shadow:0 20px 50px rgba(11,91,211,.18);
+transition: var(--transition);
+}
+.quoteBanner:hover{box-shadow:0 25px 60px rgba(11,91,211,.25);}
+.quoteBanner h3{
+margin:0 0 6px;
+font-size:28px;
+line-height:1.08;
+letter-spacing:-.5px;
+}
+.quoteBanner p{
+margin:0;
+max-width:62ch;
+color:rgba(255,255,255,.86);
+font-weight:800;
+font-size:14px;
+}
+
+/* --- CONTACT --- */
+.twoCol{
+display:grid;
+gap:14px;
+grid-template-columns:1fr;
+}
+.box{padding:20px}
+.list{
+list-style:none;
+margin:12px 0 0;
+padding:0;
+display:grid;
+gap:10px;
+}
+.list li{
+display:flex;
+gap:10px;
+align-items:flex-start;
+color:var(--muted);
+font-size:14px;
+font-weight:800;
+}
+.dot{
+width:9px;
+height:9px;
+border-radius:999px;
+margin-top:7px;
+flex:0 0 auto;
+background:linear-gradient(135deg, var(--blue), rgba(11,91,211,.60));
+box-shadow:0 0 0 4px rgba(11,91,211,.10);
+}
+.contactCard{
+margin-top:16px;
+padding:16px;
+border-radius:18px;
+background:rgba(244,197,66,.14);
+border:1px solid rgba(244,197,66,.40);
+transition: var(--transition);
+}
+.contactCard:hover{background:rgba(244,197,66,.20);}
+.contactCard p{
+margin:0;
+font-size:14px;
+color:rgba(12,20,36,.82);
+font-weight:850;
+}
+.contactCard p + p{
+margin-top:8px;
+color:var(--muted);
+}
+
+/* --- FAQ --- */
+.faqGrid{
+display:grid;
+gap:14px;
+grid-template-columns:repeat(2,1fr);
+}
+details.faq{
+background:#fff;
+border:1px solid var(--line);
+border-radius:20px;
+box-shadow:var(--shadow-sm);
+padding:16px 18px;
+transition: var(--transition);
+}
+details.faq[open]{border-color: var(--blue); box-shadow: var(--shadow-glow);}
+.faq summary{
+cursor:pointer;
+font-weight:1000;
+list-style:none;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after { content: '+'; font-size: 20px; color: var(--blue); font-weight: 300; }
+details.faq[open] summary::after { content: '-'; }
+.faq p{
+margin:10px 0 0;
+color:var(--muted);
+font-size:14px;
+font-weight:750;
+}
+@media (max-width:920px){
+.faqGrid{grid-template-columns:1fr}
+}
+
+/* --- FOOTER --- */
+footer{
+padding:28px 0 40px;
+border-top:1px solid var(--line);
+color:var(--muted2);
+font-weight:800;
+background: #fff;
+}
+.footRow{
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:14px;
+flex-wrap:wrap;
+}
+.footLinks{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+}
+.footLinks a{
+padding:10px 14px;
+border-radius:999px;
+border:1px solid var(--line);
+background:#fff;
+box-shadow:0 10px 18px rgba(12,20,36,.05);
+font-size:13px;
+font-weight:1000;
+color:rgba(12,20,36,.74);
+transition: var(--transition);
+}
+.footLinks a:hover{border-color: var(--blue); color: var(--blue); transform: translateY(-2px);}
+
+/* --- STICKY CTA --- */
+.sticky{
+position:fixed;
+left:0;
+right:0;
+bottom:14px;
+display:flex;
+justify-content:center;
+z-index:70;
+pointer-events:none;
+}
+.sticky a{
+pointer-events:auto;
+display:inline-flex;
+align-items:center;
+gap:10px;
+padding:14px 18px;
+border-radius:999px;
+background:linear-gradient(135deg, rgba(37,211,102,.98), rgba(37,211,102,.84));
+color:#06220f;
+font-weight:1100;
+border:1px solid rgba(37,211,102,.35);
+box-shadow:0 22px 50px rgba(12,20,36,.18);
+transition: var(--transition);
+}
+.sticky a:hover{transform: translateY(-4px); box-shadow:0 28px 60px rgba(37,211,102,.25);}
+
+/* --- LIGHTBOX --- */
+.lb{
+position:fixed;
+inset:0;
+display:none;
+align-items:center;
+justify-content:center;
+background:rgba(12,20,36,.74);
+backdrop-filter:blur(6px);
+z-index:200;
+padding:18px;
+opacity: 0;
+transition: opacity 0.3s ease;
+}
+.lb.open{display:flex; opacity: 1;}
+.lbInner{
+width:min(1100px,96vw);
+max-height:86vh;
+position:relative;
+border-radius:18px;
+overflow:hidden;
+border:1px solid rgba(255,255,255,.14);
+box-shadow:0 30px 70px rgba(0,0,0,.35);
+background:rgba(0,0,0,.2);
+}
+.lbImg{
+width:100%;
+height:100%;
+max-height:86vh;
+object-fit:contain;
+background:rgba(0,0,0,.2);
+}
+.lbClose{
+position:absolute;
+top:10px;
+right:10px;
+width:44px;
+height:44px;
+border-radius:14px;
+border:1px solid rgba(255,255,255,.18);
+background:rgba(255,255,255,.12);
+color:#fff;
+font-weight:1100;
+cursor:pointer;
+backdrop-filter:blur(10px);
+transition: var(--transition);
+}
+.lbClose:hover{background: rgba(255,255,255,.20); transform: scale(1.1);}
+.lbHint{
+position:absolute;
+left:12px;
+bottom:12px;
+padding:8px 10px;
+border-radius:999px;
+border:1px solid rgba(255,255,255,.16);
+background:rgba(255,255,255,.10);
+color:rgba(255,255,255,.88);
+font-size:12px;
+font-weight:900;
+backdrop-filter:blur(10px);
+}
+
+/* --- BACK TO TOP --- */
+.backToTop {
+position: fixed; bottom: 100px; right: 24px;
+width: 44px; height: 44px; border-radius: 50%;
+background: var(--blue); color: #fff;
+border: none; box-shadow: var(--shadow-lg);
+cursor: pointer; z-index: 80;
+display: grid; place-items: center;
+opacity: 0; pointer-events: none; transform: translateY(20px);
+transition: var(--transition);
+font-size: 18px; font-weight: 700;
+}
+.backToTop.visible { opacity: 1; pointer-events: auto; transform: translateY(0); }
+.backToTop:hover { background: var(--blue2); transform: translateY(-4px); }
+
+/* --- ANIMATIONS --- */
+.fade-up { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.fade-up.visible { opacity: 1; transform: translateY(0); }
+
+/* --- FOCUS STATES --- */
+:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+</style>
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"CleaningService",
+"name":"Swift Cleaning Service",
+"url":"https://swiftcleaning.je/",
+"image":"https://swiftcleaning.je/hero.jpg",
+"telephone":"+447700335389",
+"areaServed":{
+"@type":"Place",
+"name":"Jersey, Channel Islands"
+},
+"sameAs":[
+"https://www.facebook.com/share/181zrn8D8R/"
+],
+"serviceType":[
+"Commercial Cleaning",
+"Carpet Cleaning",
+"Upholstery Cleaning",
+"Window Cleaning"
+]
+}
+</script>
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"FAQPage",
+"mainEntity":[
+{
+"@type":"Question",
+"name":"Do you provide commercial cleaning across Jersey?",
+"acceptedAnswer":{
+"@type":"Answer",
+"text":"Yes. Swift Cleaning Service works across Jersey and focuses on commercial cleaning, carpets and upholstery, and window cleaning."
+}
+},
+{
+"@type":"Question",
+"name":"How can I get a quote?",
+"acceptedAnswer":{
+"@type":"Answer",
+"text":"The fastest way is by WhatsApp. Send the service you need, your location, and your preferred date and time, and we will confirm availability and quote."
+}
+},
+{
+"@type":"Question",
+"name":"Do you offer one-off and regular cleaning?",
+"acceptedAnswer":{
+"@type":"Answer",
+"text":"Yes. Depending on the service, both regular and one-off cleaning can be arranged."
+}
+},
+{
+"@type":"Question",
+"name":"Is end of tenancy cleaning available?",
+"acceptedAnswer":{
+"@type":"Answer",
+"text":"Yes, end of tenancy cleaning is available occasionally and depends on scheduling and availability."
+}
+}
+]
+}
+</script>
 </head>
-
 <body>
-  <div class="topbar" id="top">
-    <div class="wrap">
-      <div class="nav">
-        <a class="brand" href="#top" aria-label="Swift Cleaning Service home">
-          <div class="logoBox">
-            <img src="logo-gold.png" alt="Swift Cleaning Service logo" width="64" height="64">
-          </div>
-          <div class="brandText">
-            <strong>SWIFT CLEANING SERVICE</strong>
-            <span>Jersey, Channel Islands</span>
-          </div>
-        </a>
-
-        <div class="navRight">
-          <nav class="navLinks" aria-label="Primary">
-            <a href="#services">Services</a>
-            <a href="#why-us">Why Us</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#faq">FAQ</a>
-            <a href="#contact">Contact</a>
-          </nav>
-
-          <a class="cta" href="https://wa.me/447700335389?text=Hi%20Swift%20Cleaning%20Service%2C%20please%20can%20I%20get%20a%20quote%3F%0A%0AService%3A%20%0ALocation%3A%20%0APreferred%20date%2Ftime%3A" target="_blank" rel="noopener">
-            <span class="waDot" aria-hidden="true"></span> WhatsApp for a quote
-          </a>
-
-          <button class="menuBtn" type="button" id="menuBtn" aria-label="Open menu" aria-expanded="false">Menu</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="drawerOverlay" id="drawerOverlay" aria-hidden="true"></div>
-
-  <aside class="drawer" id="drawer" aria-label="Mobile menu" aria-hidden="true">
-    <div class="drawerTop">
-      <strong>Swift Cleaning Service</strong>
-      <button class="closeBtn" type="button" id="closeBtn" aria-label="Close menu">✕</button>
-    </div>
-
-    <nav class="drawerNav" aria-label="Mobile navigation">
-      <a href="#services" data-close>Services</a>
-      <a href="#why-us" data-close>Why Us</a>
-      <a href="#gallery" data-close>Gallery</a>
-      <a href="#faq" data-close>FAQ</a>
-      <a href="#contact" data-close>Contact</a>
-    </nav>
-
-    <div class="drawerCtas">
-      <a class="primary" href="https://wa.me/447700335389?text=Hi%20Swift%20Cleaning%20Service%2C%20please%20can%20I%20get%20a%20quote%3F%0A%0AService%3A%20%0ALocation%3A%20%0APreferred%20date%2Ftime%3A" target="_blank" rel="noopener">
-        <span class="waDot" aria-hidden="true"></span> WhatsApp for a quote
-      </a>
-      <a href="tel:+447700335389">Call +44 7700 335389</a>
-      <a href="https://www.facebook.com/share/181zrn8D8R/" target="_blank" rel="noopener">Facebook</a>
-    </div>
-  </aside>
-
-  <main>
-    <section class="hero">
-      <div class="wrap">
-        <div class="heroGrid">
-          <div class="panel heroCopy">
-            <div class="kicker">
-              <span class="pill">Serving Jersey</span>
-              <span class="pill">Commercial Cleaning</span>
-              <span class="pill">Carpets & Upholstery</span>
-              <span class="pill">Window Cleaning</span>
-              <span class="pill gold">Fully insured</span>
-            </div>
-
-            <h1>Professional cleaning services across Jersey for businesses and properties.</h1>
-
-            <p class="lead">
-              Swift Cleaning Service provides reliable <strong>commercial cleaning</strong>, <strong>carpet and upholstery cleaning</strong>, and <strong>window cleaning</strong> across Jersey, Channel Islands. Clear communication, dependable service, and a professional finish.
-            </p>
-
-            <div class="heroBullets">
-              <div class="b"><span>✓</span><span>Fast quotes and straightforward communication</span></div>
-              <div class="b"><span>✓</span><span>Flexible service for commercial and property needs</span></div>
-              <div class="b"><span>✓</span><span>Professional standards and reliable attendance</span></div>
-              <div class="b"><span>✓</span><span>WhatsApp preferred for quick response</span></div>
-            </div>
-
-            <div class="btnRow">
-              <a class="btn btnGreen" href="https://wa.me/447700335389?text=Hi%20Swift%20Cleaning%20Service%2C%20please%20can%20I%20get%20a%20quote%3F%0A%0AService%3A%20%0ALocation%3A%20%0APreferred%20date%2Ftime%3A" target="_blank" rel="noopener">
-                <span class="waDot" aria-hidden="true"></span> Get a quote on WhatsApp
-              </a>
-              <a class="btn btnBlue" href="#services">View services</a>
-            </div>
-
-            <p class="micro">Commercial focus • Fast response • Professional finish</p>
-          </div>
-
-          <aside class="heroMedia" aria-label="Swift Cleaning Service hero image">
-            <div class="heroMediaInner">
-              <div class="heroMiniTitle">Reliable cleaning in Jersey for commercial and specialist needs.</div>
-              <div class="heroMiniText">Trusted presentation starts with clean spaces, clear standards, and consistent service.</div>
-
-              <div class="trustRow">
-                <div class="trustCard"><span class="tick">✓</span> Commercial-ready service</div>
-                <div class="trustCard"><span class="tick">✓</span> Fully insured</div>
-                <div class="trustCard"><span class="tick">✓</span> Window cleaning available</div>
-                <div class="trustCard"><span class="tick">✓</span> Jersey-wide coverage</div>
-              </div>
-            </div>
-          </aside>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="wrap">
-        <div class="stats">
-          <div class="stat">
-            <strong>Commercial</strong>
-            <span>Offices, shared areas and business premises</span>
-          </div>
-          <div class="stat">
-            <strong>Specialist</strong>
-            <span>Carpets, upholstery and selected specialist work</span>
-          </div>
-          <div class="stat">
-            <strong>Responsive</strong>
-            <span>Fastest contact and quote flow via WhatsApp</span>
-          </div>
-          <div class="stat">
-            <strong>Jersey</strong>
-            <span>Local service across Jersey, Channel Islands</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="services">
-      <div class="wrap">
-        <div class="sectionHead">
-          <div>
-            <h2>Services</h2>
-            <p>Clear service categories designed to help visitors understand quickly what you do and request a quote faster.</p>
-          </div>
-        </div>
-
-        <div class="grid">
-          <div class="card">
-            <h3>Office & Commercial Cleaning</h3>
-            <p>Regular or one-off cleaning for offices, business spaces, communal areas and commercial premises, tailored around access times and operational needs.</p>
-            <div class="tags">
-              <span class="tag">Contracts</span>
-              <span class="tag">After-hours</span>
-              <span class="tag">Custom schedules</span>
-            </div>
-          </div>
-
-          <div class="card">
-            <h3>Carpet & Upholstery Cleaning</h3>
-            <p>Professional carpet and upholstery cleaning to improve appearance, reduce odours and tackle staining where possible, helping spaces feel cleaner and more presentable.</p>
-            <div class="tags">
-              <span class="tag">Stain treatment</span>
-              <span class="tag">Odour reduction</span>
-              <span class="tag">Refresh & restore</span>
-            </div>
-          </div>
-
-          <div class="card">
-            <h3>Window Cleaning</h3>
-            <p>Window cleaning for commercial properties and other suitable buildings, with access assessed in advance to confirm scope and safe completion.</p>
-            <div class="tags">
-              <span class="tag">Inside / outside</span>
-              <span class="tag">One-off</span>
-              <span class="tag">Regular visits</span>
-            </div>
-          </div>
-
-          <div class="card">
-            <h3>End of Tenancy Cleaning</h3>
-            <p>Move-out cleaning support for selected properties, subject to availability, scheduling and the level of work required before handover.</p>
-            <div class="tags">
-              <span class="tag">Move-out cleans</span>
-              <span class="tag">Landlords</span>
-              <span class="tag">Lettings</span>
-            </div>
-          </div>
-
-          <div class="card">
-            <h3>Specialist Cleaning</h3>
-            <p>For unusual or specialist cleaning requirements, send details by WhatsApp and the service scope, timing and availability can be confirmed directly.</p>
-            <div class="tags">
-              <span class="tag">Tailored work</span>
-              <span class="tag">Professional approach</span>
-              <span class="tag">Clear scope</span>
-            </div>
-          </div>
-
-          <div class="card">
-            <h3>Quote Support</h3>
-            <p>The fastest way to get an accurate quote is to send the service needed, location, access details and preferred date or time through WhatsApp.</p>
-            <div class="tags">
-              <span class="tag">Fast response</span>
-              <span class="tag">Clear pricing</span>
-              <span class="tag">Easy booking enquiry</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="why-us">
-      <div class="wrap">
-        <div class="sectionHead">
-          <div>
-            <h2>Why choose Swift Cleaning Service</h2>
-            <p>Clear reasons to trust the business and move from interest to enquiry.</p>
-          </div>
-        </div>
-
-        <div class="featureGrid">
-          <div class="feature">
-            <div class="featureIcon">01</div>
-            <h3>Professional presentation</h3>
-            <p>Clean spaces create better first impressions for customers, staff, tenants and visitors. The service is built around standards that reflect well on the property or business.</p>
-          </div>
-
-          <div class="feature">
-            <div class="featureIcon">02</div>
-            <h3>Clear communication</h3>
-            <p>Simple quote process, direct responses and clear expectations. That reduces friction and helps jobs move faster from enquiry to booking.</p>
-          </div>
-
-          <div class="feature">
-            <div class="featureIcon">03</div>
-            <h3>Commercial mindset</h3>
-            <p>The business is positioned properly for commercial work, not just domestic cleaning. That builds stronger trust with better clients.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="wrap">
-        <div class="sectionHead">
-          <div>
-            <h2>How it works</h2>
-            <p>A simple process improves trust and helps the visitor understand exactly what to do next.</p>
-          </div>
-        </div>
-
-        <div class="steps">
-          <div class="step">
-            <div class="stepNo">1</div>
-            <h3>Send your request</h3>
-            <p>Message on WhatsApp with the service required, your location in Jersey, and your preferred date or time.</p>
-          </div>
-
-          <div class="step">
-            <div class="stepNo">2</div>
-            <h3>Confirm the scope</h3>
-            <p>The job details, access needs and timing are reviewed so the quote is based on the actual work required.</p>
-          </div>
-
-          <div class="step">
-            <div class="stepNo">3</div>
-            <h3>Receive your quote</h3>
-            <p>Availability is confirmed and a clear quote is provided, with the next steps explained simply.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="gallery">
-      <div class="wrap">
-        <div class="sectionHead">
-          <div>
-            <h2>Gallery</h2>
-            <p>Examples of carpet, commercial and window cleaning work across Jersey.</p>
-          </div>
-        </div>
-
-        <div class="gallery">
-          <figure class="gItem">
-            <a class="gLink" href="hero.jpg" data-lightbox>
-              <img src="hero.jpg" alt="Swift Cleaning Service in Jersey" loading="lazy" width="1200" height="800">
-              <span class="gBadge">Main image</span>
-            </a>
-          </figure>
-
-          <figure class="gItem">
-            <a class="gLink" href="carpet-cleaning-before-after-jersey.jpg" data-lightbox>
-              <img src="carpet-cleaning-before-after-jersey.jpg" alt="Carpet cleaning before and after in Jersey" loading="lazy" width="1200" height="800">
-              <span class="gBadge">Carpet cleaning</span>
-            </a>
-          </figure>
-
-          <figure class="gItem">
-            <a class="gLink" href="commercial-cleaning-equipment-jersey.jpg" data-lightbox>
-              <img src="commercial-cleaning-equipment-jersey.jpg" alt="Commercial cleaning equipment in Jersey" loading="lazy" width="1200" height="800">
-              <span class="gBadge">Commercial cleaning</span>
-            </a>
-          </figure>
-
-          <figure class="gItem">
-            <a class="gLink" href="window-cleaning-jersey-commercial-cleaning.jpg" data-lightbox>
-              <img src="window-cleaning-jersey-commercial-cleaning.jpg" alt="Window cleaning service in Jersey" loading="lazy" width="1200" height="800">
-              <span class="gBadge">Window cleaning</span>
-            </a>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="wrap">
-        <div class="quoteBanner">
-          <div>
-            <h3>Need a fast quote in Jersey?</h3>
-            <p>Send your service requirement, location and preferred date or time on WhatsApp for the quickest response.</p>
-          </div>
-
-          <a class="btn btnGreen" href="https://wa.me/447700335389?text=Hi%20Swift%20Cleaning%20Service%2C%20please%20can%20I%20get%20a%20quote%3F%0A%0AService%3A%20%0ALocation%3A%20%0APreferred%20date%2Ftime%3A" target="_blank" rel="noopener">
-            <span class="waDot" aria-hidden="true"></span> Request a quote
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section id="faq">
-      <div class="wrap">
-        <div class="sectionHead">
-          <div>
-            <h2>Frequently asked questions</h2>
-            <p>This helps both trust and local SEO.</p>
-          </div>
-        </div>
-
-        <div class="faqGrid">
-          <details class="faq">
-            <summary>Do you provide commercial cleaning across Jersey?</summary>
-            <p>Yes. Swift Cleaning Service works across Jersey and focuses strongly on commercial cleaning, along with carpet, upholstery and window cleaning services.</p>
-          </details>
-
-          <details class="faq">
-            <summary>What is the fastest way to get a quote?</summary>
-            <p>WhatsApp is the fastest option. Send the service required, the location, and your preferred date or time so availability and pricing can be confirmed quickly.</p>
-          </details>
-
-          <details class="faq">
-            <summary>Do you offer one-off and regular cleaning?</summary>
-            <p>Yes. Depending on the service and schedule, both regular and one-off work can be arranged.</p>
-          </details>
-
-          <details class="faq">
-            <summary>Do you offer end of tenancy cleaning?</summary>
-            <p>Yes, on selected dates and subject to availability. It is best to enquire early if a deadline is involved.</p>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="wrap">
-        <div class="sectionHead">
-          <div>
-            <h2>Contact</h2>
-            <p>The fastest way to get a quote is to send the right details on WhatsApp.</p>
-          </div>
-        </div>
-
-        <div class="twoCol">
-          <div class="panel box">
-            <div class="kicker">
-              <span class="pill">Quick quote</span>
-              <span class="pill gold">WhatsApp preferred</span>
-            </div>
-
-            <ul class="list">
-              <li><span class="dot"></span><span><strong>Commercial cleaning:</strong> tell us the premises type, size, frequency and access times.</span></li>
-              <li><span class="dot"></span><span><strong>Carpets and upholstery:</strong> tell us the number of rooms or items, staining and parking or access details.</span></li>
-              <li><span class="dot"></span><span><strong>Window cleaning:</strong> tell us the property type, number of floors and access situation.</span></li>
-              <li><span class="dot"></span><span><strong>End of tenancy:</strong> tell us the bedrooms, bathrooms, condition and deadline.</span></li>
-            </ul>
-
-            <div class="btnRow" style="margin-top:16px">
-              <a class="btn btnGreen" href="https://wa.me/447700335389?text=Hi%20Swift%20Cleaning%20Service%2C%20please%20can%20I%20get%20a%20quote%3F%0A%0AService%3A%20%0ALocation%3A%20%0APreferred%20date%2Ftime%3A" target="_blank" rel="noopener">
-                <span class="waDot" aria-hidden="true"></span> WhatsApp
-              </a>
-              <a class="btn" href="tel:+447700335389">Call</a>
-              <a class="btn btnBlue" href="https://www.facebook.com/share/181zrn8D8R/" target="_blank" rel="noopener">Facebook</a>
-            </div>
-
-            <div class="contactCard">
-              <p><strong>Phone:</strong> +44 7700 335389</p>
-              <p><strong>Location:</strong> Jersey, Channel Islands</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="wrap">
-      <div class="footRow">
-        <div>
-          © <span id="y"></span> Swift Cleaning Service • Jersey, Channel Islands
-          <div style="margin-top:6px;font-size:12px;color:var(--muted2);font-weight:800;">
-            Commercial Cleaning • Carpet & Upholstery • Window Cleaning • Fully insured
-          </div>
-        </div>
-
-        <div class="footLinks">
-          <a href="#top">Top</a>
-          <a href="#services">Services</a>
-          <a href="#gallery">Gallery</a>
-          <a href="#faq">FAQ</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <div class="sticky" aria-hidden="false">
-    <a href="https://wa.me/447700335389?text=Hi%20Swift%20Cleaning%20Service%2C%20please%20can%20I%20get%20a%20quote%3F%0A%0AService%3A%20%0ALocation%3A%20%0APreferred%20date%2Ftime%3A" target="_blank" rel="noopener">
-      <span class="waDot" aria-hidden="true"></span> WhatsApp for a quote
-    </a>
-  </div>
-
-  <div class="lb" id="lb" aria-hidden="true">
-    <div class="lbInner" role="dialog" aria-modal="true" aria-label="Image preview">
-      <button class="lbClose" id="lbClose" aria-label="Close">✕</button>
-      <img class="lbImg" id="lbImg" alt="" src="">
-      <div class="lbHint">Tap outside or press Esc</div>
-    </div>
-  </div>
-
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-
-    const body = document.body;
-    const menuBtn = document.getElementById("menuBtn");
-    const closeBtn = document.getElementById("closeBtn");
-    const overlay = document.getElementById("drawerOverlay");
-    const drawer = document.getElementById("drawer");
-
-    function openMenu(){
-      body.classList.add("menuOpen");
-      menuBtn?.setAttribute("aria-expanded","true");
-      overlay?.setAttribute("aria-hidden","false");
-      drawer?.setAttribute("aria-hidden","false");
-    }
-
-    function closeMenu(){
-      body.classList.remove("menuOpen");
-      menuBtn?.setAttribute("aria-expanded","false");
-      overlay?.setAttribute("aria-hidden","true");
-      drawer?.setAttribute("aria-hidden","true");
-    }
-
-    menuBtn?.addEventListener("click", openMenu);
-    closeBtn?.addEventListener("click", closeMenu);
-    overlay?.addEventListener("click", closeMenu);
-
-    drawer?.addEventListener("click", (e) => {
-      const t = e.target;
-      if (t && t.matches && t.matches("[data-close]")) closeMenu();
-    });
-
-    const lb = document.getElementById("lb");
-    const lbImg = document.getElementById("lbImg");
-    const lbClose = document.getElementById("lbClose");
-
-    function openLightbox(src, alt){
-      lbImg.src = src;
-      lbImg.alt = alt || "Gallery image";
-      lb.classList.add("open");
-      lb.setAttribute("aria-hidden","false");
-      body.style.overflow = "hidden";
-    }
-
-    function closeLightbox(){
-      lb.classList.remove("open");
-      lb.setAttribute("aria-hidden","true");
-      lbImg.src = "";
-      body.style.overflow = "";
-    }
-
-    document.querySelectorAll("[data-lightbox]").forEach(link => {
-      link.addEventListener("click", (e) => {
-        e.preventDefault();
-        const href = link.getAttribute("href");
-        const img = link.querySelector("img");
-        openLightbox(href, img ? img.alt : "Gallery image");
-      });
-    });
-
-    lbClose?.addEventListener("click", closeLightbox);
-
-    lb?.addEventListener("click", (e) => {
-      if (e.target === lb) closeLightbox();
-    });
-
-    window.addEventListener("keydown", (e) => {
-      if (e.key === "Escape") {
-        closeMenu();
-        closeLightbox();
-      }
-    });
-  </script>
+<div class="topbar" id="top">
+<div class="wrap">
+<div class="nav">
+<a class="brand" href="#top" aria-label="Swift Cleaning Service home">
+<div class="logoBox">
+<img src="logo-gold.png" alt="Swift Cleaning Service logo" width="64" height="64">
+</div>
+<div class="brandText">
+<strong>SWIFT CLEANING SERVICE</strong>
+<span>Jersey, Channel Islands</span>
+</div>
+</a>
+<div class="navRight">
+<nav class="navLinks" aria-label="Primary">
+<a href="#services">Services</a>
+<a href="#why-us">Why Us</a>
+<a href="#gallery">Gallery</a>
+<a href="#faq">FAQ</a>
+<a href="#contact">Contact</a>
+</nav>
+<a class="cta desktop-only" href="https://wa.me/447700335389?text=Hi%20Swift%20Cleaning%20Service%2C%20please%20can%20I%20get%20a%20quote%3F%0A%0AService%3A%20%0ALocation%3A%20%0APreferred%20date%2Ftime%3A" target="_blank" rel="noopener">
+<span class="waDot" aria-hidden="true"></span> WhatsApp for a quote
+</a>
+<button class="menuBtn" type="button" id="menuBtn" aria-label="Open menu" aria-expanded="false">Menu</button>
+</div>
+</div>
+</div>
+</div>
+<div class="drawerOverlay" id="drawerOverlay" aria-hidden="true"></div>
+<aside class="drawer" id="drawer" aria-label="Mobile menu" aria-hidden="true">
+<div class="drawerTop">
+<strong>Swift Cleaning Service</strong>
+<button class="closeBtn" type="button" id="closeBtn" aria-label="Close menu">✕</button>
+</div>
+<nav class="drawerNav" aria-label="Mobile navigation">
+<a href="#services" data-close>Services</a>
+<a href="#why-us" data-close>Why Us</a>
+<a href="#gallery" data-close>Gallery</a>
+<a href="#faq" data-close>FAQ</a>
+<a href="#contact" data-close>Contact</a>
+</nav>
+<div class="drawerCtas">
+<a class="primary" href="https://wa.me/447700335389?text=Hi%20Swift%20Cleaning%20Service%2C%20please%20can%20I%20get%20a%20quote%3F%0A%0AService%3A%20%0ALocation%3A%20%0APreferred%20date%2Ftime%3A" target="_blank" rel="noopener">
+<span class="waDot" aria-hidden="true"></span> WhatsApp for a quote
+</a>
+<a href="tel:+447700335389">Call +44 7700 335389</a>
+<a href="https://www.facebook.com/share/181zrn8D8R/" target="_blank" rel="noopener">Facebook</a>
+</div>
+</aside>
+<main>
+<section class="hero">
+<div class="wrap">
+<div class="heroGrid">
+<div class="panel heroCopy fade-up">
+<div class="kicker">
+<span class="pill">Serving Jersey</span>
+<span class="pill">Commercial Cleaning</span>
+<span class="pill">Carpets & Upholstery</span>
+<span class="pill">Window Cleaning</span>
+<span class="pill gold">Fully insured</span>
+</div>
+<h1>Professional cleaning services across Jersey for businesses and properties.</h1>
+<p class="lead">
+Swift Cleaning Service provides reliable <strong>commercial cleaning</strong>, <strong>carpet and upholstery cleaning</strong>, and <strong>window cleaning</strong> across Jersey, Channel Islands. Clear communication, dependable service, and a professional finish.
+</p>
+<div class="heroBullets">
+<div class="b"><span>✓</span><span>Fast quotes and straightforward communication</span></div>
+<div class="b"><span>✓</span><span>Flexible service for commercial and property needs</span></div>
+<div class="b"><span>✓</span><span>Professional standards and reliable attendance</span></div>
+<div class="b"><span>✓</span><span>WhatsApp preferred for quick response</span></div>
+</div>
+<div class="btnRow">
+<a class="btn btnGreen" href="https://wa.me/447700335389?text=Hi%20Swift%20Cleaning%20Service%2C%20please%20can%20I%20get%20a%20quote%3F%0A%0AService%3A%20%0ALocation%3A%20%0APreferred%20date%2Ftime%3A" target="_blank" rel="noopener">
+<span class="waDot" aria-hidden="true"></span> Get a quote on WhatsApp
+</a>
+<a class="btn btnBlue" href="#services">View services</a>
+</div>
+<p class="micro">Commercial focus • Fast response • Professional finish</p>
+</div>
+<aside class="heroMedia fade-up" aria-label="Swift Cleaning Service hero image">
+<div class="heroMediaInner">
+<div class="heroMiniTitle">Reliable cleaning in Jersey for commercial and specialist needs.</div>
+<div class="heroMiniText">Trusted presentation starts with clean spaces, clear standards, and consistent service.</div>
+<div class="trustRow">
+<div class="trustCard"><span class="tick">✓</span> Commercial-ready service</div>
+<div class="trustCard"><span class="tick">✓</span> Fully insured</div>
+<div class="trustCard"><span class="tick">✓</span> Window cleaning available</div>
+<div class="trustCard"><span class="tick">✓</span> Jersey-wide coverage</div>
+</div>
+</div>
+</aside>
+</div>
+</div>
+</section>
+<section>
+<div class="wrap">
+<div class="stats fade-up">
+<div class="stat">
+<strong>Commercial</strong>
+<span>Offices, shared areas and business premises</span>
+</div>
+<div class="stat">
+<strong>Specialist</strong>
+<span>Carpets, upholstery and selected specialist work</span>
+</div>
+<div class="stat">
+<strong>Responsive</strong>
+<span>Fastest contact and quote flow via WhatsApp</span>
+</div>
+<div class="stat">
+<strong>Jersey</strong>
+<span>Local service across Jersey, Channel Islands</span>
+</div>
+</div>
+</div>
+</section>
+<section id="services">
+<div class="wrap">
+<div class="sectionHead">
+<div>
+<h2>Services</h2>
+<p>Clear service categories designed to help visitors understand quickly what you do and request a quote faster.</p>
+</div>
+</div>
+<div class="grid">
+<div class="card fade-up">
+<h3>Office & Commercial Cleaning</h3>
+<p>Regular or one-off cleaning for offices, business spaces, communal areas and commercial premises, tailored around access times and operational needs.</p>
+<div class="tags">
+<span class="tag">Contracts</span>
+<span class="tag">After-hours</span>
+<span class="tag">Custom schedules</span>
+</div>
+</div>
+<div class="card fade-up">
+<h3>Carpet & Upholstery Cleaning</h3>
+<p>Professional carpet and upholstery cleaning to improve appearance, reduce odours and tackle staining where possible, helping spaces feel cleaner and more presentable.</p>
+<div class="tags">
+<span class="tag">Stain treatment</span>
+<span class="tag">Odour reduction</span>
+<span class="tag">Refresh & restore</span>
+</div>
+</div>
+<div class="card fade-up">
+<h3>Window Cleaning</h3>
+<p>Window cleaning for commercial properties and other suitable buildings, with access assessed in advance to confirm scope and safe completion.</p>
+<div class="tags">
+<span class="tag">Inside / outside</span>
+<span class="tag">One-off</span>
+<span class="tag">Regular visits</span>
+</div>
+</div>
+<div class="card fade-up">
+<h3>End of Tenancy Cleaning</h3>
+<p>Move-out cleaning support for selected properties, subject to availability, scheduling and the level of work required before handover.</p>
+<div class="tags">
+<span class="tag">Move-out cleans</span>
+<span class="tag">Landlords</span>
+<span class="tag">Lettings</span>
+</div>
+</div>
+<div class="card fade-up">
+<h3>Specialist Cleaning</h3>
+<p>For unusual or specialist cleaning requirements, send details by WhatsApp and the service scope, timing and availability can be confirmed directly.</p>
+<div class="tags">
+<span class="tag">Tailored work</span>
+<span class="tag">Professional approach</span>
+<span class="tag">Clear scope</span>
+</div>
+</div>
+<div class="card fade-up">
+<h3>Quote Support</h3>
+<p>The fastest way to get an accurate quote is to send the service needed, location, access details and preferred date or time through WhatsApp.</p>
+<div class="tags">
+<span class="tag">Fast response</span>
+<span class="tag">Clear pricing</span>
+<span class="tag">Easy booking enquiry</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="why-us">
+<div class="wrap">
+<div class="sectionHead">
+<div>
+<h2>Why choose Swift Cleaning Service</h2>
+<p>Clear reasons to trust the business and move from interest to enquiry.</p>
+</div>
+</div>
+<div class="featureGrid">
+<div class="feature fade-up">
+<div class="featureIcon">01</div>
+<h3>Professional presentation</h3>
+<p>Clean spaces create better first impressions for customers, staff, tenants and visitors. The service is built around standards that reflect well on the property or business.</p>
+</div>
+<div class="feature fade-up">
+<div class="featureIcon">02</div>
+<h3>Clear communication</h3>
+<p>Simple quote process, direct responses and clear expectations. That reduces friction and helps jobs move faster from enquiry to booking.</p>
+</div>
+<div class="feature fade-up">
+<div class="featureIcon">03</div>
+<h3>Commercial mindset</h3>
+<p>The business is positioned properly for commercial work, not just domestic cleaning. That builds stronger trust with better clients.</p>
+</div>
+</div>
+</div>
+</section>
+<section>
+<div class="wrap">
+<div class="sectionHead">
+<div>
+<h2>How it works</h2>
+<p>A simple process improves trust and helps the visitor understand exactly what to do next.</p>
+</div>
+</div>
+<div class="steps">
+<div class="step fade-up">
+<div class="stepNo">1</div>
+<h3>Send your request</h3>
+<p>Message on WhatsApp with the service required, your location in Jersey, and your preferred date or time.</p>
+</div>
+<div class="step fade-up">
+<div class="stepNo">2</div>
+<h3>Confirm the scope</h3>
+<p>The job details, access needs and timing are reviewed so the quote is based on the actual work required.</p>
+</div>
+<div class="step fade-up">
+<div class="stepNo">3</div>
+<h3>Receive your quote</h3>
+<p>Availability is confirmed and a clear quote is provided, with the next steps explained simply.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="gallery">
+<div class="wrap">
+<div class="sectionHead">
+<div>
+<h2>Gallery</h2>
+<p>Examples of carpet, commercial and window cleaning work across Jersey.</p>
+</div>
+</div>
+<div class="gallery">
+<figure class="gItem fade-up">
+<a class="gLink" href="hero.jpg" data-lightbox>
+<img src="hero.jpg" alt="Swift Cleaning Service in Jersey" loading="lazy" width="1200" height="800">
+<span class="gBadge">Main image</span>
+</a>
+</figure>
+<figure class="gItem fade-up">
+<a class="gLink" href="carpet-cleaning-before-after-jersey.jpg" data-lightbox>
+<img src="carpet-cleaning-before-after-jersey.jpg" alt="Carpet cleaning before and after in Jersey" loading="lazy" width="1200" height="800">
+<span class="gBadge">Carpet cleaning</span>
+</a>
+</figure>
+<figure class="gItem fade-up">
+<a class="gLink" href="commercial-cleaning-equipment-jersey.jpg" data-lightbox>
+<img src="commercial-cleaning-equipment-jersey.jpg" alt="Commercial cleaning equipment in Jersey" loading="lazy" width="1200" height="800">
+<span class="gBadge">Commercial cleaning</span>
+</a>
+</figure>
+<figure class="gItem fade-up">
+<a class="gLink" href="window-cleaning-jersey-commercial-cleaning.jpg" data-lightbox>
+<img src="window-cleaning-jersey-commercial-cleaning.jpg" alt="Window cleaning service in Jersey" loading="lazy" width="1200" height="800">
+<span class="gBadge">Window cleaning</span>
+</a>
+</figure>
+</div>
+</div>
+</section>
+<section>
+<div class="wrap">
+<div class="quoteBanner fade-up">
+<div>
+<h3>Need a fast quote in Jersey?</h3>
+<p>Send your service requirement, location and preferred date or time on WhatsApp for the quickest response.</p>
+</div>
+<a class="btn btnGreen" href="https://wa.me/447700335389?text=Hi%20Swift%20Cleaning%20Service%2C%20please%20can%20I%20get%20a%20quote%3F%0A%0AService%3A%20%0ALocation%3A%20%0APreferred%20date%2Ftime%3A" target="_blank" rel="noopener">
+<span class="waDot" aria-hidden="true"></span> Request a quote
+</a>
+</div>
+</div>
+</section>
+<section id="faq">
+<div class="wrap">
+<div class="sectionHead">
+<div>
+<h2>Frequently asked questions</h2>
+<p>This helps both trust and local SEO.</p>
+</div>
+</div>
+<div class="faqGrid">
+<details class="faq fade-up">
+<summary>Do you provide commercial cleaning across Jersey?</summary>
+<p>Yes. Swift Cleaning Service works across Jersey and focuses strongly on commercial cleaning, along with carpet, upholstery and window cleaning services.</p>
+</details>
+<details class="faq fade-up">
+<summary>What is the fastest way to get a quote?</summary>
+<p>WhatsApp is the fastest option. Send the service required, the location, and your preferred date or time so availability and pricing can be confirmed quickly.</p>
+</details>
+<details class="faq fade-up">
+<summary>Do you offer one-off and regular cleaning?</summary>
+<p>Yes. Depending on the service and schedule, both regular and one-off work can be arranged.</p>
+</details>
+<details class="faq fade-up">
+<summary>Do you offer end of tenancy cleaning?</summary>
+<p>Yes, on selected dates and subject to availability. It is best to enquire early if a deadline is involved.</p>
+</details>
+</div>
+</div>
+</section>
+<section id="contact">
+<div class="wrap">
+<div class="sectionHead">
+<div>
+<h2>Contact</h2>
+<p>The fastest way to get a quote is to send the right details on WhatsApp.</p>
+</div>
+</div>
+<div class="twoCol">
+<div class="panel box fade-up">
+<div class="kicker">
+<span class="pill">Quick quote</span>
+<span class="pill gold">WhatsApp preferred</span>
+</div>
+<ul class="list">
+<li><span class="dot"></span><span><strong>Commercial cleaning:</strong> tell us the premises type, size, frequency and access times.</span></li>
+<li><span class="dot"></span><span><strong>Carpets and upholstery:</strong> tell us the number of rooms or items, staining and parking or access details.</span></li>
+<li><span class="dot"></span><span><strong>Window cleaning:</strong> tell us the property type, number of floors and access situation.</span></li>
+<li><span class="dot"></span><span><strong>End of tenancy:</strong> tell us the bedrooms, bathrooms, condition and deadline.</span></li>
+</ul>
+<div class="btnRow" style="margin-top:16px">
+<a class="btn btnGreen" href="https://wa.me/447700335389?text=Hi%20Swift%20Cleaning%20Service%2C%20please%20can%20I%20get%20a%20quote%3F%0A%0AService%3A%20%0ALocation%3A%20%0APreferred%20date%2Ftime%3A" target="_blank" rel="noopener">
+<span class="waDot" aria-hidden="true"></span> WhatsApp
+</a>
+<a class="btn" href="tel:+447700335389">Call</a>
+<a class="btn btnBlue" href="https://www.facebook.com/share/181zrn8D8R/" target="_blank" rel="noopener">Facebook</a>
+</div>
+<div class="contactCard">
+<p><strong>Phone:</strong> +44 7700 335389</p>
+<p><strong>Location:</strong> Jersey, Channel Islands</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer>
+<div class="wrap">
+<div class="footRow">
+<div>
+© <span id="y"></span> Swift Cleaning Service • Jersey, Channel Islands
+<div style="margin-top:6px;font-size:12px;color:var(--muted2);font-weight:800;">
+Commercial Cleaning • Carpet & Upholstery • Window Cleaning • Fully insured
+</div>
+</div>
+<div class="footLinks">
+<a href="#top">Top</a>
+<a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
+<a href="#faq">FAQ</a>
+<a href="#contact">Contact</a>
+</div>
+</div>
+</div>
+</footer>
+<div class="sticky" aria-hidden="false">
+<a href="https://wa.me/447700335389?text=Hi%20Swift%20Cleaning%20Service%2C%20please%20can%20I%20get%20a%20quote%3F%0A%0AService%3A%20%0ALocation%3A%20%0APreferred%20date%2Ftime%3A" target="_blank" rel="noopener">
+<span class="waDot" aria-hidden="true"></span> WhatsApp for a quote
+</a>
+</div>
+<button class="backToTop" id="backToTop" aria-label="Back to top">↑</button>
+<div class="lb" id="lb" aria-hidden="true">
+<div class="lbInner" role="dialog" aria-modal="true" aria-label="Image preview">
+<button class="lbClose" id="lbClose" aria-label="Close">✕</button>
+<img class="lbImg" id="lbImg" alt="" src="">
+<div class="lbHint">Tap outside or press Esc</div>
+</div>
+</div>
+<script>
+// Year Update
+document.getElementById("y").textContent = new Date().getFullYear();
+
+// Mobile Menu
+const body = document.body;
+const menuBtn = document.getElementById("menuBtn");
+const closeBtn = document.getElementById("closeBtn");
+const overlay = document.getElementById("drawerOverlay");
+const drawer = document.getElementById("drawer");
+
+function openMenu(){
+body.classList.add("menuOpen");
+menuBtn?.setAttribute("aria-expanded","true");
+overlay?.setAttribute("aria-hidden","false");
+drawer?.setAttribute("aria-hidden","false");
+}
+function closeMenu(){
+body.classList.remove("menuOpen");
+menuBtn?.setAttribute("aria-expanded","false");
+overlay?.setAttribute("aria-hidden","true");
+drawer?.setAttribute("aria-hidden","true");
+}
+menuBtn?.addEventListener("click", openMenu);
+closeBtn?.addEventListener("click", closeMenu);
+overlay?.addEventListener("click", closeMenu);
+drawer?.addEventListener("click", (e) => {
+const t = e.target;
+if (t && t.matches && t.matches("[data-close]")) closeMenu();
+});
+
+// Lightbox
+const lb = document.getElementById("lb");
+const lbImg = document.getElementById("lbImg");
+const lbClose = document.getElementById("lbClose");
+
+function openLightbox(src, alt){
+lbImg.src = src;
+lbImg.alt = alt || "Gallery image";
+lb.classList.add("open");
+lb.setAttribute("aria-hidden","false");
+body.style.overflow = "hidden";
+}
+function closeLightbox(){
+lb.classList.remove("open");
+lb.setAttribute("aria-hidden","true");
+setTimeout(() => { lbImg.src = ""; }, 300);
+body.style.overflow = "";
+}
+document.querySelectorAll("[data-lightbox]").forEach(link => {
+link.addEventListener("click", (e) => {
+e.preventDefault();
+const href = link.getAttribute("href");
+const img = link.querySelector("img");
+openLightbox(href, img ? img.alt : "Gallery image");
+});
+});
+lbClose?.addEventListener("click", closeLightbox);
+lb?.addEventListener("click", (e) => {
+if (e.target === lb) closeLightbox();
+});
+
+// Scroll Animations & Back to Top
+const observer = new IntersectionObserver((entries) => {
+entries.forEach(entry => {
+if(entry.isIntersecting){
+entry.target.classList.add('visible');
+}
+});
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+const backToTopBtn = document.getElementById('backToTop');
+window.addEventListener('scroll', () => {
+if (window.scrollY > 300) {
+backToTopBtn.classList.add('visible');
+} else {
+backToTopBtn.classList.remove('visible');
+}
+});
+
+backToTopBtn.addEventListener('click', () => {
+window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+// Keyboard Accessibility
+window.addEventListener("keydown", (e) => {
+if (e.key === "Escape") {
+closeMenu();
+closeLightbox();
+}
+});
+</script>
 </body>
-  </html>
+</html>
